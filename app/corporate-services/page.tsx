@@ -117,7 +117,7 @@ export default function CorporateServicesPage() {
               className="flex items-start gap-4 p-6 rounded-lg bg-white/10"
             >
               <CheckCircle className="text-white flex-shrink-0 mt-1" size={24} />
-              <span className="text-white">Complete support across UAE, Saudi, Qatar, Bahrain, Oman, and Kuwait</span>
+              <span className="text-white">Complete support across all GCC countries</span>
             </motion.div>
           </div>
         </div>
