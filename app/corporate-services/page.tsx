@@ -82,13 +82,44 @@ export default function CorporateServicesPage() {
             transition={{ duration: 0.8 }}
             className="text-center mb-12"
           >
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-light mb-6 text-white">
-              Corporate Services Across the GCC
-            </h2>
             <p className="text-xl md:text-2xl text-white mb-12 max-w-4xl mx-auto leading-relaxed">
-              RelocateMe provides comprehensive corporate support services in all locations we operate: United Arab Emirates, Saudi Arabia, Qatar, Bahrain, Oman, and Kuwait. From assisting companies with entity formation and prime-location office solutions, to HR support services and employee tenancy management. Our corporate services are designed to help you grow seamlessly across the region. Each client benefits from an assigned dedicated account manager, ensuring precision, compliance, and clarity at every stage.
+              From business setup to office solutions, HR support, and beyond.
+              One trusted partner for all your corporate needs across the region.
             </p>
           </motion.div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0 }}
+              className="flex items-start gap-4 p-6 rounded-lg bg-white/10"
+            >
+              <CheckCircle className="text-white flex-shrink-0 mt-1" size={24} />
+              <span className="text-white">15+ years helping businesses expand to the GCC</span>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.1 }}
+              className="flex items-start gap-4 p-6 rounded-lg bg-white/10"
+            >
+              <CheckCircle className="text-white flex-shrink-0 mt-1" size={24} />
+              <span className="text-white">One dedicated account manager from start to finish</span>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              className="flex items-start gap-4 p-6 rounded-lg bg-white/10"
+            >
+              <CheckCircle className="text-white flex-shrink-0 mt-1" size={24} />
+              <span className="text-white">Complete support across UAE, Saudi, Qatar, Bahrain, Oman, and Kuwait</span>
+            </motion.div>
+          </div>
         </div>
       </section>
 
