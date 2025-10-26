@@ -1,13 +1,15 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import { Menu, X } from "lucide-react";
 
 export function Navbar({ transparent = false }: { transparent?: boolean }) {
     const [isScrolled, setIsScrolled] = useState(false);
+    const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -17,6 +19,15 @@ export function Navbar({ transparent = false }: { transparent?: boolean }) {
         window.addEventListener("scroll", handleScroll);
         return () => window.removeEventListener("scroll", handleScroll);
     }, []);
+
+    // Close mobile menu when clicking outside or on a link
+    useEffect(() => {
+        if (isMobileMenuOpen) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = 'unset';
+        }
+    }, [isMobileMenuOpen]);
 
     // If transparent is false, always show solid navbar
     const shouldBeTransparent = transparent && !isScrolled;
@@ -98,7 +109,8 @@ export function Navbar({ transparent = false }: { transparent?: boolean }) {
                         </a>
                     </div>
 
-                    <div className="flex items-center gap-4">
+                    {/* Desktop CTA Button */}
+                    <div className="hidden md:flex items-center gap-4">
                         <a href="/contact">
                             <Button
                                 variant="outline"
@@ -114,8 +126,82 @@ export function Navbar({ transparent = false }: { transparent?: boolean }) {
                             </Button>
                         </a>
                     </div>
+
+                    {/* Mobile Hamburger Menu Button */}
+                    <div className="md:hidden">
+                        <button
+                            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+                            className={cn(
+                                "p-2 transition-colors",
+                                shouldBeTransparent ? "text-white" : "text-gray-900"
+                            )}
+                            aria-label="Toggle menu"
+                        >
+                            {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+                        </button>
+                    </div>
                 </div>
             </div>
+
+            {/* Mobile Menu */}
+            <AnimatePresence>
+                {isMobileMenuOpen && (
+                    <motion.div
+                        initial={{ opacity: 0, height: 0 }}
+                        animate={{ opacity: 1, height: "auto" }}
+                        exit={{ opacity: 0, height: 0 }}
+                        transition={{ duration: 0.3 }}
+                        className="md:hidden bg-white border-t border-gray-200"
+                    >
+                        <div className="container mx-auto px-4 py-6 flex flex-col gap-4">
+                            <a
+                                href="#about-us"
+                                onClick={() => setIsMobileMenuOpen(false)}
+                                className="text-gray-900 font-medium py-2 hover:text-[hsl(var(--brand))] transition-colors"
+                            >
+                                About Us
+                            </a>
+                            <a
+                                href="/corporate-services"
+                                onClick={() => setIsMobileMenuOpen(false)}
+                                className="text-gray-900 font-medium py-2 hover:text-[hsl(var(--brand))] transition-colors"
+                            >
+                                Corporate Services
+                            </a>
+                            <a
+                                href="#immigration"
+                                onClick={() => setIsMobileMenuOpen(false)}
+                                className="text-gray-900 font-medium py-2 hover:text-[hsl(var(--brand))] transition-colors"
+                            >
+                                Immigration
+                            </a>
+                            <a
+                                href="/relocation"
+                                onClick={() => setIsMobileMenuOpen(false)}
+                                className="text-gray-900 font-medium py-2 hover:text-[hsl(var(--brand))] transition-colors"
+                            >
+                                Relocation
+                            </a>
+                            <a
+                                href="#insights"
+                                onClick={() => setIsMobileMenuOpen(false)}
+                                className="text-gray-900 font-medium py-2 hover:text-[hsl(var(--brand))] transition-colors"
+                            >
+                                Insights
+                            </a>
+                            <a href="/contact" onClick={() => setIsMobileMenuOpen(false)} className="mt-4">
+                                <Button
+                                    variant="outline"
+                                    size="default"
+                                    className="w-full bg-[hsl(var(--brand))] border border-[hsl(var(--brand))] text-white hover:bg-[hsl(var(--brand))]/90 hover:text-white px-6 py-5"
+                                >
+                                    Get in Touch
+                                </Button>
+                            </a>
+                        </div>
+                    </motion.div>
+                )}
+            </AnimatePresence>
         </motion.nav>
     );
 }
