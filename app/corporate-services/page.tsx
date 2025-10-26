@@ -123,7 +123,7 @@ export default function CorporateServicesPage() {
         </div>
       </section>
 
-      {/* Our Corporate Services Section - HIDDEN (uncomment to restore)
+      {/* Our Corporate Services Grid Section */}
       <section className="pt-20 bg-white">
         <div className="container mx-auto px-4 md:px-6">
           <motion.div
@@ -344,9 +344,8 @@ export default function CorporateServicesPage() {
           </motion.div>
         </div>
       </section>
-      */}
 
-      {/* Our Corporate Services Section */}
+      {/* Our Corporate Services Timeline Section */}
       <section className="bg-white">
         <div className="container mx-auto px-4 md:px-6 py-20">
           <motion.div
