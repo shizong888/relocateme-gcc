@@ -367,17 +367,26 @@ export default function CorporateServicesPage() {
             {
               title: "Business Set-Up & Licensing",
               content: (
-                <div className="relative w-full overflow-hidden rounded-lg bg-[hsl(var(--brand))] p-6 md:p-12 lg:p-16">
-                  <p className="text-white text-base md:text-lg lg:text-xl leading-relaxed text-left">
-                    We streamline the company formation process from start to finish, supporting all aspects of licensing, registration, and compliance. Our experts manage MISA, DED, and Free Zone setups, assist with commercial registration, chamber membership, and VAT registration, ensuring your entity is established quickly and correctly in line with local regulations.
-                  </p>
+                <div className="relative w-full min-h-[400px] overflow-hidden group rounded-lg">
+                  <Image
+                    src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80"
+                    alt="Business setup and licensing"
+                    fill
+                    className="object-cover transition-transform duration-700 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-black/50 transition-opacity duration-300 group-hover:bg-black/60" />
+                  <div className="absolute inset-0 flex items-center justify-start p-6 md:px-12 lg:px-16">
+                    <p className="text-white text-base md:text-lg lg:text-xl leading-relaxed max-w-3xl text-left">
+                      We streamline the company formation process from start to finish, supporting all aspects of licensing, registration, and compliance. Our experts manage MISA, DED, and Free Zone setups, assist with commercial registration, chamber membership, and VAT registration, ensuring your entity is established quickly and correctly in line with local regulations.
+                    </p>
+                  </div>
                 </div>
               )
             },
             {
               title: "Office Solutions & Workspace Setup",
               content: (
-                <div className="relative w-full aspect-video overflow-hidden group rounded-lg">
+                <div className="relative w-full min-h-[400px] overflow-hidden group rounded-lg">
                   <Image
                     src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80"
                     alt="Office solutions and workspace"
@@ -385,7 +394,7 @@ export default function CorporateServicesPage() {
                     className="object-cover transition-transform duration-700 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-black/50 transition-opacity duration-300 group-hover:bg-black/60" />
-                  <div className="absolute inset-0 flex items-center justify-start px-6 md:px-12 lg:px-16">
+                  <div className="absolute inset-0 flex items-center justify-start p-6 md:px-12 lg:px-16">
                     <p className="text-white text-base md:text-lg lg:text-xl leading-relaxed max-w-3xl text-left">
                       From serviced offices and co-working spaces to bespoke corporate headquarters, we deliver tailored solutions to fit your operational needs. With access to premium offices in prime city locations, you can be operational as soon as your licence is issued. Our business setup services include access to fully furnished, 5-star serviced office spaces designed to meet every need. Whether you require a premium private office, convenient flexi desks, virtual offices, or simply a prestigious business address for company registration, we provide tailored solutions in prime city locations, ensuring you have the right set up from day one.
                     </p>
@@ -396,7 +405,7 @@ export default function CorporateServicesPage() {
             {
               title: "HR Support & Employee Services",
               content: (
-                <div className="relative w-full aspect-video overflow-hidden group rounded-lg">
+                <div className="relative w-full min-h-[400px] overflow-hidden group rounded-lg">
                   <Image
                     src="https://images.unsplash.com/photo-1521791136064-7986c2920216?w=800&q=80"
                     alt="HR support and employee services"
@@ -404,7 +413,7 @@ export default function CorporateServicesPage() {
                     className="object-cover transition-transform duration-700 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-black/50 transition-opacity duration-300 group-hover:bg-black/60" />
-                  <div className="absolute inset-0 flex items-center justify-start px-6 md:px-12 lg:px-16">
+                  <div className="absolute inset-0 flex items-center justify-start p-6 md:px-12 lg:px-16">
                     <p className="text-white text-base md:text-lg lg:text-xl leading-relaxed max-w-3xl text-left">
                       Our HR support programs help companies manage their workforce effectively across borders. Tailored HR guidance covering onboarding, policies, payroll coordination, benefits administration, visa and iqama renewals, and onboarding support - all delivered with accuracy, confidentiality, and compliance at the core.
                     </p>
@@ -415,7 +424,7 @@ export default function CorporateServicesPage() {
             {
               title: "Tenancy & Property Management",
               content: (
-                <div className="relative w-full aspect-video overflow-hidden group rounded-lg">
+                <div className="relative w-full min-h-[400px] overflow-hidden group rounded-lg">
                   <Image
                     src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&q=80"
                     alt="Tenancy and property management"
@@ -423,7 +432,7 @@ export default function CorporateServicesPage() {
                     className="object-cover transition-transform duration-700 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-black/50 transition-opacity duration-300 group-hover:bg-black/60" />
-                  <div className="absolute inset-0 flex items-center justify-start px-6 md:px-12 lg:px-16">
+                  <div className="absolute inset-0 flex items-center justify-start p-6 md:px-12 lg:px-16">
                     <p className="text-white text-base md:text-lg lg:text-xl leading-relaxed max-w-3xl text-left">
                       We manage the entire lifecycle of corporate leases and staff accommodations, from property sourcing, tenancy registrations, and tenancy renewals to maintenance coordination, inspections, and landlord liaison. This ensures consistency and cost control for every property under management.
                     </p>
@@ -434,7 +443,7 @@ export default function CorporateServicesPage() {
             {
               title: "Expense & Vendor Management",
               content: (
-                <div className="relative w-full aspect-video overflow-hidden group rounded-lg">
+                <div className="relative w-full min-h-[400px] overflow-hidden group rounded-lg">
                   <Image
                     src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=800&q=80"
                     alt="Expense and vendor management"
@@ -442,7 +451,7 @@ export default function CorporateServicesPage() {
                     className="object-cover transition-transform duration-700 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-black/50 transition-opacity duration-300 group-hover:bg-black/60" />
-                  <div className="absolute inset-0 flex items-center justify-start px-6 md:px-12 lg:px-16">
+                  <div className="absolute inset-0 flex items-center justify-start p-6 md:px-12 lg:px-16">
                     <p className="text-white text-base md:text-lg lg:text-xl leading-relaxed max-w-3xl text-left">
                       RelocateMe offers structured solutions for corporate expense tracking and vendor management. We oversee supplier contracts, renewal dates, and payment coordination to optimise efficiency and ensure cost transparency across your operations.
                     </p>
@@ -453,7 +462,7 @@ export default function CorporateServicesPage() {
             {
               title: "Value-Added Corporate Services",
               content: (
-                <div className="relative w-full aspect-video overflow-hidden group rounded-lg">
+                <div className="relative w-full min-h-[400px] overflow-hidden group rounded-lg">
                   <Image
                     src="https://images.unsplash.com/photo-1450778869180-41d0601e046e?w=800&q=80"
                     alt="Value-added corporate services"
@@ -461,7 +470,7 @@ export default function CorporateServicesPage() {
                     className="object-cover transition-transform duration-700 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-black/50 transition-opacity duration-300 group-hover:bg-black/60" />
-                  <div className="absolute inset-0 flex items-center justify-start px-6 md:px-12 lg:px-16">
+                  <div className="absolute inset-0 flex items-center justify-start p-6 md:px-12 lg:px-16">
                     <p className="text-white text-base md:text-lg lg:text-xl leading-relaxed max-w-3xl text-left">
                       Beyond the essentials, we provide a suite of value-added support services including corporate bank account opening, translation and attestation, document clearing, business insurance facilitation, and corporate concierge services; all designed to ensure your operations stay simple, and uninterrupted no matter which GCC market you're moving into.
                     </p>

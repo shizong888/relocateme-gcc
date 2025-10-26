@@ -253,7 +253,7 @@ export default function RelocationPage() {
             {
               title: "Arrival & City Orientations",
               content: (
-                <div className="relative w-full aspect-video overflow-hidden group rounded-lg">
+                <div className="relative w-full min-h-[400px] overflow-hidden group rounded-lg">
                   <Image
                     src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=800&q=80"
                     alt="Airport arrival and city orientation"
@@ -261,7 +261,7 @@ export default function RelocationPage() {
                     className="object-cover transition-transform duration-700 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-black/50 transition-opacity duration-300 group-hover:bg-black/60" />
-                  <div className="absolute inset-0 flex items-center justify-start px-6 md:px-12 lg:px-16">
+                  <div className="absolute inset-0 flex items-center justify-start p-6 md:px-12 lg:px-16">
                     <p className="text-white text-base md:text-lg lg:text-xl leading-relaxed max-w-3xl text-left">
                       We provide a welcoming start from the moment employees and families arrive. Services include airport meet and greet, temporary accommodation booking, and city welcome packs. We also arrange preview and tailored executive orientation programs, offering familiarisation tours for individuals, families, or corporate groups to explore neighbourhoods, housing, schools, and essential amenities.
                     </p>
@@ -272,7 +272,7 @@ export default function RelocationPage() {
             {
               title: "Home Search & Housing Expertise",
               content: (
-                <div className="relative w-full aspect-video overflow-hidden group rounded-lg">
+                <div className="relative w-full min-h-[400px] overflow-hidden group rounded-lg">
                   <Image
                     src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&q=80"
                     alt="Home search and housing"
@@ -280,7 +280,7 @@ export default function RelocationPage() {
                     className="object-cover transition-transform duration-700 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-black/50 transition-opacity duration-300 group-hover:bg-black/60" />
-                  <div className="absolute inset-0 flex items-center justify-start px-6 md:px-12 lg:px-16">
+                  <div className="absolute inset-0 flex items-center justify-start p-6 md:px-12 lg:px-16">
                     <p className="text-white text-base md:text-lg lg:text-xl leading-relaxed max-w-3xl text-left">
                       We manage the full home search process; from area orientation and accompanied property viewings to lease negotiation, tenancy contract registration, utility connections, property handover and move-in coordination. Each search is personalised to the assignee's preferences, budget, and company policy, ensuring compliant contracts and a smooth relocation experience.
                     </p>
@@ -291,7 +291,7 @@ export default function RelocationPage() {
             {
               title: "School Search & Education Advisory",
               content: (
-                <div className="relative w-full aspect-video overflow-hidden group rounded-lg">
+                <div className="relative w-full min-h-[400px] overflow-hidden group rounded-lg">
                   <Image
                     src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=800&q=80"
                     alt="School search and education"
@@ -299,7 +299,7 @@ export default function RelocationPage() {
                     className="object-cover transition-transform duration-700 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-black/50 transition-opacity duration-300 group-hover:bg-black/60" />
-                  <div className="absolute inset-0 flex items-center justify-start px-6 md:px-12 lg:px-16">
+                  <div className="absolute inset-0 flex items-center justify-start p-6 md:px-12 lg:px-16">
                     <p className="text-white text-base md:text-lg lg:text-xl leading-relaxed max-w-3xl text-left">
                       Our education specialists guide families through the entire school search journey. After the initial briefing call to assess curriculum preferences, we shortlist suitable options, schedule accompanied school tours, and guide the family through the online admission processes, ensuring every child transitions smoothly into their new environment.
                     </p>
@@ -310,7 +310,7 @@ export default function RelocationPage() {
             {
               title: "Settling-In & Community Integration",
               content: (
-                <div className="relative w-full aspect-video overflow-hidden group rounded-lg">
+                <div className="relative w-full min-h-[400px] overflow-hidden group rounded-lg">
                   <Image
                     src="https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=800&q=80"
                     alt="Settling in and community integration"
@@ -318,7 +318,7 @@ export default function RelocationPage() {
                     className="object-cover transition-transform duration-700 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-black/50 transition-opacity duration-300 group-hover:bg-black/60" />
-                  <div className="absolute inset-0 flex items-center justify-start px-6 md:px-12 lg:px-16">
+                  <div className="absolute inset-0 flex items-center justify-start p-6 md:px-12 lg:px-16">
                     <p className="text-white text-base md:text-lg lg:text-xl leading-relaxed max-w-3xl text-left">
                       Our settling-in services ensure a comfortable and compliant start for every assignee. We assist with utilities, banking, mobile registration, driving licence conversion, and all local registrations, enabling a smooth, well-supported arrival into the new community, with tailored on-the-ground assistance.
                     </p>
@@ -329,7 +329,7 @@ export default function RelocationPage() {
             {
               title: "Cultural Training & Relocation Preparation",
               content: (
-                <div className="relative w-full aspect-video overflow-hidden group rounded-lg">
+                <div className="relative w-full min-h-[400px] overflow-hidden group rounded-lg">
                   <Image
                     src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=800&q=80"
                     alt="Cultural training"
@@ -337,7 +337,7 @@ export default function RelocationPage() {
                     className="object-cover transition-transform duration-700 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-black/50 transition-opacity duration-300 group-hover:bg-black/60" />
-                  <div className="absolute inset-0 flex items-center justify-start px-6 md:px-12 lg:px-16">
+                  <div className="absolute inset-0 flex items-center justify-start p-6 md:px-12 lg:px-16">
                     <p className="text-white text-base md:text-lg lg:text-xl leading-relaxed max-w-3xl text-left">
                       We prepare assignees and families for life in their new country through tailored cultural awareness training programs. Our cultural training experts tailor individual and group sessions to help navigate workplace etiquette, communication styles, and daily customs to ensure a confident, respectful transition into the new environment.
                     </p>
@@ -348,7 +348,7 @@ export default function RelocationPage() {
             {
               title: "Pet Relocation & Moving Services",
               content: (
-                <div className="relative w-full aspect-video overflow-hidden group rounded-lg">
+                <div className="relative w-full min-h-[400px] overflow-hidden group rounded-lg">
                   <Image
                     src="https://images.unsplash.com/photo-1450778869180-41d0601e046e?w=800&q=80"
                     alt="Pet relocation and moving"
@@ -356,7 +356,7 @@ export default function RelocationPage() {
                     className="object-cover transition-transform duration-700 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-black/50 transition-opacity duration-300 group-hover:bg-black/60" />
-                  <div className="absolute inset-0 flex items-center justify-start px-6 md:px-12 lg:px-16">
+                  <div className="absolute inset-0 flex items-center justify-start p-6 md:px-12 lg:px-16">
                     <p className="text-white text-base md:text-lg lg:text-xl leading-relaxed max-w-3xl text-left">
                       Whether it's your beloved pets, household furniture, or personal belongings, we manage the entire move with precision and care. Our door-to-door service ensures every item, and every family member, arrives safely and stress-free with comfort and peace of mind at every step.
                     </p>
@@ -367,7 +367,7 @@ export default function RelocationPage() {
             {
               title: "Departure & Repatriation Management",
               content: (
-                <div className="relative w-full aspect-video overflow-hidden group rounded-lg">
+                <div className="relative w-full min-h-[400px] overflow-hidden group rounded-lg">
                   <Image
                     src="https://images.unsplash.com/photo-1464746133101-a2c3f88e0dd9?w=800&q=80"
                     alt="Departure and repatriation"
@@ -375,7 +375,7 @@ export default function RelocationPage() {
                     className="object-cover transition-transform duration-700 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-black/50 transition-opacity duration-300 group-hover:bg-black/60" />
-                  <div className="absolute inset-0 flex items-center justify-start px-6 md:px-12 lg:px-16">
+                  <div className="absolute inset-0 flex items-center justify-start p-6 md:px-12 lg:px-16">
                     <p className="text-white text-base md:text-lg lg:text-xl leading-relaxed max-w-3xl text-left">
                       At the end of an assignment, we manage the full exit process; lease termination, property hand-back, deposit recovery, school withdrawal, and account closures, ensuring cost control and compliance for employers, and peace of mind for employees.
                     </p>
