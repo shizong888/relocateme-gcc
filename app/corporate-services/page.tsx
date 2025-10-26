@@ -366,7 +366,7 @@ export default function CorporateServicesPage() {
             {
               title: "Business Set-Up & Licensing",
               content: (
-                <div>
+                <div className="bg-gray-50 rounded-lg p-6 md:p-8">
                   <p className="text-gray-600 text-base md:text-lg leading-relaxed">
                     We streamline the company formation process from start to finish, supporting all aspects of licensing, registration, and compliance. Our experts manage MISA, DED, and Free Zone setups, assist with commercial registration, chamber membership, and VAT registration, ensuring your entity is established quickly and correctly in line with local regulations.
                   </p>
@@ -376,7 +376,7 @@ export default function CorporateServicesPage() {
             {
               title: "Office Solutions & Workspace Setup",
               content: (
-                <div>
+                <div className="bg-gray-50 rounded-lg p-6 md:p-8">
                   <p className="text-gray-600 text-base md:text-lg leading-relaxed">
                     From serviced offices and co-working spaces to bespoke corporate headquarters, we deliver tailored solutions to fit your operational needs. With access to premium offices in prime city locations, you can be operational as soon as your licence is issued. Our business setup services include access to fully furnished, 5-star serviced office spaces designed to meet every need. Whether you require a premium private office, convenient flexi desks, virtual offices, or simply a prestigious business address for company registration, we provide tailored solutions in prime city locations, ensuring you have the right set up from day one.
                   </p>
@@ -386,7 +386,7 @@ export default function CorporateServicesPage() {
             {
               title: "HR Support & Employee Services",
               content: (
-                <div>
+                <div className="bg-gray-50 rounded-lg p-6 md:p-8">
                   <p className="text-gray-600 text-base md:text-lg leading-relaxed">
                     Our HR support programs help companies manage their workforce effectively across borders. Tailored HR guidance covering onboarding, policies, payroll coordination, benefits administration, visa and iqama renewals, and onboarding support - all delivered with accuracy, confidentiality, and compliance at the core.
                   </p>
@@ -396,7 +396,7 @@ export default function CorporateServicesPage() {
             {
               title: "Tenancy & Property Management",
               content: (
-                <div>
+                <div className="bg-gray-50 rounded-lg p-6 md:p-8">
                   <p className="text-gray-600 text-base md:text-lg leading-relaxed">
                     We manage the entire lifecycle of corporate leases and staff accommodations, from property sourcing, tenancy registrations, and tenancy renewals to maintenance coordination, inspections, and landlord liaison. This ensures consistency and cost control for every property under management.
                   </p>
@@ -406,7 +406,7 @@ export default function CorporateServicesPage() {
             {
               title: "Expense & Vendor Management",
               content: (
-                <div>
+                <div className="bg-gray-50 rounded-lg p-6 md:p-8">
                   <p className="text-gray-600 text-base md:text-lg leading-relaxed">
                     RelocateMe offers structured solutions for corporate expense tracking and vendor management. We oversee supplier contracts, renewal dates, and payment coordination to optimise efficiency and ensure cost transparency across your operations.
                   </p>
@@ -416,7 +416,7 @@ export default function CorporateServicesPage() {
             {
               title: "Value-Added Corporate Services",
               content: (
-                <div>
+                <div className="bg-gray-50 rounded-lg p-6 md:p-8">
                   <p className="text-gray-600 text-base md:text-lg leading-relaxed">
                     Beyond the essentials, we provide a suite of value-added support services including corporate bank account opening, translation and attestation, document clearing, business insurance facilitation, and corporate concierge services; all designed to ensure your operations stay simple, and uninterrupted no matter which GCC market you're moving into.
                   </p>
