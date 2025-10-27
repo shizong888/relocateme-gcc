@@ -120,38 +120,45 @@ export default function InsightsPage() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="relative overflow-hidden rounded-lg bg-white shadow-lg group cursor-pointer"
+              className="relative overflow-hidden rounded-lg h-[500px] md:h-[600px] group cursor-pointer"
             >
-              <div className="grid grid-cols-1 lg:grid-cols-2">
-                <div className="relative h-[300px] lg:h-auto overflow-hidden">
-                  <Image
-                    src={featuredPost.image}
-                    alt={featuredPost.title}
-                    fill
-                    className="object-cover transition-transform duration-700 group-hover:scale-105"
-                  />
-                </div>
-                <div className="p-8 lg:p-12 flex flex-col justify-center">
+              {/* Background Image */}
+              <Image
+                src={featuredPost.image}
+                alt={featuredPost.title}
+                fill
+                className="object-cover transition-transform duration-700 group-hover:scale-105"
+              />
+
+              {/* Dark Overlay */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-black/30" />
+
+              {/* Content Overlay */}
+              <div className="relative z-10 h-full flex flex-col justify-end p-8 md:p-12">
+                <div className="max-w-3xl">
                   <div className="flex items-center gap-4 mb-4">
-                    <span className="px-3 py-1 bg-[hsl(var(--brand))]/10 text-[hsl(var(--brand))] text-sm font-medium rounded-full">
+                    <span className="px-3 py-1 bg-white/20 backdrop-blur-sm text-white text-sm font-medium rounded-full">
+                      Featured Article
+                    </span>
+                    <span className="px-3 py-1 bg-[hsl(var(--brand))]/90 text-white text-sm font-medium rounded-full">
                       {featuredPost.category}
                     </span>
-                    <span className="text-sm text-gray-500">{featuredPost.date}</span>
+                    <span className="text-sm text-white/80">{featuredPost.date}</span>
                   </div>
-                  <h2 className="text-3xl md:text-4xl font-light mb-4 group-hover:text-[hsl(var(--brand))] transition-colors">
+                  <h2 className="text-3xl md:text-4xl lg:text-5xl font-light mb-4 text-white leading-tight">
                     {featuredPost.title}
                   </h2>
-                  <p className="text-gray-600 text-lg mb-6 leading-relaxed">
+                  <p className="text-white/90 text-lg mb-6 leading-relaxed">
                     {featuredPost.excerpt}
                   </p>
-                  <div className="flex items-center justify-between">
-                    <div className="flex items-center gap-2 text-sm text-gray-500">
+                  <div className="flex items-center gap-6">
+                    <div className="flex items-center gap-2 text-sm text-white/80">
                       <Clock size={16} />
                       <span>{featuredPost.readTime}</span>
                     </div>
                     <Button
                       variant="outline"
-                      className="border-[hsl(var(--brand))] text-[hsl(var(--brand))] hover:bg-[hsl(var(--brand))] hover:text-white"
+                      className="bg-white/10 border border-white text-white hover:bg-white/20 hover:text-white transition-all duration-300"
                     >
                       Read Article <ArrowRight size={16} className="ml-2" />
                     </Button>
