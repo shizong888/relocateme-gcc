@@ -9,7 +9,7 @@ const services = [
   {
     id: 1,
     subtitle: "Supportive at every step",
-    title: "Our Relocation Services",
+    title: "Relocation Services",
     buttonText: "Explore now",
     image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&h=1000&fit=crop&q=80",
     href: "/relocation"
