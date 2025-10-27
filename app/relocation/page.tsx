@@ -142,7 +142,7 @@ export default function RelocationPage() {
               Relocation & Mobility Services<br />
               <span className="text-[hsl(var(--brand))]">Across the GCC</span>
             </h2>
-            <p className="text-lg text-gray-600 max-w-4xl mx-auto mb-6 leading-relaxed">
+            <p className="text-lg text-gray-600 max-w-4xl mx-auto mb-8 leading-relaxed">
               RelocateMe delivers personalised relocation programs across the United Arab Emirates, Saudi Arabia, Qatar, Bahrain, Oman, and Kuwait, helping companies move their talent efficiently and compliantly, with precision and care.
             </p>
             <p className="text-lg text-gray-600 max-w-4xl mx-auto mb-8 leading-relaxed">
