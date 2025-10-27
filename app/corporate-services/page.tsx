@@ -138,8 +138,11 @@ export default function CorporateServicesPage() {
               Expanding to the GCC Should Feel<br />
               <span className="text-[hsl(var(--brand))]">Strategic, Not Complicated</span>
             </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto mb-8">
-              Everything your business needs to establish, operate, and thrive in the region
+            <p className="text-lg text-gray-600 max-w-4xl mx-auto mb-6 leading-relaxed">
+              RelocateMe delivers personalised relocation programs across the United Arab Emirates, Saudi Arabia, Qatar, Bahrain, Oman, and Kuwait, helping companies move their talent efficiently and compliantly, with precision and care.
+            </p>
+            <p className="text-lg text-gray-600 max-w-4xl mx-auto mb-8 leading-relaxed">
+              We streamline the journey from airport arrival to long-term settling through a single point of contact. Your dedicated account manager coordinates every stage with clarity, specialist care, and meticulous attention to detail.
             </p>
             <Button
               size="lg"
