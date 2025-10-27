@@ -66,7 +66,7 @@ export default function CorporateServicesPage() {
                 className="bg-white/10 border border-white text-white hover:bg-white/20 hover:text-white transition-all duration-300 px-6 py-5"
                 onClick={scrollToContact}
               >
-                Get My Free Relocation Plan
+                Get Your Free Setup Plan
               </Button>
             </motion.div>
           </div>
@@ -146,7 +146,7 @@ export default function CorporateServicesPage() {
               className="bg-[hsl(var(--brand))] hover:bg-[hsl(var(--brand))]/90 text-white px-6 py-5"
               onClick={scrollToContact}
             >
-              Get My Free Setup Plan
+              Get Your Free Setup Plan
             </Button>
           </motion.div>
         </div>
@@ -354,9 +354,9 @@ export default function CorporateServicesPage() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="text-center mb-16"
+            className="mb-8"
           >
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-light leading-tight">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-light leading-tight text-left">
               <span className="text-[hsl(var(--brand))]">Complete corporate services</span> designed to simplify your business expansion and operations across the GCC region.
             </h2>
           </motion.div>
