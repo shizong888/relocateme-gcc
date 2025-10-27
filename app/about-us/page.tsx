@@ -194,7 +194,7 @@ export default function AboutPage() {
               We provide a <span className="text-[hsl(var(--brand))]">full spectrum of relocation and global services</span> to meet the finer details of settling employees into their new places.
             </h2>
             <p className="text-lg text-gray-700 leading-relaxed max-w-5xl">
-              We understand employees as individuals, we know the ideal properties, our Home Search Specialists source the ideal properties, our Education Specialists place children in the right schools, and our Cultural Trainers and Handover & Settling-In Team take care of the rest. The result: seamless housing, schooling, and community integration, ensuring every employee and their family feels at home from day one.
+              We manage the entire journey: our Immigration Team secures the right visas, our Home Search Specialists source the ideal properties, our Education Specialists place children in the right schools, and our Cultural Trainers and Handover & Settling-In Team take care of the rest. The result: seamless housing, schooling, and community integration, ensuring every employee and their family feels at home from day one.
             </p>
           </motion.div>
 
