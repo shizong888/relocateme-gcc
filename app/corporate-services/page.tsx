@@ -146,7 +146,7 @@ export default function CorporateServicesPage() {
               className="bg-[hsl(var(--brand))] hover:bg-[hsl(var(--brand))]/90 text-white px-6 py-5"
               onClick={scrollToContact}
             >
-              Explore Our Services
+              Get Your Free Setup Plan
             </Button>
           </motion.div>
         </div>
