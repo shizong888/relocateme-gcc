@@ -150,7 +150,7 @@ export async function POST(request: NextRequest) {
 
     // Send email using Resend
     const data = await resend.emails.send({
-      from: 'info@relocatemegcc.com',
+      from: 'onboarding@resend.dev',
       to: 'victoria@relocatemegcc.com',
       subject: `New Contact Form Submission - ${name}`,
       html: emailHtml,
