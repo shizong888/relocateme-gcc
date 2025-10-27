@@ -5,7 +5,6 @@ import { useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 // import { ScrollIndicator } from "@/components/ui/scroll-indicator";
-import { ArrowRight } from "lucide-react";
 
 
 function ElegantShape({
@@ -161,12 +160,17 @@ function HeroGeometric({
                         animate="visible"
                         className="flex flex-col sm:flex-row gap-4 justify-center items-center"
                     >
-                        <Button size="lg" className="group bg-[hsl(var(--brand))] hover:bg-[hsl(var(--brand))/90] text-white">
-                            Get Started
-                            <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-                        </Button>
-                        <Button size="lg" variant="outline" className="bg-white/10 border border-white text-white hover:bg-white/20 hover:text-white transition-all duration-300">
-                            Learn More
+                        <Button
+                            size="lg"
+                            className="bg-[hsl(var(--brand))] hover:bg-[hsl(var(--brand))/90] text-white px-8 py-6 text-lg"
+                            onClick={() => {
+                                const contactSection = document.getElementById('contact-form');
+                                if (contactSection) {
+                                    contactSection.scrollIntoView({ behavior: 'smooth' });
+                                }
+                            }}
+                        >
+                            Get in Touch
                         </Button>
                     </motion.div>
                 </div>
