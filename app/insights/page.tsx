@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import { motion } from "framer-motion";
 import Image from "next/image";
@@ -24,7 +24,7 @@ import { getAllBlogPosts, getAllCategories } from "@/lib/blogService";
 import { BlogPostListItem } from "@/types/blog";
 import { formatDate } from "@/lib/formatDate";
 
-export default function InsightsPage() {
+function InsightsContent() {
   const searchParams = useSearchParams();
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("All");
@@ -365,5 +365,62 @@ export default function InsightsPage() {
 
       <Footer />
     </>
+  );
+}
+
+export default function InsightsPage() {
+  return (
+    <Suspense fallback={
+      <>
+        <Navbar />
+        <section className="pt-32 pb-12 bg-gray-50">
+          <div className="container mx-auto px-4 md:px-6">
+            <div className="relative overflow-hidden rounded-lg h-[500px] md:h-[600px]">
+              <Skeleton className="absolute inset-0" />
+            </div>
+          </div>
+        </section>
+        <section className="py-8 bg-white border-b border-gray-200">
+          <div className="container mx-auto px-4 md:px-6">
+            <div className="flex flex-col md:flex-row gap-6 items-center justify-between">
+              <Skeleton className="h-12 w-full md:w-96" />
+              <div className="flex gap-2 flex-wrap">
+                {[1, 2, 3, 4].map((i) => (
+                  <Skeleton key={i} className="h-10 w-24" />
+                ))}
+              </div>
+            </div>
+            <Skeleton className="h-6 w-48 mt-6" />
+          </div>
+        </section>
+        <section className="py-16 bg-white">
+          <div className="container mx-auto px-4 md:px-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {[1, 2, 3, 4, 5, 6].map((i) => (
+                <div key={i} className="bg-white rounded-lg overflow-hidden shadow-md">
+                  <Skeleton className="h-48 w-full" />
+                  <div className="p-6 space-y-4">
+                    <div className="flex items-center gap-3">
+                      <Skeleton className="h-6 w-20" />
+                      <Skeleton className="h-6 w-24" />
+                    </div>
+                    <Skeleton className="h-6 w-full" />
+                    <Skeleton className="h-6 w-3/4" />
+                    <Skeleton className="h-16 w-full" />
+                    <div className="flex items-center justify-between">
+                      <Skeleton className="h-4 w-16" />
+                      <Skeleton className="h-4 w-24" />
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+        <Footer />
+      </>
+    }>
+      <InsightsContent />
+    </Suspense>
   );
 }
