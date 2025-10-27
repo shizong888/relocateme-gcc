@@ -128,14 +128,20 @@ export function Footer() {
             <div>
               <h4 className="font-semibold mb-4">Quick Links</h4>
               <div className="space-y-2 text-sm">
-                <a href="#corporate-services" className="block hover:text-white/80 transition-colors">
+                <a href="/about-us" className="block hover:text-white/80 transition-colors">
+                  About Us
+                </a>
+                <a href="/corporate-services" className="block hover:text-white/80 transition-colors">
                   Corporate Services
                 </a>
-                <a href="#immigration" className="block hover:text-white/80 transition-colors">
+                <a href="/immigration" className="block hover:text-white/80 transition-colors">
                   Immigration Services
                 </a>
-                <a href="#relocation" className="block hover:text-white/80 transition-colors">
+                <a href="/relocation" className="block hover:text-white/80 transition-colors">
                   Relocation Services
+                </a>
+                <a href="/contact" className="block hover:text-white/80 transition-colors">
+                  Contact
                 </a>
               </div>
             </div>
