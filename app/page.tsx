@@ -5,6 +5,7 @@ import { LocalExpertiseSection } from "@/components/sections/local-expertise-sec
 import { DeliveringExcellenceSection } from "@/components/sections/delivering-excellence-section";
 import { ServicesSection } from "@/components/sections/services-section";
 import { StaggerTestimonials } from "@/components/ui/stagger-testimonials";
+import { ContactForm } from "@/components/sections/contact-form";
 import { Footer } from "@/components/ui/footer";
 
 export const metadata: Metadata = {
@@ -60,6 +61,13 @@ export default function Home() {
       <DeliveringExcellenceSection />
       <ServicesSection />
       <StaggerTestimonials />
+      <ContactForm
+        title="Ready to Make"
+        titleHighlight="Your Move?"
+        description="Whether you're establishing your business in the GCC, relocating your team, or navigating visa requirements, we're here to help. Connect with our experts today for a personalized consultation."
+        imageSrc="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&q=80"
+        imageAlt="Contact RelocateMe GCC"
+      />
       <Footer />
     </>
   );
