@@ -435,22 +435,22 @@ export default function CorporateServicesPage() {
         items={[
           {
             icon: <Building2 size={32} />,
-            title: "One Partner for Everything",
+            title: "One Partner\nfor Everything",
             description: "You won't deal with multiple vendors."
           },
           {
             icon: <Users size={32} />,
-            title: "Real People, Not Portals",
+            title: "Real People,\nNot Portals",
             description: "You'll always talk to your dedicated manager."
           },
           {
             icon: <CheckCircle size={32} />,
-            title: "Transparency at Every Step",
+            title: "Transparency at\nEvery Step",
             description: "You'll never be left guessing what's happening."
           },
           {
             icon: <Award size={32} />,
-            title: "15 Years of GCC Expertise",
+            title: "15 Years\nof GCC Expertise",
             description: "We've done this hundreds of times before."
           }
         ]}
