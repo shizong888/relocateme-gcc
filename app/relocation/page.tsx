@@ -235,16 +235,16 @@ export default function RelocationPage() {
 
       {/* Relocation Services Section */}
       <section className="bg-white">
-        <div className="container mx-auto px-4 md:px-6 py-20">
+        <div className="container mx-auto px-4 md:px-6 pt-20 pb-8">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="text-center mb-16"
+            className="mb-4"
           >
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-light mb-6">
-              Our <span className="text-[hsl(var(--brand))]">Relocation Services</span>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-light leading-tight text-left">
+              <span className="text-[hsl(var(--brand))]">Comprehensive relocation services</span> designed to make your move to the GCC seamless and stress-free for every family member.
             </h2>
           </motion.div>
         </div>
