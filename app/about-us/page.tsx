@@ -44,7 +44,7 @@ export default function AboutPage() {
                 </span>
               </h1>
               <p className="text-xl md:text-2xl text-white/90 mb-8 font-light">
-                20+ years of expertise. 100% client satisfaction. Local knowledge, global standards.
+                30+ years of expertise. 100% client satisfaction. Local knowledge, global standards.
               </p>
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
@@ -79,10 +79,10 @@ export default function AboutPage() {
             </h2>
             <div className="space-y-6 text-lg text-gray-700 leading-relaxed">
               <p>
-                Established in 2011, we have transitioned from providing relocation services to the United Arab Emirates, to delivering comprehensive programs to the GCC throughout the Gulf Cooperation Council, earning the trust of leading corporates to move their talent with care and precision.
+                Established in 2011, we have expanded from providing inbound relocation services to the United Arab Emirates, to delivering comprehensive cross-border mobility solutions throughout the Gulf Cooperation Council, earning the trust of leading corporations to move their talent with care and precision.
               </p>
               <p>
-                Backed by over 20 years of oil & gas experience, we run dedicated programs for major operators and oilfield contractors. Our multilingual teams manage every relocation and professional application with care.
+                Backed by over 30 years of our team's combined expertise, we pair deep regional know-how with uncompromising service standards. Our multilingual teams manage every relocation with professionalism and care.
               </p>
             </div>
           </motion.div>
@@ -99,15 +99,15 @@ export default function AboutPage() {
             >
               <Image
                 src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80"
-                alt="20+ years of experience in GCC relocation and immigration"
+                alt="30+ years of experience in GCC relocation and immigration"
                 fill
                 className="object-cover transition-transform duration-700 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-black/50 transition-opacity duration-300 group-hover:bg-black/60" />
               <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6 text-white">
-                <h3 className="text-3xl md:text-4xl font-light mb-4">20+ Years</h3>
+                <h3 className="text-3xl md:text-4xl font-light mb-4">30+ Years</h3>
                 <p className="text-sm md:text-base leading-relaxed">
-                  Two decades of expertise in GCC relocation and immigration services
+                  Combined team expertise in GCC relocation and immigration services
                 </p>
               </div>
             </motion.div>

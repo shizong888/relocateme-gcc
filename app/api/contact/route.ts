@@ -8,6 +8,8 @@ export async function POST(request: NextRequest) {
     const body = await request.json();
     const { name, email, phone, countryCode, pageName, formName } = body;
 
+    console.log('Contact form submission received:', { name, email, phone, countryCode });
+
     // Get client information
     const clientIP = request.headers.get('x-forwarded-for') || request.headers.get('x-real-ip') || 'Unknown';
     const userAgent = request.headers.get('user-agent') || 'Unknown';
@@ -149,18 +151,24 @@ export async function POST(request: NextRequest) {
     `;
 
     // Send email using Resend
+    console.log('Attempting to send email via Resend...');
+    console.log('API Key present:', !!process.env.RESEND_API_KEY);
+
     const data = await resend.emails.send({
       from: 'onboarding@resend.dev',
-      to: 'victoria@relocatemegcc.com',
+      to: 'contactabertay@gmail.com', // Testing mode - can only send to your verified email
       subject: `New Contact Form Submission - ${name}`,
       html: emailHtml,
     });
 
+    console.log('Email sent successfully:', data);
+
     return NextResponse.json({ success: true, data }, { status: 200 });
   } catch (error) {
     console.error('Error sending email:', error);
+    console.error('Error details:', JSON.stringify(error, null, 2));
     return NextResponse.json(
-      { success: false, error: 'Failed to send email' },
+      { success: false, error: 'Failed to send email', details: error instanceof Error ? error.message : 'Unknown error' },
       { status: 500 }
     );
   }
