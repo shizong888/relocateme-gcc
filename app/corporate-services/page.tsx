@@ -378,8 +378,11 @@ export default function CorporateServicesPage() {
               title: "Office Solutions & Workspace Setup",
               content: (
                 <div className="bg-gray-50 rounded-lg p-6 md:p-8">
+                  <p className="text-gray-600 text-base md:text-lg leading-relaxed mb-4">
+                    From serviced offices and co-working spaces to bespoke corporate headquarters, we deliver tailored solutions to fit your operational needs. With access to premium offices in prime city locations, you can be operational as soon as your licence is issued. If you require a customised office search, we'll manage it end-to-end, ensuring you have a professional, compliant, and ready-to-operate environment from day one.
+                  </p>
                   <p className="text-gray-600 text-base md:text-lg leading-relaxed">
-                    From serviced offices and co-working spaces to bespoke corporate headquarters, we deliver tailored solutions to fit your operational needs. With access to premium offices in prime city locations, you can be operational as soon as your licence is issued. Our business setup services include access to fully furnished, 5-star serviced office spaces designed to meet every need. Whether you require a premium private office, convenient flexi desks, virtual offices, or simply a prestigious business address for company registration, we provide tailored solutions in prime city locations, ensuring you have the right set up from day one.
+                    Our business setup services include access to fully furnished; 5-star serviced office spaces designed to meet every need. Whether you require a premium private office, convenient flexi desks, virtual offices, or simply a prestigious business address for company registration, we provide tailored solutions in prime city locations, ensuring you have the right set up from day one.
                   </p>
                 </div>
               )
