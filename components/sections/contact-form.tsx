@@ -31,11 +31,44 @@ export function ContactForm({
   imageAlt = "Contact RelocateMe"
 }: ContactFormProps) {
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [countryCode, setCountryCode] = useState("+971");
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log("Form submitted");
-    setIsSubmitted(true);
+    setIsSubmitting(true);
+
+    const formData = new FormData(e.currentTarget);
+    const data = {
+      name: formData.get('name'),
+      email: formData.get('email'),
+      phone: formData.get('phone'),
+      countryCode: countryCode,
+      pageName: typeof window !== 'undefined' ? document.title : 'Home Page',
+      formName: 'Contact Us Popup',
+    };
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+      });
+
+      if (response.ok) {
+        setIsSubmitted(true);
+      } else {
+        console.error('Failed to submit form');
+        alert('Failed to submit form. Please try again.');
+      }
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      alert('An error occurred. Please try again.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -118,7 +151,7 @@ export function ContactForm({
                           Phone <span className="text-red-500">*</span>
                         </Label>
                         <div className="relative mt-2 flex items-center border border-input rounded-md hover:border-ring transition-colors focus-within:ring-2 focus-within:ring-ring focus-within:ring-offset-2">
-                          <Select defaultValue="+971">
+                          <Select defaultValue="+971" onValueChange={setCountryCode}>
                             <SelectTrigger className="border-0 border-r border-input rounded-none rounded-l-md focus:ring-0 focus:ring-offset-0 hover:border-input w-[110px] bg-transparent">
                               <SelectValue />
                             </SelectTrigger>
@@ -154,9 +187,10 @@ export function ContactForm({
                     <Button
                       type="submit"
                       size="lg"
+                      disabled={isSubmitting}
                       className="bg-[hsl(var(--brand))] hover:bg-[hsl(var(--brand))]/90 text-white uppercase font-semibold px-12"
                     >
-                      Submit
+                      {isSubmitting ? 'Submitting...' : 'Submit'}
                     </Button>
                   </form>
                 </motion.div>
