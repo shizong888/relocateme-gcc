@@ -164,7 +164,7 @@ export default function RelocationPage() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0 }}
-            className="relative h-[500px] md:h-[600px] lg:h-[700px] overflow-hidden group"
+            className="relative aspect-square overflow-hidden group"
           >
             <Image
               src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&h=1000&fit=crop&q=80"
@@ -188,7 +188,7 @@ export default function RelocationPage() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="relative h-[500px] md:h-[600px] lg:h-[700px] overflow-hidden group"
+            className="relative aspect-square overflow-hidden group"
           >
             <Image
               src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=800&h=1000&fit=crop&q=80"
@@ -212,7 +212,7 @@ export default function RelocationPage() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="relative h-[500px] md:h-[600px] lg:h-[700px] overflow-hidden group"
+            className="relative aspect-square overflow-hidden group"
           >
             <Image
               src="https://images.unsplash.com/photo-1521791136064-7986c2920216?w=800&h=1000&fit=crop&q=80"
