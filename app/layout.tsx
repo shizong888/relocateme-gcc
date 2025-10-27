@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://relocateme-gcc.com'),
+  metadataBase: new URL('https://www.relocatemegcc.com'),
   title: "RelocateMe GCC - Corporate Services & Relocation Experts",
   description: "Expert corporate services and relocation solutions across the GCC. From business setup to family relocation, we make your move seamless.",
   icons: {
