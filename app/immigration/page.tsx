@@ -280,7 +280,7 @@ export default function ImmigrationPage() {
             className="relative aspect-square overflow-hidden group"
           >
             <Image
-              src="https://images.unsplash.com/photo-1554224311-beee4ece2b06?w=800&h=1000&fit=crop&q=80"
+              src="https://images.unsplash.com/photo-1629141821139-ac3cc2f27a60?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=987"
               alt="Document Attestation & Legalisation"
               fill
               className="object-cover transition-transform duration-700 group-hover:scale-105"
