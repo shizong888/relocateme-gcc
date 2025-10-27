@@ -318,7 +318,7 @@ export default function RelocationPage() {
             className="relative aspect-square overflow-hidden group"
           >
             <Image
-              src="https://images.unsplash.com/photo-1450778869180-41d0601e046e?w=800&h=1000&fit=crop&q=80"
+              src="/images/pet-relocation.jpg"
               alt="Pet Relocation & Care"
               fill
               className="object-cover transition-transform duration-700 group-hover:scale-105"
