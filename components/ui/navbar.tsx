@@ -63,7 +63,7 @@ export function Navbar({ transparent = false }: { transparent?: boolean }) {
 
                     <div className="hidden md:flex items-center gap-8">
                         <a
-                            href="#about-us"
+                            href="/about-us"
                             className={cn(
                                 "text-sm font-medium transition-colors hover:opacity-80",
                                 shouldBeTransparent ? "text-white" : "text-gray-900"
@@ -155,7 +155,7 @@ export function Navbar({ transparent = false }: { transparent?: boolean }) {
                     >
                         <div className="container mx-auto px-4 py-6 flex flex-col gap-4">
                             <a
-                                href="#about-us"
+                                href="/about-us"
                                 onClick={() => setIsMobileMenuOpen(false)}
                                 className="text-gray-900 font-medium py-2 hover:text-[hsl(var(--brand))] transition-colors"
                             >

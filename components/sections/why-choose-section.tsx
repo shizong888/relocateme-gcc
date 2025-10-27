@@ -55,7 +55,7 @@ export function WhyChooseSection({
               <div className="w-16 h-16 bg-[hsl(var(--brand))]/10 rounded-full flex items-center justify-center mx-auto mb-4 text-[hsl(var(--brand))]">
                 {item.icon}
               </div>
-              <h3 className="text-xl font-light mb-3">{item.title}</h3>
+              <h3 className="text-xl font-light mb-3 whitespace-pre-line">{item.title}</h3>
               <p className="text-gray-600 text-sm">{item.description}</p>
             </motion.div>
           ))}
