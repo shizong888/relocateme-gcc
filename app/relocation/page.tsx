@@ -233,7 +233,229 @@ export default function RelocationPage() {
         </div>
       </section> */}
 
-      {/* Relocation Services Section */}
+      {/* Relocation Services Grid Section */}
+      <section className="pt-20 bg-white">
+        <div className="container mx-auto px-4 md:px-6">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            className="text-center mb-16"
+          >
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-light mb-6">
+              Relocating to the GCC Should Feel<br />
+              <span className="text-[hsl(var(--brand))]">Exciting, Not Overwhelming</span>
+            </h2>
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto mb-8">
+              Everything your family needs to settle in and feel at home from day one
+            </p>
+            <Button
+              size="lg"
+              className="bg-[hsl(var(--brand))] hover:bg-[hsl(var(--brand))]/90 text-white px-6 py-5"
+              onClick={scrollToContact}
+            >
+              Get My Free Relocation Plan
+            </Button>
+          </motion.div>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0 }}
+            className="relative aspect-square overflow-hidden group"
+          >
+            <Image
+              src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&h=1000&fit=crop&q=80"
+              alt="Business Set-Up"
+              fill
+              className="object-cover transition-transform duration-700 group-hover:scale-105"
+            />
+            <div className="absolute inset-0 bg-black/50 transition-opacity duration-300 group-hover:bg-black/60" />
+            <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6 text-white">
+              <h3 className="text-2xl md:text-3xl font-light mb-4">
+                Business Set-Up
+              </h3>
+              <p className="text-sm md:text-base text-white/90">
+                We simplify business setup across the region, handling formation, licensing, and compliance.
+              </p>
+            </div>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.1 }}
+            className="relative aspect-square overflow-hidden group"
+          >
+            <Image
+              src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&h=1000&fit=crop&q=80"
+              alt="Comprehensive Office Solutions"
+              fill
+              className="object-cover transition-transform duration-700 group-hover:scale-105"
+            />
+            <div className="absolute inset-0 bg-black/50 transition-opacity duration-300 group-hover:bg-black/60" />
+            <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6 text-white">
+              <h3 className="text-2xl md:text-3xl font-light mb-4">
+                Comprehensive Office Solutions
+              </h3>
+              <p className="text-sm md:text-base text-white/90">
+                Fully furnished, 5-star serviced office spaces designed to meet every need.
+              </p>
+            </div>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="relative aspect-square overflow-hidden group"
+          >
+            <Image
+              src="https://images.unsplash.com/photo-1521791136064-7986c2920216?w=800&h=1000&fit=crop&q=80"
+              alt="HR Support Services"
+              fill
+              className="object-cover transition-transform duration-700 group-hover:scale-105"
+            />
+            <div className="absolute inset-0 bg-black/50 transition-opacity duration-300 group-hover:bg-black/60" />
+            <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6 text-white">
+              <h3 className="text-2xl md:text-3xl font-light mb-4">
+                HR Support Services
+              </h3>
+              <p className="text-sm md:text-base text-white/90">
+                Tailored HR guidance covering onboarding, policies, and compliance.
+              </p>
+            </div>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.3 }}
+            className="relative aspect-square overflow-hidden group"
+          >
+            <Image
+              src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&h=1000&fit=crop&q=80"
+              alt="Tenancy Management"
+              fill
+              className="object-cover transition-transform duration-700 group-hover:scale-105"
+            />
+            <div className="absolute inset-0 bg-black/50 transition-opacity duration-300 group-hover:bg-black/60" />
+            <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6 text-white">
+              <h3 className="text-2xl md:text-3xl font-light mb-4">
+                Tenancy Management
+              </h3>
+              <p className="text-sm md:text-base text-white/90">
+                From lease negotiations to renewals and landlord coordination, we manage it all.
+              </p>
+            </div>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0 }}
+            className="relative aspect-square overflow-hidden group"
+          >
+            <Image
+              src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=800&h=1000&fit=crop&q=80"
+              alt="Expense Management"
+              fill
+              className="object-cover transition-transform duration-700 group-hover:scale-105"
+            />
+            <div className="absolute inset-0 bg-black/50 transition-opacity duration-300 group-hover:bg-black/60" />
+            <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6 text-white">
+              <h3 className="text-2xl md:text-3xl font-light mb-4">
+                Expense Management
+              </h3>
+              <p className="text-sm md:text-base text-white/90">
+                Streamlined solutions for expense tracking and reporting with full transparency.
+              </p>
+            </div>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.1 }}
+            className="relative aspect-square overflow-hidden group"
+          >
+            <Image
+              src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=800&h=1000&fit=crop&q=80"
+              alt="Cultural Training Programs"
+              fill
+              className="object-cover transition-transform duration-700 group-hover:scale-105"
+            />
+            <div className="absolute inset-0 bg-black/50 transition-opacity duration-300 group-hover:bg-black/60" />
+            <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6 text-white">
+              <h3 className="text-2xl md:text-3xl font-light mb-4">
+                Cultural Training Programs
+              </h3>
+              <p className="text-sm md:text-base text-white/90">
+                Interactive sessions to ease adaptation to local culture and build stronger connections.
+              </p>
+            </div>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="relative aspect-square overflow-hidden group"
+          >
+            <Image
+              src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=800&h=1000&fit=crop&q=80"
+              alt="Language Training Programs"
+              fill
+              className="object-cover transition-transform duration-700 group-hover:scale-105"
+            />
+            <div className="absolute inset-0 bg-black/50 transition-opacity duration-300 group-hover:bg-black/60" />
+            <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6 text-white">
+              <h3 className="text-2xl md:text-3xl font-light mb-4">
+                Language Training Programs
+              </h3>
+              <p className="text-sm md:text-base text-white/90">
+                Personalised language courses to support integration and confident communication.
+              </p>
+            </div>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.3 }}
+            className="relative aspect-square overflow-hidden group"
+          >
+            <Image
+              src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&h=1000&fit=crop&q=80"
+              alt="Spousal Training Programs"
+              fill
+              className="object-cover transition-transform duration-700 group-hover:scale-105"
+            />
+            <div className="absolute inset-0 bg-black/50 transition-opacity duration-300 group-hover:bg-black/60" />
+            <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6 text-white">
+              <h3 className="text-2xl md:text-3xl font-light mb-4">
+                Spousal Training Programs
+              </h3>
+              <p className="text-sm md:text-base text-white/90">
+                Career and personal support for accompanying spouses to help families thrive together.
+              </p>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Relocation Services Timeline Section */}
       <section className="bg-white">
         <div className="container mx-auto px-4 md:px-6 pt-20 pb-8">
           <motion.div
