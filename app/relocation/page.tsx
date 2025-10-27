@@ -302,11 +302,21 @@ export default function RelocationPage() {
               )
             },
             {
-              title: "Pet Relocation & Moving Services",
+              title: "Household Moving & Personal Effects",
               content: (
                 <div className="bg-gray-50 rounded-lg p-6 md:p-8">
                   <p className="text-gray-600 text-base md:text-lg leading-relaxed">
-                    Whether it's your beloved pets, household furniture, or personal belongings, we manage the entire move with precision and care. Our door-to-door service ensures every item, and every family member, arrives safely and stress-free with comfort and peace of mind at every step.
+                    Door to door packing, customs, transport and setup through our FIDI accredited, long standing approved partner network ensures your household goods arrive on time and in perfect condition, ready for day one living.
+                  </p>
+                </div>
+              )
+            },
+            {
+              title: "Pet Relocation & Care",
+              content: (
+                <div className="bg-gray-50 rounded-lg p-6 md:p-8">
+                  <p className="text-gray-600 text-base md:text-lg leading-relaxed">
+                    We treat your family pets with genuine care and attention, ensuring they are comfortable, safely handled and kept at ease from pickup to reunion. Every detail is arranged for a calm journey and a happy arrival.
                   </p>
                 </div>
               )
