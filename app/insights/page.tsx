@@ -94,27 +94,9 @@ export default function InsightsPage() {
     <>
       <Navbar />
 
-      {/* Header Section */}
-      <section className="pt-32 pb-12 bg-white">
-        <div className="container mx-auto px-4 md:px-6">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-          >
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-light mb-6">
-              Insights & <span className="text-[hsl(var(--brand))]">Resources</span>
-            </h1>
-            <p className="text-xl text-gray-600 max-w-3xl">
-              Expert guidance on relocation, immigration, and corporate services across the GCC region.
-            </p>
-          </motion.div>
-        </div>
-      </section>
-
       {/* Featured Post */}
       {featuredPost && (
-        <section className="py-12 bg-gray-50">
+        <section className="pt-32 pb-12 bg-gray-50">
           <div className="container mx-auto px-4 md:px-6">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
