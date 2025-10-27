@@ -188,7 +188,7 @@ export function ContactForm({
                       type="submit"
                       size="lg"
                       disabled={isSubmitting}
-                      className="bg-[hsl(var(--brand))] hover:bg-[hsl(var(--brand))]/90 text-white uppercase font-semibold px-12"
+                      className="bg-[hsl(var(--brand))] hover:bg-[hsl(var(--brand))]/90 text-white font-semibold px-12"
                     >
                       {isSubmitting ? 'Submitting...' : 'Submit'}
                     </Button>

@@ -40,11 +40,6 @@ export function LocalExpertiseSection() {
                                 Kuwait, Bahrain, and Oman, we deliver trusted, end-to-end support across the GCC.
                             </p>
                         </div>
-
-                        <Button size="lg" className="group bg-[hsl(var(--brand))] hover:bg-[hsl(var(--brand))/90] text-white">
-                            Learn More
-                            <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-                        </Button>
                     </div>
                 </motion.div>
 

@@ -4,6 +4,8 @@ import { motion, useMotionValue, useTransform, animate } from "framer-motion";
 import { useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
+import { ArrowRight } from "lucide-react";
+import Link from "next/link";
 // import { ScrollIndicator } from "@/components/ui/scroll-indicator";
 
 
@@ -160,18 +162,16 @@ function HeroGeometric({
                         animate="visible"
                         className="flex flex-col sm:flex-row gap-4 justify-center items-center"
                     >
-                        <Button
-                            size="lg"
-                            className="bg-[hsl(var(--brand))] hover:bg-[hsl(var(--brand))/90] text-white px-8 py-6 text-lg"
-                            onClick={() => {
-                                const contactSection = document.getElementById('contact-form');
-                                if (contactSection) {
-                                    contactSection.scrollIntoView({ behavior: 'smooth' });
-                                }
-                            }}
-                        >
-                            Get in Touch
-                        </Button>
+                        <Link href="/contact">
+                            <Button
+                                variant="outline"
+                                size="lg"
+                                className="bg-white/10 border border-white text-white hover:bg-white/20 hover:text-white transition-all duration-300 px-6 py-5"
+                            >
+                                Get in Touch
+                                <ArrowRight className="ml-2 h-4 w-4" />
+                            </Button>
+                        </Link>
                     </motion.div>
                 </div>
             </div>

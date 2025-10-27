@@ -35,7 +35,7 @@ export function DeliveringExcellenceSection() {
                 >
                     <div className="space-y-6 max-w-2xl">
                         <h2 className="text-3xl sm:text-4xl md:text-5xl font-light leading-tight">
-                            Delivering <span className="font-light">excellence</span> across the Middle East
+                            Delivering <span className="text-[hsl(var(--brand))]">excellence</span> across the <span className="text-[hsl(var(--brand))]">Middle East</span>
                         </h2>
 
                         <div className="space-y-4 text-gray-600 text-base md:text-lg leading-relaxed">
@@ -59,11 +59,6 @@ export function DeliveringExcellenceSection() {
                                 momentum.
                             </p>
                         </div>
-
-                        <Button size="lg" className="group bg-[hsl(var(--brand))] hover:bg-[hsl(var(--brand))/90] text-white">
-                            Discover Our Services
-                            <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-                        </Button>
                     </div>
                 </motion.div>
             </div>

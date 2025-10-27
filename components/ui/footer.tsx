@@ -58,7 +58,7 @@ export function Footer() {
                   <div>
                     <p className="font-semibold mb-1">Dubai, UAE</p>
                     <p className="text-white">
-                      RAC Biz HQ, Al Diyar Building,<br />
+                      Office 33, RAG Biz HQ, Al Diyar Building,<br />
                       Sheikh Zayed Road, Al Wasl, Dubai
                     </p>
                   </div>

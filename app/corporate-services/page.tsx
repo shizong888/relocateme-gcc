@@ -31,7 +31,7 @@ export default function CorporateServicesPage() {
       {/* Hero Section */}
       <section className="relative min-h-screen w-full flex items-center justify-center overflow-hidden bg-white">
         <Image
-          src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&q=80"
+          src="/images/hero-corporate.jpg"
           alt="Corporate expansion in GCC"
           fill
           className="object-cover"
@@ -569,7 +569,7 @@ export default function CorporateServicesPage() {
         title="Ready to Expand Your"
         titleHighlight="Business to the GCC?"
         description="Let's make your GCC expansion seamless. Share your details below and our corporate services team will reach out within 24 hours to create your personalized setup plan."
-        imageSrc="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&q=80"
+        imageSrc="https://images.unsplash.com/photo-1748366546170-1ee68388f183?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=2070"
         imageAlt="Corporate expansion to the GCC"
       />
 
