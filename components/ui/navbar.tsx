@@ -87,7 +87,7 @@ export function Navbar({ transparent = false }: { transparent?: boolean }) {
                                 shouldBeTransparent ? "text-white" : "text-gray-900"
                             )}
                         >
-                            Immigration
+                            Immigration Services
                         </a>
                         <a
                             href="/relocation"
@@ -96,7 +96,7 @@ export function Navbar({ transparent = false }: { transparent?: boolean }) {
                                 shouldBeTransparent ? "text-white" : "text-gray-900"
                             )}
                         >
-                            Relocation
+                            Relocation Services
                         </a>
                         <a
                             href="#insights"
@@ -173,14 +173,14 @@ export function Navbar({ transparent = false }: { transparent?: boolean }) {
                                 onClick={() => setIsMobileMenuOpen(false)}
                                 className="text-gray-900 font-medium py-2 hover:text-[hsl(var(--brand))] transition-colors"
                             >
-                                Immigration
+                                Immigration Services
                             </a>
                             <a
                                 href="/relocation"
                                 onClick={() => setIsMobileMenuOpen(false)}
                                 className="text-gray-900 font-medium py-2 hover:text-[hsl(var(--brand))] transition-colors"
                             >
-                                Relocation
+                                Relocation Services
                             </a>
                             <a
                                 href="#insights"
