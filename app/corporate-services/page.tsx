@@ -356,8 +356,8 @@ export default function CorporateServicesPage() {
             transition={{ duration: 0.8 }}
             className="text-center mb-16"
           >
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-light mb-6">
-              Our <span className="text-[hsl(var(--brand))]">Corporate Services</span>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-light leading-tight">
+              <span className="text-[hsl(var(--brand))]">Complete corporate services</span> designed to simplify your business expansion and operations across the GCC region.
             </h2>
           </motion.div>
         </div>
