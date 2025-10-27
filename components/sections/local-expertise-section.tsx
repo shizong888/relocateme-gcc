@@ -57,7 +57,7 @@ export function LocalExpertiseSection() {
                     className="relative min-h-[400px] lg:min-h-screen"
                 >
                     <Image
-                        src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=1200&q=80"
+                        src="/images/global-expertise-hp.jpg"
                         alt="Global Business Local Expertise"
                         fill
                         className="object-cover"

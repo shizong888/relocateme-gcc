@@ -18,7 +18,7 @@ export function DeliveringExcellenceSection() {
                     className="relative min-h-[400px] lg:min-h-screen bg-gray-800"
                 >
                     <Image
-                        src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1200&q=80"
+                        src="/images/team-hp.jpg"
                         alt="Delivering Excellence"
                         fill
                         className="object-cover"
