@@ -65,8 +65,8 @@ export default function Home() {
         title="Ready to Make"
         titleHighlight="Your Move?"
         description="Whether you're establishing your business in the GCC, relocating your team, or navigating visa requirements, we're here to help. Connect with our experts today for a personalized consultation."
-        imageSrc="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&q=80"
-        imageAlt="Contact RelocateMe GCC"
+        imageSrc="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=1200&q=80"
+        imageAlt="Dubai Skyline - Contact RelocateMe GCC"
       />
       <Footer />
     </>
