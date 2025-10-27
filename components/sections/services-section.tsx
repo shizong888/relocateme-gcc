@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
 const services = [
@@ -10,21 +11,24 @@ const services = [
     subtitle: "Supportive at every step",
     title: "Our Relocation Services",
     buttonText: "Explore now",
-    image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&h=1000&fit=crop&q=80"
+    image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&h=1000&fit=crop&q=80",
+    href: "/relocation"
   },
   {
     id: 2,
     subtitle: "Managing the complexities",
-    title: "Professional Services",
+    title: "Corporate Services",
     buttonText: "Find out more",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&h=1000&fit=crop&q=80"
+    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&h=1000&fit=crop&q=80",
+    href: "/corporate-services"
   },
   {
     id: 3,
     subtitle: "We manage the complexities",
     title: "Immigration Services",
     buttonText: "Learn more",
-    image: "https://images.unsplash.com/photo-1514565131-fce0801e5785?w=800&h=1000&fit=crop&q=80"
+    image: "https://images.unsplash.com/photo-1514565131-fce0801e5785?w=800&h=1000&fit=crop&q=80",
+    href: "/immigration"
   }
 ];
 
@@ -39,7 +43,7 @@ export function ServicesSection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: index * 0.1 }}
-            className="relative h-[500px] md:h-[600px] lg:h-[700px] overflow-hidden group"
+            className="relative aspect-square overflow-hidden group"
           >
             {/* Background Image */}
             <Image
@@ -58,13 +62,15 @@ export function ServicesSection() {
               <h3 className="text-3xl md:text-4xl lg:text-5xl font-light mb-8 max-w-xs">
                 {service.title}
               </h3>
-              <Button
-                variant="outline"
-                size="lg"
-                className="bg-white/10 border border-white text-white hover:bg-white/20 hover:text-white transition-all duration-300"
-              >
-                {service.buttonText}
-              </Button>
+              <Link href={service.href}>
+                <Button
+                  variant="outline"
+                  size="lg"
+                  className="bg-white/10 border border-white text-white hover:bg-white/20 hover:text-white transition-all duration-300"
+                >
+                  {service.buttonText}
+                </Button>
+              </Link>
             </div>
           </motion.div>
         ))}

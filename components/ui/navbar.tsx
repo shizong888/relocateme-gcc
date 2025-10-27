@@ -81,7 +81,7 @@ export function Navbar({ transparent = false }: { transparent?: boolean }) {
                             Corporate Services
                         </a>
                         <a
-                            href="#immigration"
+                            href="/immigration"
                             className={cn(
                                 "text-sm font-medium transition-colors hover:opacity-80",
                                 shouldBeTransparent ? "text-white" : "text-gray-900"
@@ -169,7 +169,7 @@ export function Navbar({ transparent = false }: { transparent?: boolean }) {
                                 Corporate Services
                             </a>
                             <a
-                                href="#immigration"
+                                href="/immigration"
                                 onClick={() => setIsMobileMenuOpen(false)}
                                 className="text-gray-900 font-medium py-2 hover:text-[hsl(var(--brand))] transition-colors"
                             >
