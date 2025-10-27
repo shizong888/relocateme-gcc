@@ -249,11 +249,21 @@ export default function ImmigrationPage() {
               )
             },
             {
-              title: "Employee & Dependent Visas",
+              title: "Employee Visa Processing & Management",
               content: (
                 <div className="bg-gray-50 rounded-lg p-6 md:p-8">
                   <p className="text-gray-600 text-base md:text-lg leading-relaxed">
-                    From initial entry permits to work visas, iqamas, and dependent sponsorships, our immigration team manages the entire lifecycle, covering renewals, status amendments, and visa transfers - all while maintaining strict compliance with local labour and immigration laws.
+                    From initial entry permits to work visas and iqamas (KSA), our immigration team manages the full visa lifecycle - renewals, status changes, transfers, cancellations, medicals/biometrics, and National ID applications, all with strict adherence to local labour and immigration laws for clean, on-time approvals.
+                  </p>
+                </div>
+              )
+            },
+            {
+              title: "Dependent Visa Sponsorship & Support",
+              content: (
+                <div className="bg-gray-50 rounded-lg p-6 md:p-8">
+                  <p className="text-gray-600 text-base md:text-lg leading-relaxed">
+                    We handle spouse, child, parent, and domestic sponsorship end-to-end. Entry permits, status changes, medicals/biometrics, National ID, insurance, and renewals, including document attestation where required, ensuring families are onboarded quickly and in full compliance.
                   </p>
                 </div>
               )
