@@ -7,6 +7,7 @@ import { Navbar } from "@/components/ui/navbar";
 import { Footer } from "@/components/ui/footer";
 import { ContactForm } from "@/components/sections/contact-form";
 import { Timeline } from "@/components/ui/timeline";
+import { WhyChooseSection } from "@/components/sections/why-choose-section";
 // import { ScrollIndicator } from "@/components/ui/scroll-indicator";
 import {
   Accordion,
@@ -388,75 +389,35 @@ export default function RelocationPage() {
       </section>
 
       {/* Why Choose Us Section */}
-      <section className="py-20 bg-white">
-        <div className="container mx-auto px-4 md:px-6">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-            className="text-center mb-16"
-          >
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-light mb-6">
-              Why Families Choose <span className="text-[hsl(var(--brand))]">RelocateMe</span>
-            </h2>
-            <p className="text-xl text-gray-600">Because We Make Moving Feel Like Coming Home</p>
-          </motion.div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
-            {[
-              {
-                icon: <Users size={32} />,
-                title: "Local Expertise",
-                description: "We know every neighborhood, school, and community across the GCC."
-              },
-              {
-                icon: <Heart size={32} />,
-                title: "Personal Touch",
-                description: "Your dedicated consultant understands your unique needs."
-              },
-              {
-                icon: <CheckCircle size={32} />,
-                title: "Full Transparency",
-                description: "You'll always know what's happening and what comes next."
-              },
-              {
-                icon: <Award size={32} />,
-                title: "15 Years of Experience",
-                description: "We've helped thousands of families settle successfully."
-              }
-            ].map((item, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
-                className="text-center p-6 rounded-lg border border-gray-200 hover:shadow-lg transition-shadow"
-              >
-                <div className="w-16 h-16 bg-[hsl(var(--brand))]/10 rounded-full flex items-center justify-center mx-auto mb-4 text-[hsl(var(--brand))]">
-                  {item.icon}
-                </div>
-                <h3 className="text-xl font-light mb-3">{item.title}</h3>
-                <p className="text-gray-600 text-sm">{item.description}</p>
-              </motion.div>
-            ))}
-          </div>
-
-          <div className="text-center mt-12">
-            <p className="text-lg text-gray-600 mb-6">
-              It's the support every relocating family deserves.
-            </p>
-            <Button
-              size="lg"
-              className="bg-[hsl(var(--brand))] hover:bg-[hsl(var(--brand))]/90 text-white px-6 py-5"
-              onClick={scrollToContact}
-            >
-              Get Started Today
-            </Button>
-          </div>
-        </div>
-      </section>
+      <WhyChooseSection
+        audience="Families"
+        subtitle="Because We Make Moving Feel Like Coming Home"
+        items={[
+          {
+            icon: <Users size={32} />,
+            title: "Local Expertise",
+            description: "We know every neighborhood, school, and community across the GCC."
+          },
+          {
+            icon: <Heart size={32} />,
+            title: "Personal Touch",
+            description: "Your dedicated consultant understands your unique needs."
+          },
+          {
+            icon: <CheckCircle size={32} />,
+            title: "Full Transparency",
+            description: "You'll always know what's happening and what comes next."
+          },
+          {
+            icon: <Award size={32} />,
+            title: "15 Years of Experience",
+            description: "We've helped thousands of families settle successfully."
+          }
+        ]}
+        footerText="It's the support every relocating family deserves."
+        buttonText="Get Started Today"
+        onButtonClick={scrollToContact}
+      />
 
       {/* FAQ Section */}
       <section className="py-20 bg-white">

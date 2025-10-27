@@ -7,13 +7,14 @@ import { Navbar } from "@/components/ui/navbar";
 import { Footer } from "@/components/ui/footer";
 import { ContactForm } from "@/components/sections/contact-form";
 import { Timeline } from "@/components/ui/timeline";
+import { WhyChooseSection } from "@/components/sections/why-choose-section";
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { CheckCircle, Users, Heart, Award } from "lucide-react";
+import { CheckCircle, Users, Heart, Award, Building2 } from "lucide-react";
 
 export default function CorporateServicesPage() {
   const scrollToContact = () => {
@@ -428,81 +429,35 @@ export default function CorporateServicesPage() {
       </section>
 
       {/* Why Choose Us Section */}
-      <section className="py-20 bg-gray-50">
-        <div className="container mx-auto px-4 md:px-6">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-            className="text-center mb-16"
-          >
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-light mb-6">
-              Why Companies Choose <span className="text-[hsl(var(--brand))]">RelocateMe</span>
-            </h2>
-            <p className="text-xl text-gray-600">Because We Keep It Simple, Honest, and Human</p>
-          </motion.div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto mb-12">
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0 }}
-              className="bg-white p-8 rounded-lg border border-gray-200"
-            >
-              <h3 className="text-2xl font-normal mb-4">One Partner for Everything</h3>
-              <p className="text-gray-600">You won't deal with multiple vendors.</p>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.1 }}
-              className="bg-white p-8 rounded-lg border border-gray-200"
-            >
-              <h3 className="text-2xl font-normal mb-4">Real People, Not Portals</h3>
-              <p className="text-gray-600">You'll always talk to your dedicated manager.</p>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              className="bg-white p-8 rounded-lg border border-gray-200"
-            >
-              <h3 className="text-2xl font-normal mb-4">Transparency at Every Step</h3>
-              <p className="text-gray-600">You'll never be left guessing what's happening.</p>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.3 }}
-              className="bg-white p-8 rounded-lg border border-gray-200"
-            >
-              <h3 className="text-2xl font-normal mb-4">15 Years of GCC Expertise</h3>
-              <p className="text-gray-600">We've done this hundreds of times before.</p>
-            </motion.div>
-          </div>
-
-          <div className="text-center mt-12">
-            <p className="text-xl text-gray-900 mb-8 font-normal">
-              It's the peace of mind every expansion deserves.
-            </p>
-            <Button
-              size="lg"
-              className="bg-[hsl(var(--brand))] hover:bg-[hsl(var(--brand))]/90 text-white px-6 py-5"
-              onClick={scrollToContact}
-            >
-              Talk to an Expert
-            </Button>
-          </div>
-        </div>
-      </section>
+      <WhyChooseSection
+        audience="Companies"
+        subtitle="Because We Keep It Simple, Honest, and Human"
+        items={[
+          {
+            icon: <Building2 size={32} />,
+            title: "One Partner for Everything",
+            description: "You won't deal with multiple vendors."
+          },
+          {
+            icon: <Users size={32} />,
+            title: "Real People, Not Portals",
+            description: "You'll always talk to your dedicated manager."
+          },
+          {
+            icon: <CheckCircle size={32} />,
+            title: "Transparency at Every Step",
+            description: "You'll never be left guessing what's happening."
+          },
+          {
+            icon: <Award size={32} />,
+            title: "15 Years of GCC Expertise",
+            description: "We've done this hundreds of times before."
+          }
+        ]}
+        footerText="It's the peace of mind every expansion deserves."
+        buttonText="Talk to an Expert"
+        onButtonClick={scrollToContact}
+      />
 
       {/* FAQ Section */}
       <section className="py-20 bg-white">
