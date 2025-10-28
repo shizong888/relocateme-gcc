@@ -108,6 +108,81 @@ const testimonials = [
     tempId: 18,
     testimonial: "Amazing service, Victoria was very helpful with all the process relocating with family from the UK.",
     by: "Christos Tzivinikos, Corporate Client"
+  },
+  {
+    tempId: 19,
+    testimonial: "I would also like to express my gratitude to Asim for his professional assistance in the property search. Asim prepared and organized the property viewing very well, addressed all my questions and requirements. Furthermore, Asim helped me to significantly reduce the price for the apartment I liked and negotiated discount on my behalf. Until now Asim is supporting me in communicating to the property owner which is extremely helpful. Thank you very much for your professionalism!",
+    by: "Assignee moving from Ukraine to Riyadh, Saudi Arabia"
+  },
+  {
+    tempId: 20,
+    testimonial: "I wanted to thank you for your support in finding an apartment. I'd also like to take a moment to share some feedback on our experience with Soumeya as she was great! She took us to all the places we wanted to see, and she was very flexible in adjusting the viewings on the spot based on our feedback. Her attitude was very friendly and helpful, which made the whole experience smooth and enjoyable.",
+    by: "Assignee moving from Dubai to Saudi Arabia"
+  },
+  {
+    tempId: 21,
+    testimonial: "I want to appreciate you and your team's efforts to help me secure this apartment. I would also like to provide feedback on Asim especially. He was an excellent in every way, from the house search appointment till even after we secured the deal. His knowledge, communication skills and just general empathy really helped me understand the market and make the right choice for housing. He was very kind and understanding towards my family structure, and his advice and suggestions were most appreciated. Thank you once again for the lovely experience!",
+    by: "Assignee moving from Egypt to KSA"
+  },
+  {
+    tempId: 22,
+    testimonial: "Dominic, I wanted to share how grateful I am for the support I received from you and your team. They were instrumental in helping me find an apartment, which made the whole process so much easier. In particular, I would like to thank Fouzan, who was extremely helpful and an absolute pleasure to work with. His professionalism, kindness, and dedication truly stood out and made the experience stress-free. I also want to thank you for always checking in and make sure everything is going smoothly. I sincerely appreciate all the help and would happily recommend to anyone in need of their services.",
+    by: "Assignee moving from Egypt to KSA"
+  },
+  {
+    tempId: 23,
+    testimonial: "The service has been excellent, and I truly appreciate the effort put into organizing the school tours. A special thanks to Ms. Sumeya for her kind assistance and help throughout the process — it really made a difference.",
+    by: "Assignee moving from Jordan to Riyadh, KSA"
+  },
+  {
+    tempId: 24,
+    testimonial: "A special thanks to Sumeya, who lead us on field. She was extremely helpful throughout the entire house-hunting process in Riyadh. She took the time to understand our preferences and needs, and made sure to show us only those properties that matched our criteria. Her responsiveness, patience, and professionalism made the entire experience smooth and stress-free. We truly appreciate her support and would highly recommend her services to anyone looking for a home in Riyadh.",
+    by: "Assignee moving from India to KSA"
+  },
+  {
+    tempId: 25,
+    testimonial: "Dominic, thank you, to both you and Asim, for your help and support throughout the search. It was a productive process ending with finding the apartment in reference. Really appreciate it!",
+    by: "Assignee moving from UK to Saudi Arabia"
+  },
+  {
+    tempId: 26,
+    testimonial: "First of all, I would like to thank you for your support during the past six months covering both the school and house search. And I would like to confirm that both services were provided with utmost professionalism.",
+    by: "Assignee moving from Lebanon to Riyadh, KSA"
+  },
+  {
+    tempId: 27,
+    testimonial: "I wanted to extend my sincere thanks for the exceptional support you provided during my relocation to Saudi Arabia.",
+    by: "Assignee moving from Egypt to Riyadh, KSA"
+  },
+  {
+    tempId: 28,
+    testimonial: "From the moment I began this journey, you were with me every step of the way - guiding me through the Riyadh rental market, showing me suitable homes, and even helping negotiate a favorable agreement with the landlord. Your local knowledge and professionalism made the entire experience smooth and far less daunting.",
+    by: "Assignee moving from India to Riyadh, KSA"
+  },
+  {
+    tempId: 29,
+    testimonial: "It was amazing! The consultant (Mr Ahmed) was incredible and an asset to your team. The whole day was perfectly executed and the order of the locations planned was carefully thought through (for example doing horse riding last so it would be cooler and comfortable). I want to sincerely thank you Arshiya and your team for the ongoing support. Please pass my special thanks to Ahmed!",
+    by: "Senior executive relocating from Bristol, UK to Taif, Saudi Arabia"
+  },
+  {
+    tempId: 30,
+    testimonial: "Thanks so much Arshi - Laila was fantastic and you organizing the day was super - very productive indeed.",
+    by: "Senior partner relocating from Singapore to Riyadh, Saudi Arabia"
+  },
+  {
+    tempId: 31,
+    testimonial: "Arshiya, thank you for your note and support. It was a pleasure working with you and Fouzan. Happy to inform you that I signed up for an accommodation yesterday. I would like to thank Fouzan for his support. His help led to the success of my search.",
+    by: "Senior director relocating from London to Riyadh, Saudi Arabia"
+  },
+  {
+    tempId: 32,
+    testimonial: "Thank you very much for your support over the last weeks and for offering the apartment inspection on Saturday. Thank you once again for all your help.",
+    by: "Senior executive relocating from Dusseldorf to Doha, Qatar"
+  },
+  {
+    tempId: 33,
+    testimonial: "Hello Arshiya, first of all, thank you again for your and the team's help in July. It was very helpful! Everyone has been so kind. Thank you thank you thank you!!!",
+    by: "Assignee relocating from Paris to Riyadh"
   }
 ];
 
