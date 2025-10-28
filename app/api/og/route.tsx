@@ -9,6 +9,9 @@ export async function GET(request: NextRequest) {
     const title = searchParams.get('title') || 'RelocateMe GCC';
     const imageUrl = searchParams.get('image');
 
+    // Fetch the logo
+    const logoUrl = new URL('/relocateme-logo.png', request.url).toString();
+
     // Fetch the background image if provided
     let backgroundImage = null;
     if (imageUrl) {
@@ -83,20 +86,17 @@ export async function GET(request: NextRequest) {
               zIndex: 10,
             }}
           >
-            {/* Logo - White text version */}
-            <div
+            {/* Logo */}
+            <img
+              src={logoUrl}
+              alt="RelocateMe"
+              width="300"
+              height="80"
               style={{
-                fontSize: 48,
-                fontWeight: 300,
-                color: 'white',
                 marginBottom: 40,
-                letterSpacing: '0.05em',
-                display: 'flex',
-                alignItems: 'center',
+                filter: 'brightness(0) invert(1)',
               }}
-            >
-              RELOCATEME
-            </div>
+            />
 
             {/* Title */}
             <div
