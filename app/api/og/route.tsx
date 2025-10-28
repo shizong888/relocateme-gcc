@@ -74,31 +74,18 @@ export async function GET(request: NextRequest) {
             }}
           />
 
-          {/* Content */}
+          {/* Title - Centered */}
           <div
             style={{
               position: 'relative',
               display: 'flex',
-              flexDirection: 'column',
               alignItems: 'center',
               justifyContent: 'center',
-              padding: '80px',
+              width: '100%',
+              height: '100%',
               zIndex: 10,
             }}
           >
-            {/* Logo */}
-            <img
-              src={logoUrl}
-              alt="RelocateMe"
-              width="400"
-              height="85"
-              style={{
-                marginBottom: 40,
-                filter: 'brightness(0) invert(1)',
-              }}
-            />
-
-            {/* Title */}
             <div
               style={{
                 fontSize: 72,
@@ -112,6 +99,21 @@ export async function GET(request: NextRequest) {
               {title}
             </div>
           </div>
+
+          {/* Logo - Bottom Right */}
+          <img
+            src={logoUrl}
+            alt="RelocateMe"
+            width="250"
+            height="53"
+            style={{
+              position: 'absolute',
+              bottom: 40,
+              right: 40,
+              filter: 'brightness(0) invert(1)',
+              zIndex: 10,
+            }}
+          />
         </div>
       ),
       {
