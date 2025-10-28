@@ -14,7 +14,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { CheckCircle, Users, Heart, Award, Building2 } from "lucide-react";
+import { CheckCircle, Users, Heart, Award, Building2, ArrowRight } from "lucide-react";
 
 export default function CorporateServicesPage() {
   const scrollToContact = () => {
@@ -66,7 +66,8 @@ export default function CorporateServicesPage() {
                 className="bg-white/10 border border-white text-white hover:bg-white/20 hover:text-white transition-all duration-300 px-6 py-5"
                 onClick={scrollToContact}
               >
-                Get Your Free Setup Plan
+                Get in Touch
+                <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
             </motion.div>
           </div>

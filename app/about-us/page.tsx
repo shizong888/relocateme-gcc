@@ -44,7 +44,7 @@ export default function AboutPage() {
                 </span>
               </h1>
               <p className="text-xl md:text-2xl text-white/90 mb-8 font-light">
-                30+ years of expertise. 100% client satisfaction. Local knowledge, global standards.
+                30+ years of expertise. Local knowledge, global standards.
               </p>
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
@@ -72,19 +72,17 @@ export default function AboutPage() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="max-w-5xl mx-auto"
+            className="max-w-5xl"
           >
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-light mb-8 text-center">
-              Our <span className="text-[hsl(var(--brand))]">Story</span>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-light leading-tight mb-8">
+              <span className="text-[hsl(var(--brand))]">People-First</span>, Trusted Across the GCC
             </h2>
-            <div className="space-y-6 text-lg text-gray-700 leading-relaxed">
-              <p>
-                Established in 2011, we have expanded from providing inbound relocation services to the United Arab Emirates, to delivering comprehensive cross-border mobility solutions throughout the Gulf Cooperation Council, earning the trust of leading corporations to move their talent with care and precision.
-              </p>
-              <p>
-                Backed by over 30 years of our team's combined expertise, we pair deep regional know-how with uncompromising service standards. Our multilingual teams manage every relocation with professionalism and care.
-              </p>
-            </div>
+            <p className="text-lg text-gray-700 leading-relaxed max-w-5xl mb-6">
+              Established in 2011, we have expanded from providing inbound relocation services to the United Arab Emirates, to delivering comprehensive cross-border mobility solutions throughout the Gulf Cooperation Council, earning the trust of leading corporations to move their talent with care and precision.
+            </p>
+            <p className="text-lg text-gray-700 leading-relaxed max-w-5xl">
+              Backed by over 30 years of our team's combined expertise, we pair deep regional know-how with uncompromising service standards. Our multilingual teams manage every relocation with professionalism and care.
+            </p>
           </motion.div>
         </div>
 
@@ -127,9 +125,9 @@ export default function AboutPage() {
               />
               <div className="absolute inset-0 bg-black/50 transition-opacity duration-300 group-hover:bg-black/60" />
               <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6 text-white">
-                <h3 className="text-3xl md:text-4xl font-light mb-4">100% Satisfaction</h3>
+                <h3 className="text-3xl md:text-4xl font-light mb-4">Local Expertise</h3>
                 <p className="text-sm md:text-base leading-relaxed">
-                  Outstanding client service satisfaction across all our programs
+                  On-the-ground teams with extensive market insight
                 </p>
               </div>
             </motion.div>
@@ -181,7 +179,7 @@ export default function AboutPage() {
       </section>
 
       {/* What We Do Section */}
-      <section className="py-20 bg-white">
+      <section className="pt-8 pb-20 bg-white">
         <div className="container mx-auto px-4 md:px-6">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -191,7 +189,7 @@ export default function AboutPage() {
             className="mb-16"
           >
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-light leading-tight mb-8">
-              We provide a <span className="text-[hsl(var(--brand))]">full spectrum of relocation and global services</span> to meet the finer details of settling employees into their new places.
+              We provide a <span className="text-[hsl(var(--brand))]">full spectrum of relocation and global mobility services</span> to meet the finer details of settling employees into their new places.
             </h2>
             <p className="text-lg text-gray-700 leading-relaxed max-w-5xl">
               We manage the entire journey: our Immigration Team secures the right visas, our Home Search Specialists source the ideal properties, our Education Specialists place children in the right schools, and our Cultural Trainers and Handover & Settling-In Team take care of the rest. The result: seamless housing, schooling, and community integration, ensuring every employee and their family feels at home from day one.
@@ -306,7 +304,7 @@ export default function AboutPage() {
             </h2>
           </motion.div>
 
-          <div className="max-w-5xl mx-auto space-y-12">
+          <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Local & Regional Expertise */}
             <motion.div
               initial={{ opacity: 0, y: 30 }}
@@ -407,7 +405,7 @@ export default function AboutPage() {
         title="Ready to Make"
         titleHighlight="Your Move?"
         description="Our team is here to support your relocation, immigration, and corporate services needs across the GCC. Let's discuss how we can help make your transition seamless."
-        imageSrc="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=1200&q=80"
+        imageSrc="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=1200&q=80"
         imageAlt="Contact RelocateMe GCC Team"
       />
 

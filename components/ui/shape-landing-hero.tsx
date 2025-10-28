@@ -149,9 +149,8 @@ function HeroGeometric({
                         initial="hidden"
                         animate="visible"
                     >
-                        <p className="text-base sm:text-lg md:text-xl text-white mb-8 leading-relaxed font-light tracking-wide max-w-xl mx-auto px-4">
-                            Crafting exceptional digital experiences through
-                            innovative design and cutting-edge technology.
+                        <p className="text-base sm:text-lg md:text-xl text-white mb-8 leading-relaxed font-light tracking-wide max-w-4xl mx-auto px-4">
+                            Crafting exceptional relocation experiences built on trusted human expertise, personalised care, and meticulous attention to detail.
                         </p>
                     </motion.div>
 

@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     siteName: "RelocateMe GCC",
     images: [
       {
-        url: "/relocateme-logo.png",
+        url: "/api/og?title=Corporate Services&image=https://www.relocatemegcc.com/images/hero-corporate.jpg",
         width: 1200,
         height: 630,
         alt: "RelocateMe GCC Corporate Services"
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Corporate Services GCC | RelocateMe",
     description: "Comprehensive corporate services across the GCC for expanding businesses.",
-    images: ["/relocateme-logo.png"]
+    images: ["/api/og?title=Corporate Services&image=https://www.relocatemegcc.com/images/hero-corporate.jpg"]
   },
   alternates: {
     canonical: "https://relocateme-gcc.com/corporate-services"

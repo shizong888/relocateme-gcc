@@ -14,7 +14,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { CheckCircle, Users, Heart, Award, FileCheck } from "lucide-react";
+import { CheckCircle, Users, Heart, Award, FileCheck, ArrowRight } from "lucide-react";
 
 export default function ImmigrationPage() {
   const scrollToContact = () => {
@@ -67,6 +67,7 @@ export default function ImmigrationPage() {
                 onClick={scrollToContact}
               >
                 Get Your Free Immigration Plan
+                <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
             </motion.div>
           </div>

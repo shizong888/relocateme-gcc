@@ -32,7 +32,7 @@ export function LocalExpertiseSection() {
 
                             <p>
                                 We navigate the complexities of regional regulations and compliance, allowing our clients to
-                                focus on what matters most — their business success.
+                                focus on what matters most; their business success.
                             </p>
 
                             <p>

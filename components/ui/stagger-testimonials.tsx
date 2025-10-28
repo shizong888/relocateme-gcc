@@ -244,7 +244,7 @@ export const StaggerTestimonials: React.FC = () => {
     <div className="bg-white py-20">
       <div className="container mx-auto px-4 md:px-6 mb-12">
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-light leading-tight">
-          Trusted by <span className="text-[hsl(var(--brand))]">leading organizations</span> across the Middle East for seamless global mobility and relocation services.
+          Trusted by <span className="text-[hsl(var(--brand))]">leading organisations</span> across the Middle East for seamless global mobility and relocation services.
         </h2>
       </div>
       <div

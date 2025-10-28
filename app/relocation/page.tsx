@@ -15,7 +15,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { CheckCircle, Users, Heart, Award } from "lucide-react";
+import { CheckCircle, Users, Heart, Award, ArrowRight } from "lucide-react";
 
 export default function RelocationPage() {
   const scrollToContact = () => {
@@ -68,6 +68,7 @@ export default function RelocationPage() {
                 onClick={scrollToContact}
               >
                 Get Your Free Relocation Plan
+                <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
             </motion.div>
           </div>
