@@ -5,7 +5,15 @@ import { motion, AnimatePresence } from "framer-motion";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
-import { Menu, X } from "lucide-react";
+import { Menu, X, ChevronDown } from "lucide-react";
+import {
+  NavigationMenu,
+  NavigationMenuContent,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+  NavigationMenuTrigger,
+} from "@/components/ui/navigation-menu";
 
 export function Navbar({ transparent = false }: { transparent?: boolean }) {
     const [isScrolled, setIsScrolled] = useState(false);
@@ -71,15 +79,65 @@ export function Navbar({ transparent = false }: { transparent?: boolean }) {
                         >
                             About Us
                         </a>
-                        <a
-                            href="/corporate-services"
-                            className={cn(
-                                "text-sm font-medium transition-colors hover:opacity-80",
-                                shouldBeTransparent ? "text-white" : "text-gray-900"
-                            )}
-                        >
-                            Corporate Services
-                        </a>
+
+                        <NavigationMenu>
+                            <NavigationMenuList>
+                                <NavigationMenuItem>
+                                    <NavigationMenuTrigger
+                                        className={cn(
+                                            "text-sm font-medium transition-colors hover:opacity-80 bg-transparent",
+                                            shouldBeTransparent ? "text-white hover:bg-white/10" : "text-gray-900 hover:bg-gray-100"
+                                        )}
+                                    >
+                                        Corporate Services
+                                    </NavigationMenuTrigger>
+                                    <NavigationMenuContent>
+                                        <ul className="grid w-[400px] gap-3 p-4">
+                                            <li>
+                                                <NavigationMenuLink asChild>
+                                                    <a
+                                                        href="/corporate-services"
+                                                        className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                                                    >
+                                                        <div className="text-sm font-medium leading-none">Corporate Services Overview</div>
+                                                        <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+                                                            Complete corporate support across the GCC region
+                                                        </p>
+                                                    </a>
+                                                </NavigationMenuLink>
+                                            </li>
+                                            <li>
+                                                <NavigationMenuLink asChild>
+                                                    <a
+                                                        href="/business-setup-uae"
+                                                        className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                                                    >
+                                                        <div className="text-sm font-medium leading-none">Business Setup in UAE</div>
+                                                        <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+                                                            Launch your business in Dubai's premier free zones
+                                                        </p>
+                                                    </a>
+                                                </NavigationMenuLink>
+                                            </li>
+                                            <li>
+                                                <NavigationMenuLink asChild>
+                                                    <a
+                                                        href="/business-setup-saudi"
+                                                        className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                                                    >
+                                                        <div className="text-sm font-medium leading-none">Business Setup in Saudi Arabia</div>
+                                                        <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+                                                            Accelerate your Saudi market entry with MISA licensing
+                                                        </p>
+                                                    </a>
+                                                </NavigationMenuLink>
+                                            </li>
+                                        </ul>
+                                    </NavigationMenuContent>
+                                </NavigationMenuItem>
+                            </NavigationMenuList>
+                        </NavigationMenu>
+
                         <a
                             href="/immigration"
                             className={cn(
@@ -161,13 +219,31 @@ export function Navbar({ transparent = false }: { transparent?: boolean }) {
                             >
                                 About Us
                             </a>
-                            <a
-                                href="/corporate-services"
-                                onClick={() => setIsMobileMenuOpen(false)}
-                                className="text-gray-900 font-medium py-2 hover:text-[hsl(var(--brand))] transition-colors"
-                            >
-                                Corporate Services
-                            </a>
+
+                            <div className="flex flex-col gap-2">
+                                <a
+                                    href="/corporate-services"
+                                    onClick={() => setIsMobileMenuOpen(false)}
+                                    className="text-gray-900 font-medium py-2 hover:text-[hsl(var(--brand))] transition-colors"
+                                >
+                                    Corporate Services
+                                </a>
+                                <a
+                                    href="/business-setup-uae"
+                                    onClick={() => setIsMobileMenuOpen(false)}
+                                    className="text-gray-600 text-sm py-2 pl-4 hover:text-[hsl(var(--brand))] transition-colors"
+                                >
+                                    → Business Setup in UAE
+                                </a>
+                                <a
+                                    href="/business-setup-saudi"
+                                    onClick={() => setIsMobileMenuOpen(false)}
+                                    className="text-gray-600 text-sm py-2 pl-4 hover:text-[hsl(var(--brand))] transition-colors"
+                                >
+                                    → Business Setup in Saudi Arabia
+                                </a>
+                            </div>
+
                             <a
                                 href="/immigration"
                                 onClick={() => setIsMobileMenuOpen(false)}
