@@ -205,7 +205,7 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
     <div
       onClick={() => handleMove(position)}
       className={cn(
-        "absolute left-1/2 top-1/2 cursor-pointer border-2 p-8 transition-all duration-500 ease-in-out",
+        "absolute left-1/2 top-1/2 cursor-pointer border-2 p-6 sm:p-8 transition-all duration-500 ease-in-out",
         isCenter
           ? "z-10 bg-[hsl(var(--brand))] text-white border-[hsl(var(--brand))]"
           : "z-0 bg-card text-card-foreground border-border hover:border-[hsl(var(--brand))]/50"
@@ -215,7 +215,7 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
         height: cardSize,
         clipPath: `polygon(50px 0%, calc(100% - 50px) 0%, 100% 50px, 100% 100%, calc(100% - 50px) 100%, 50px 100%, 0 100%, 0 0)`,
         transform: `
-          translate(-50%, -50%) 
+          translate(-50%, -50%)
           translateX(${(cardSize / 1.5) * position}px)
           translateY(${isCenter ? -65 : position % 2 ? 15 : -15}px)
           rotate(${isCenter ? 0 : position % 2 ? 2.5 : -2.5}deg)
@@ -267,13 +267,13 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
         </div>
       )}
       <h3 className={cn(
-        "text-sm sm:text-base font-medium",
+        "text-xs sm:text-sm md:text-base font-medium leading-relaxed",
         isCenter ? "text-white" : "text-foreground"
       )}>
         "{testimonial.testimonial}"
       </h3>
       <p className={cn(
-        "absolute bottom-8 left-8 right-8 mt-2 text-sm italic",
+        "absolute bottom-6 left-6 right-6 sm:bottom-8 sm:left-8 sm:right-8 mt-2 text-xs sm:text-sm italic leading-tight",
         isCenter ? "text-white/80" : "text-muted-foreground"
       )}>
         - {testimonial.by}
@@ -283,7 +283,7 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
 };
 
 export const StaggerTestimonials: React.FC = () => {
-  const [cardSize, setCardSize] = useState(365);
+  const [cardSize, setCardSize] = useState(480);
   const [testimonialsList, setTestimonialsList] = useState(testimonials);
 
   const handleMove = (steps: number) => {
@@ -306,8 +306,19 @@ export const StaggerTestimonials: React.FC = () => {
 
   useEffect(() => {
     const updateSize = () => {
-      const { matches } = window.matchMedia("(min-width: 640px)");
-      setCardSize(matches ? 420 : 420);
+      const { matches: isLarge } = window.matchMedia("(min-width: 1024px)");
+      const { matches: isMedium } = window.matchMedia("(min-width: 768px)");
+      const { matches: isSmall } = window.matchMedia("(min-width: 640px)");
+
+      if (isLarge) {
+        setCardSize(520);
+      } else if (isMedium) {
+        setCardSize(480);
+      } else if (isSmall) {
+        setCardSize(420);
+      } else {
+        setCardSize(380);
+      }
     };
 
     updateSize();
@@ -323,8 +334,8 @@ export const StaggerTestimonials: React.FC = () => {
         </h2>
       </div>
       <div
-        className="relative w-full overflow-hidden bg-muted/30"
-        style={{ height: 600 }}
+        className="relative w-full overflow-hidden"
+        style={{ height: 700 }}
       >
       {testimonialsList.map((testimonial, index) => {
         const position = testimonialsList.length % 2
