@@ -25,21 +25,27 @@ export function Footer() {
             </p>
             <div className="flex gap-4">
               <a
-                href="#"
+                href="https://www.facebook.com/relocateme"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors"
                 aria-label="Facebook"
               >
                 <Facebook size={18} />
               </a>
               <a
-                href="#"
+                href="https://www.linkedin.com/company/relocateme/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors"
                 aria-label="LinkedIn"
               >
                 <Linkedin size={18} />
               </a>
               <a
-                href="#"
+                href="https://instagram.com/relocateme/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors"
                 aria-label="Instagram"
               >
