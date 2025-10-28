@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     siteName: "RelocateMe GCC",
     images: [
       {
-        url: "/api/og?title=Relocation Services&image=https://images.unsplash.com/photo-1622675363311-3e1904dc1885?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=2070",
+        url: "/api/og?image=https://images.unsplash.com/photo-1622675363311-3e1904dc1885?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=2070",
         width: 1200,
         height: 630,
         alt: "RelocateMe GCC Relocation Services"
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Relocation Services GCC | RelocateMe",
     description: "Expert relocation services across the GCC for families and employees.",
-    images: ["/api/og?title=Relocation Services&image=https://images.unsplash.com/photo-1622675363311-3e1904dc1885?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=2070"]
+    images: ["/api/og?image=https://images.unsplash.com/photo-1622675363311-3e1904dc1885?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=2070"]
   },
   alternates: {
     canonical: "https://relocateme-gcc.com/relocation"

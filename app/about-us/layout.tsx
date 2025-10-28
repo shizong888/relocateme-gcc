@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     siteName: "RelocateMe GCC",
     images: [
       {
-        url: "/api/og?title=About Us&image=https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1200&q=80",
+        url: "/api/og?image=https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1200&q=80",
         width: 1200,
         height: 630,
         alt: "About RelocateMe GCC"
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "About Us | RelocateMe GCC",
     description: "Learn about our story, values, and 20+ years of GCC expertise.",
-    images: ["/api/og?title=About Us&image=https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1200&q=80"]
+    images: ["/api/og?image=https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1200&q=80"]
   },
   alternates: {
     canonical: "https://www.relocatemegcc.com/about"

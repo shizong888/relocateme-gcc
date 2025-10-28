@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     siteName: "RelocateMe GCC",
     images: [
       {
-        url: "/api/og?title=Immigration Services&image=https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=1200&q=80",
+        url: "/api/og?image=https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=1200&q=80",
         width: 1200,
         height: 630,
         alt: "RelocateMe GCC Immigration Services"
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Immigration Services GCC | RelocateMe",
     description: "Expert visa and immigration services across the GCC for seamless processing.",
-    images: ["/api/og?title=Immigration Services&image=https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=1200&q=80"]
+    images: ["/api/og?image=https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=1200&q=80"]
   },
   alternates: {
     canonical: "https://relocateme-gcc.com/immigration"
