@@ -104,7 +104,7 @@ export default function RelocationPage() {
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-light text-white mb-8 leading-tight">
                 <span className="bg-clip-text text-transparent bg-gradient-to-b from-white to-white/90">
                   Move Your Team to the GCC<br />
-                  Without the Stress or Surprises
+                  Without the Delays or Surprises
                 </span>
               </h1>
             </motion.div>
@@ -121,7 +121,7 @@ export default function RelocationPage() {
                 className="bg-white/10 border border-white text-white hover:bg-white/20 hover:text-white transition-all duration-300 px-6 py-5"
                 onClick={scrollToContact}
               >
-                Get Your Free Relocation Plan
+                Get in Touch
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
             </motion.div>
@@ -136,7 +136,7 @@ export default function RelocationPage() {
         description="We make relocating to the Middle East simple, seamless, and fully supported. From home search and school search to settling in services, one team takes care of everything so your people feel at home from day one."
         features={[
           "15+ years helping families settle in the GCC",
-          "One dedicated relocation consultant per family",
+          "Dedicated account manager throughout your journey",
           "Complete support from arrival to settling in"
         ]}
       />
