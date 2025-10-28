@@ -9,6 +9,93 @@ const SQRT_5000 = Math.sqrt(5000);
 const testimonials = [
   {
     tempId: 0,
+    testimonial: "Relocate (& Victoria Moss) helped me and family to relocate and settle in the UAE. They were really superb. They went way above the call of duty and we will forever be grateful for them. They simply gain our trust including our little ones.",
+    by: "Dr. Sattar Alshryda, Paediatrician"
+  },
+  {
+    tempId: 1,
+    testimonial: "I would like to commend RelocateMe and their service with the highest possible praise. This service is a real asset to anyone planning a move to Dubai. I was shown lovely places to live in, this helped me to remove many doubts, queries, fears, etc. that are associated at the beginning of any move.",
+    by: "Corporate Client, Oil & Gas"
+  },
+  {
+    tempId: 2,
+    testimonial: "Moving to a new country just adds to the burden. RelocateMe took a lot of the stress out of undertaking such a move. With knowledgeable agents in Abu Dhabi who did most the donkey work on finding a property, doing the filtering based on our specific requirements we found a property in a good location quickly.",
+    by: "Peter O'Toole, Private Family Relocating"
+  },
+  {
+    tempId: 3,
+    testimonial: "Thank you to the amazing staff at Relocate Me. Especially the personable Victoria. You had a very difficult task in terms of my 'check out', dealing with a difficult landlord. Thank you for handling my 'small' job with sheer professionalism and care. You are amazing at what you do.",
+    by: "Maxine Webb, Law Firm Dubai"
+  },
+  {
+    tempId: 4,
+    testimonial: "The orientation with Bhartie was absolutely fantastic she was simply incredible. She knows a lot about the history of Dubai and is a person who easily connects with people. She fully understood the circumstances that I had and the type of accommodation that I was looking for.",
+    by: "Corporate Client, Employee Relocating"
+  },
+  {
+    tempId: 5,
+    testimonial: "Victoria and Relocate did an amazing job with Creative to secure our company registration, visas and UAE ID. Fast, efficient, great comms and great value. Would highly recommend.",
+    by: "David Hughes, I'm Not Plastic FZE"
+  },
+  {
+    tempId: 6,
+    testimonial: "The best experience ever!! Thank you so much RelocateME for the extraordinary efforts and great work. You are the best guys!! Special thanks to Ceara and Edgar for the professional support and superior on-time deliverables.",
+    by: "Mahmoud Mohamed, Private Family Relocating"
+  },
+  {
+    tempId: 7,
+    testimonial: "I used RelocateMe to prepare my move from Morocco to UAE with my Family. It was a fantastic turnkey service: from my business setup in UAE until housing, kids school research. Thanks to RelocateMe, what would otherwise have been a complete nightmare was stress-free.",
+    by: "Mohamed Didouch, Private Family Relocating"
+  },
+  {
+    tempId: 8,
+    testimonial: "Excellent company and support during our relocation to Dubai. Victoria is extremely helpful and knowledgeable about all local businesses and customs which was really a big help for us coming here. They made the transition much easier and getting settled smoother.",
+    by: "Corporate Client, Employee Relocating"
+  },
+  {
+    tempId: 9,
+    testimonial: "The moving experience in Dubai has been extremely smooth thanks to RelocateMe. From finding the property, expert advice, to liaising with the landlord; this company are the 360 experts! Even after the move, they consistently go above and beyond their contracted work.",
+    by: "Chris Millard, Corporate Client"
+  },
+  {
+    tempId: 10,
+    testimonial: "Excellent company and support during our relocation to Dubai. Victoria is extremely helpful and knowledgeable about all local businesses and customs which was really a big help for us coming here. We can only recommend her services!",
+    by: "Uli Terheggen, Private Family Relocating"
+  },
+  {
+    tempId: 11,
+    testimonial: "Very professional service. Relocate me did an awesome job helping me settle. If you're new in the country, have no idea where to live and how to proceed, I definitely recommend you get in touch with Relocate me to ease the process and ensure a smooth move.",
+    by: "Roger S, Corporate Client"
+  },
+  {
+    tempId: 12,
+    testimonial: "Did their outmost and beyond to get me going. Highly recommended for a hassle-free House hunting and settlement.",
+    by: "Hakim Bounes, Corporate Client"
+  },
+  {
+    tempId: 13,
+    testimonial: "The moving experience to Dubai has been great in every aspect. The services include the entire movement process, from goods transfer, property finding based on your criteria, landlord negotiations, to contract overview and setting up of all utilities. The company offers a 100% personalized service.",
+    by: "Alvaro de Barutell Allende, Corporate Client"
+  },
+  {
+    tempId: 14,
+    testimonial: "RelocateMe made everything super easy for our relocation to UAE. They support you throughout the entire process and their team is highly responsive and very professional. Thank you Ceara!",
+    by: "Ahmed Shafei, Corporate Client"
+  },
+  {
+    tempId: 15,
+    testimonial: "Amazing service, Victoria was very helpful with all the process relocating with family from the UK.",
+    by: "Christos Tzivinikos, Corporate Client"
+  },
+  {
+    tempId: 16,
+    testimonial: "Victoria and Teresa helped my family with our relocation to Dubai from the UK in 2014. Given that we are a family of 5, with children aged 9, 8 and 3 and only had 2 months to move this was a pretty major undertaking. Throughout a stressful period, they were a saving grace in terms of calmness, professionalism and sheer 'leave it with me-ness'.",
+    by: "Marcus Gent, Managing Director",
+    imgSrc: "/images/fpi_logo.png",
+    isLogo: true
+  },
+  {
+    tempId: 17,
     testimonial: "Dubai Airports Human Resources has successfully been using RelocateMe services for some time. RelocateMe provide a professional yet personable service and our employees that have relocated from abroad have always been complimentary about their service. The companie's flexibility and willingness to meet Dubai Airport's last-minute requests is always appreciated.",
     by: "Dubai Airports Human Resources",
     imgSrc: "/images/dubai_airports_logo.svg",
@@ -16,98 +103,11 @@ const testimonials = [
     isSvg: true
   },
   {
-    tempId: 1,
-    testimonial: "Relocate (& Victoria Moss) helped me and family to relocate and settle in the UAE. They were really superb. They went way above the call of duty and we will forever be grateful for them. They simply gain our trust including our little ones.",
-    by: "Dr. Sattar Alshryda, Paediatrician"
-  },
-  {
-    tempId: 2,
-    testimonial: "I would like to commend RelocateMe and their service with the highest possible praise. This service is a real asset to anyone planning a move to Dubai. I was shown lovely places to live in, this helped me to remove many doubts, queries, fears, etc. that are associated at the beginning of any move.",
-    by: "Corporate Client, Oil & Gas"
-  },
-  {
-    tempId: 3,
-    testimonial: "Moving to a new country just adds to the burden. RelocateMe took a lot of the stress out of undertaking such a move. With knowledgeable agents in Abu Dhabi who did most the donkey work on finding a property, doing the filtering based on our specific requirements we found a property in a good location quickly.",
-    by: "Peter O'Toole, Private Family Relocating"
-  },
-  {
-    tempId: 4,
-    testimonial: "Thank you to the amazing staff at Relocate Me. Especially the personable Victoria. You had a very difficult task in terms of my 'check out', dealing with a difficult landlord. Thank you for handling my 'small' job with sheer professionalism and care. You are amazing at what you do.",
-    by: "Maxine Webb, Law Firm Dubai"
-  },
-  {
-    tempId: 5,
-    testimonial: "The orientation with Bhartie was absolutely fantastic she was simply incredible. She knows a lot about the history of Dubai and is a person who easily connects with people. She fully understood the circumstances that I had and the type of accommodation that I was looking for.",
-    by: "Corporate Client, Employee Relocating"
-  },
-  {
-    tempId: 6,
-    testimonial: "Victoria and Relocate did an amazing job with Creative to secure our company registration, visas and UAE ID. Fast, efficient, great comms and great value. Would highly recommend.",
-    by: "David Hughes, I'm Not Plastic FZE"
-  },
-  {
-    tempId: 7,
-    testimonial: "The best experience ever!! Thank you so much RelocateME for the extraordinary efforts and great work. You are the best guys!! Special thanks to Ceara and Edgar for the professional support and superior on-time deliverables.",
-    by: "Mahmoud Mohamed, Private Family Relocating"
-  },
-  {
-    tempId: 8,
-    testimonial: "I used RelocateMe to prepare my move from Morocco to UAE with my Family. It was a fantastic turnkey service: from my business setup in UAE until housing, kids school research. Thanks to RelocateMe, what would otherwise have been a complete nightmare was stress-free.",
-    by: "Mohamed Didouch, Private Family Relocating"
-  },
-  {
-    tempId: 9,
+    tempId: 18,
     testimonial: "RelocateMe manage the entirety of L'Oréal's relocation and tenancy management needs, supporting our employees moving into the UAE and within the region. Since we started using the services of RelocateMe, they have consistently delivered seamless results. The team always succeed in maintaining an exceptional level of service, from start to finish.",
     by: "Jean-Dominique De Ravignan, HR Director, L'Oréal Middle East",
     imgSrc: "/images/loreal_logo.png",
     isLogo: true
-  },
-  {
-    tempId: 10,
-    testimonial: "Victoria and Teresa helped my family with our relocation to Dubai from the UK in 2014. Given that we are a family of 5, with children aged 9, 8 and 3 and only had 2 months to move this was a pretty major undertaking. Throughout a stressful period, they were a saving grace in terms of calmness, professionalism and sheer 'leave it with me-ness'.",
-    by: "Marcus Gent, Managing Director",
-    imgSrc: "/images/fpi_logo.png",
-    isLogo: true
-  },
-  {
-    tempId: 11,
-    testimonial: "Excellent company and support during our relocation to Dubai. Victoria is extremely helpful and knowledgeable about all local businesses and customs which was really a big help for us coming here. They made the transition much easier and getting settled smoother.",
-    by: "Corporate Client, Employee Relocating"
-  },
-  {
-    tempId: 12,
-    testimonial: "The moving experience in Dubai has been extremely smooth thanks to RelocateMe. From finding the property, expert advice, to liaising with the landlord; this company are the 360 experts! Even after the move, they consistently go above and beyond their contracted work.",
-    by: "Chris Millard, Corporate Client"
-  },
-  {
-    tempId: 13,
-    testimonial: "Excellent company and support during our relocation to Dubai. Victoria is extremely helpful and knowledgeable about all local businesses and customs which was really a big help for us coming here. We can only recommend her services!",
-    by: "Uli Terheggen, Private Family Relocating"
-  },
-  {
-    tempId: 14,
-    testimonial: "Very professional service. Relocate me did an awesome job helping me settle. If you're new in the country, have no idea where to live and how to proceed, I definitely recommend you get in touch with Relocate me to ease the process and ensure a smooth move.",
-    by: "Roger S, Corporate Client"
-  },
-  {
-    tempId: 15,
-    testimonial: "Did their outmost and beyond to get me going. Highly recommended for a hassle-free House hunting and settlement.",
-    by: "Hakim Bounes, Corporate Client"
-  },
-  {
-    tempId: 16,
-    testimonial: "The moving experience to Dubai has been great in every aspect. The services include the entire movement process, from goods transfer, property finding based on your criteria, landlord negotiations, to contract overview and setting up of all utilities. The company offers a 100% personalized service.",
-    by: "Alvaro de Barutell Allende, Corporate Client"
-  },
-  {
-    tempId: 17,
-    testimonial: "RelocateMe made everything super easy for our relocation to UAE. They support you throughout the entire process and their team is highly responsive and very professional. Thank you Ceara!",
-    by: "Ahmed Shafei, Corporate Client"
-  },
-  {
-    tempId: 18,
-    testimonial: "Amazing service, Victoria was very helpful with all the process relocating with family from the UK.",
-    by: "Christos Tzivinikos, Corporate Client"
   },
   {
     tempId: 19,
