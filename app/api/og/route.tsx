@@ -90,8 +90,8 @@ export async function GET(request: NextRequest) {
             <img
               src={logoUrl}
               alt="RelocateMe"
-              width="300"
-              height="80"
+              width="400"
+              height="85"
               style={{
                 marginBottom: 40,
                 filter: 'brightness(0) invert(1)',
