@@ -15,6 +15,9 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { CheckCircle, Users, Heart, Award, FileCheck, ArrowRight } from "lucide-react";
+import { SectionHeader } from "@/components/sections/section-header";
+import { BlueBanner } from "@/components/sections/blue-banner";
+import { ServiceGrid } from "@/components/sections/service-grid";
 
 export default function ImmigrationPage() {
   const scrollToContact = () => {
@@ -23,6 +26,57 @@ export default function ImmigrationPage() {
       contactSection.scrollIntoView({ behavior: 'smooth' });
     }
   };
+
+  const immigrationServices = [
+    {
+      title: "Golden Visas & Premium Residency",
+      description: "Long-term residency programs with expert end-to-end management.",
+      image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&h=1000&fit=crop&q=80",
+      alt: "Golden Visas & Premium Residency"
+    },
+    {
+      title: "Employee Visa Processing",
+      description: "Full lifecycle management of work visas, iqamas, and renewals.",
+      image: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=800&h=1000&fit=crop&q=80",
+      alt: "Employee Visa Processing & Management"
+    },
+    {
+      title: "Dependent Visa Sponsorship",
+      description: "Family sponsorship for spouses, children, parents, and domestic helpers.",
+      image: "https://images.unsplash.com/photo-1511895426328-dc8714191300?w=800&h=1000&fit=crop&q=80",
+      alt: "Dependent Visa Sponsorship & Support"
+    },
+    {
+      title: "Work Permits & Labour Approvals",
+      description: "Ministry coordination for work permits and labour card approvals.",
+      image: "https://images.unsplash.com/photo-1521791136064-7986c2920216?w=800&h=1000&fit=crop&q=80",
+      alt: "Work Permits & Labour Approvals"
+    },
+    {
+      title: "Government Portal Management",
+      description: "Expert management of Absher, Qiwa, Muqeem, and UAE smart portals.",
+      image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&h=1000&fit=crop&q=80",
+      alt: "Government Portal Registration & Management"
+    },
+    {
+      title: "Document Attestation",
+      description: "Embassy and ministry attestation for educational and personal documents.",
+      image: "https://images.unsplash.com/photo-1629141821139-ac3cc2f27a60?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=987",
+      alt: "Document Attestation & Legalisation"
+    },
+    {
+      title: "PRO / GRO Services",
+      description: "On-the-ground Public Relations Officers for government submissions.",
+      image: "https://images.unsplash.com/photo-1554224154-26032ffc0d07?w=800&h=1000&fit=crop&q=80",
+      alt: "PRO / GRO Services"
+    },
+    {
+      title: "Value-Added Support",
+      description: "Bespoke mobility solutions including medical and Emirates ID registration.",
+      image: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&h=1000&fit=crop&q=80",
+      alt: "Value-Added Immigration Support"
+    }
+  ];
 
   return (
     <>
@@ -66,7 +120,7 @@ export default function ImmigrationPage() {
                 className="bg-white/10 border border-white text-white hover:bg-white/20 hover:text-white transition-all duration-300 px-6 py-5"
                 onClick={scrollToContact}
               >
-                Get Your Free Immigration Plan
+                Get in Touch
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
             </motion.div>
@@ -75,278 +129,30 @@ export default function ImmigrationPage() {
       </section>
 
       {/* Introduction Section */}
-      <section className="py-20 bg-[hsl(var(--brand))]">
-        <div className="container mx-auto px-4 md:px-6">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-            className="text-center mb-12"
-          >
-            <p className="text-xl md:text-2xl text-white mb-12 max-w-4xl mx-auto leading-relaxed">
-              We make visa and immigration processing simple, compliant, and stress-free.
-              From work permits and Golden Visas to PRO services and document attestation,
-              one team handles everything so you can focus on your business.
-            </p>
-          </motion.div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0 }}
-              className="flex items-start gap-4 p-6 rounded-lg bg-white/10"
-            >
-              <CheckCircle className="text-white flex-shrink-0 mt-1" size={24} />
-              <span className="text-white">15+ years managing visas and immigration across the GCC</span>
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.1 }}
-              className="flex items-start gap-4 p-6 rounded-lg bg-white/10"
-            >
-              <CheckCircle className="text-white flex-shrink-0 mt-1" size={24} />
-              <span className="text-white">One dedicated immigration specialist per account</span>
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              className="flex items-start gap-4 p-6 rounded-lg bg-white/10"
-            >
-              <CheckCircle className="text-white flex-shrink-0 mt-1" size={24} />
-              <span className="text-white">Complete compliance and transparent processing</span>
-            </motion.div>
-          </div>
-        </div>
-      </section>
+      <BlueBanner
+        description="We make visa and immigration processing clear, compliant, and efficient. From work permits and Golden Visas to PRO services and document attestation, one team handles everything so you can focus on your business."
+        features={[
+          "15+ years managing visas and immigration across the GCC",
+          "In-country immigration specialists across every location",
+          "Complete compliance and transparent processing"
+        ]}
+      />
 
       {/* Visa & Immigration Services Section */}
       <section className="pt-20 bg-white">
-        <div className="container mx-auto px-4 md:px-6">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-            className="text-center mb-16"
-          >
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-light mb-6">
-              Visa & Immigration Services<br />
-              <span className="text-[hsl(var(--brand))]">Across the GCC</span>
-            </h2>
-            <p className="text-lg text-gray-600 max-w-4xl mx-auto mb-8 leading-relaxed">
-              RelocateMe delivers comprehensive visa and immigration support across the United Arab Emirates, Saudi Arabia, Qatar, Bahrain, Oman, and Kuwait, ensuring smooth, compliant, and timely processing for employees, dependents, and corporate entities.
-            </p>
-          </motion.div>
+        <div className="container mx-auto px-4 md:px-6 mb-16">
+          <SectionHeader
+            title="Visa & Immigration Services"
+            highlightedText="Across the GCC"
+            paragraphs={[
+              "RelocateMe delivers comprehensive visa and immigration support across the United Arab Emirates, Saudi Arabia, Qatar, Bahrain, Oman, and Kuwait, ensuring smooth, compliant, and timely processing for employees, dependents, and corporate entities."
+            ]}
+            buttonText="Reach Out To Discuss Your Immigration Needs"
+            onButtonClick={scrollToContact}
+          />
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
-          {/* 1. Golden Visas & Premium Residency */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0 }}
-            className="relative aspect-square overflow-hidden group"
-          >
-            <Image
-              src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&h=1000&fit=crop&q=80"
-              alt="Golden Visas & Premium Residency"
-              fill
-              className="object-cover transition-transform duration-700 group-hover:scale-105"
-            />
-            <div className="absolute inset-0 bg-black/50 transition-opacity duration-300 group-hover:bg-black/60" />
-            <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6 text-white">
-              <h3 className="text-2xl md:text-3xl font-light mb-4">
-                Golden Visas & Premium Residency
-              </h3>
-              <p className="text-sm md:text-base text-white/90">
-                Long-term residency programs with expert end-to-end management.
-              </p>
-            </div>
-          </motion.div>
-
-          {/* 2. Employee Visa Processing & Management */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.1 }}
-            className="relative aspect-square overflow-hidden group"
-          >
-            <Image
-              src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=800&h=1000&fit=crop&q=80"
-              alt="Employee Visa Processing & Management"
-              fill
-              className="object-cover transition-transform duration-700 group-hover:scale-105"
-            />
-            <div className="absolute inset-0 bg-black/50 transition-opacity duration-300 group-hover:bg-black/60" />
-            <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6 text-white">
-              <h3 className="text-2xl md:text-3xl font-light mb-4">
-                Employee Visa Processing
-              </h3>
-              <p className="text-sm md:text-base text-white/90">
-                Full lifecycle management of work visas, iqamas, and renewals.
-              </p>
-            </div>
-          </motion.div>
-
-          {/* 3. Dependent Visa Sponsorship & Support */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="relative aspect-square overflow-hidden group"
-          >
-            <Image
-              src="https://images.unsplash.com/photo-1511895426328-dc8714191300?w=800&h=1000&fit=crop&q=80"
-              alt="Dependent Visa Sponsorship & Support"
-              fill
-              className="object-cover transition-transform duration-700 group-hover:scale-105"
-            />
-            <div className="absolute inset-0 bg-black/50 transition-opacity duration-300 group-hover:bg-black/60" />
-            <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6 text-white">
-              <h3 className="text-2xl md:text-3xl font-light mb-4">
-                Dependent Visa Sponsorship
-              </h3>
-              <p className="text-sm md:text-base text-white/90">
-                Family sponsorship for spouses, children, parents, and domestic helpers.
-              </p>
-            </div>
-          </motion.div>
-
-          {/* 4. Work Permits & Labour Approvals */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.3 }}
-            className="relative aspect-square overflow-hidden group"
-          >
-            <Image
-              src="https://images.unsplash.com/photo-1521791136064-7986c2920216?w=800&h=1000&fit=crop&q=80"
-              alt="Work Permits & Labour Approvals"
-              fill
-              className="object-cover transition-transform duration-700 group-hover:scale-105"
-            />
-            <div className="absolute inset-0 bg-black/50 transition-opacity duration-300 group-hover:bg-black/60" />
-            <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6 text-white">
-              <h3 className="text-2xl md:text-3xl font-light mb-4">
-                Work Permits & Labour Approvals
-              </h3>
-              <p className="text-sm md:text-base text-white/90">
-                Ministry coordination for work permits and labour card approvals.
-              </p>
-            </div>
-          </motion.div>
-
-          {/* 5. Government Portal Registration & Management */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0 }}
-            className="relative aspect-square overflow-hidden group"
-          >
-            <Image
-              src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&h=1000&fit=crop&q=80"
-              alt="Government Portal Registration & Management"
-              fill
-              className="object-cover transition-transform duration-700 group-hover:scale-105"
-            />
-            <div className="absolute inset-0 bg-black/50 transition-opacity duration-300 group-hover:bg-black/60" />
-            <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6 text-white">
-              <h3 className="text-2xl md:text-3xl font-light mb-4">
-                Government Portal Management
-              </h3>
-              <p className="text-sm md:text-base text-white/90">
-                Expert management of Absher, Qiwa, Muqeem, and UAE smart portals.
-              </p>
-            </div>
-          </motion.div>
-
-          {/* 6. Document Attestation & Legalisation */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.1 }}
-            className="relative aspect-square overflow-hidden group"
-          >
-            <Image
-              src="https://images.unsplash.com/photo-1629141821139-ac3cc2f27a60?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=987"
-              alt="Document Attestation & Legalisation"
-              fill
-              className="object-cover transition-transform duration-700 group-hover:scale-105"
-            />
-            <div className="absolute inset-0 bg-black/50 transition-opacity duration-300 group-hover:bg-black/60" />
-            <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6 text-white">
-              <h3 className="text-2xl md:text-3xl font-light mb-4">
-                Document Attestation
-              </h3>
-              <p className="text-sm md:text-base text-white/90">
-                Embassy and ministry attestation for educational and personal documents.
-              </p>
-            </div>
-          </motion.div>
-
-          {/* 7. PRO / GRO Services */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="relative aspect-square overflow-hidden group"
-          >
-            <Image
-              src="https://images.unsplash.com/photo-1554224154-26032ffc0d07?w=800&h=1000&fit=crop&q=80"
-              alt="PRO / GRO Services"
-              fill
-              className="object-cover transition-transform duration-700 group-hover:scale-105"
-            />
-            <div className="absolute inset-0 bg-black/50 transition-opacity duration-300 group-hover:bg-black/60" />
-            <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6 text-white">
-              <h3 className="text-2xl md:text-3xl font-light mb-4">
-                PRO / GRO Services
-              </h3>
-              <p className="text-sm md:text-base text-white/90">
-                On-the-ground Public Relations Officers for government submissions.
-              </p>
-            </div>
-          </motion.div>
-
-          {/* 8. Value-Added Immigration Support */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.3 }}
-            className="relative aspect-square overflow-hidden group"
-          >
-            <Image
-              src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&h=1000&fit=crop&q=80"
-              alt="Value-Added Immigration Support"
-              fill
-              className="object-cover transition-transform duration-700 group-hover:scale-105"
-            />
-            <div className="absolute inset-0 bg-black/50 transition-opacity duration-300 group-hover:bg-black/60" />
-            <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6 text-white">
-              <h3 className="text-2xl md:text-3xl font-light mb-4">
-                Value-Added Support
-              </h3>
-              <p className="text-sm md:text-base text-white/90">
-                Bespoke mobility solutions including medical and Emirates ID registration.
-              </p>
-            </div>
-          </motion.div>
-        </div>
+        <ServiceGrid services={immigrationServices} />
       </section>
 
       {/* Immigration Services Timeline Section */}
@@ -372,7 +178,7 @@ export default function ImmigrationPage() {
               content: (
                 <div className="bg-gray-50 rounded-lg p-6 md:p-8">
                   <p className="text-gray-600 text-base md:text-lg leading-relaxed">
-                    We manage long-term and residency-by-investment programs including UAE Golden Visas and Saudi Arabia's Premium Residency schemes. Our specialists oversee eligibility assessments, documentation, and end-to-end coordination to ensure a seamless and successful application.
+                    We manage long-term residency-by-investment programs including UAE Golden Visas and Saudi Arabia's Premium Residency schemes. Our specialists oversee eligibility assessments, documentation, and end-to-end coordination to ensure a seamless and successful application.
                   </p>
                 </div>
               )
@@ -454,7 +260,7 @@ export default function ImmigrationPage() {
       {/* Why Choose Us Section */}
       <WhyChooseSection
         audience="Companies"
-        subtitle="Because Immigration Should Be Simple, Not Stressful"
+        subtitle="High-touch service, compliant outcomes, every time."
         items={[
           {
             icon: <FileCheck size={32} />,
@@ -469,7 +275,7 @@ export default function ImmigrationPage() {
           {
             icon: <CheckCircle size={32} />,
             title: "Complete Transparency",
-            description: "Track every application with real-time updates."
+            description: "Full visibility with consistent updates."
           },
           {
             icon: <Award size={32} />,

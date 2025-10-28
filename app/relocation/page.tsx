@@ -16,6 +16,9 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { CheckCircle, Users, Heart, Award, ArrowRight } from "lucide-react";
+import { SectionHeader } from "@/components/sections/section-header";
+import { BlueBanner } from "@/components/sections/blue-banner";
+import { ServiceGrid } from "@/components/sections/service-grid";
 
 export default function RelocationPage() {
   const scrollToContact = () => {
@@ -24,6 +27,57 @@ export default function RelocationPage() {
       contactSection.scrollIntoView({ behavior: 'smooth' });
     }
   };
+
+  const relocationServices = [
+    {
+      title: "Arrival & City Orientations",
+      description: "Welcoming airport meet & greet, temporary accommodation, and city familiarisation tours.",
+      image: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=800&h=1000&fit=crop&q=80",
+      alt: "Arrival & City Orientations"
+    },
+    {
+      title: "Home Search & Housing",
+      description: "Personalized property search, viewings, lease negotiation, and move-in coordination.",
+      image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&h=1000&fit=crop&q=80",
+      alt: "Home Search & Housing Expertise"
+    },
+    {
+      title: "School Search & Education",
+      description: "Expert guidance through school selection, tours, and admission processes.",
+      image: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=800&h=1000&fit=crop&q=80",
+      alt: "School Search & Education Advisory"
+    },
+    {
+      title: "Settling-In Services",
+      description: "Utilities, banking, mobile setup, driving licence, and local registrations.",
+      image: "https://images.unsplash.com/photo-1521791136064-7986c2920216?w=800&h=1000&fit=crop&q=80",
+      alt: "Settling-In & Community Integration"
+    },
+    {
+      title: "Cultural Training",
+      description: "Tailored cultural awareness programs for confident transition into new environments.",
+      image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=1000&fit=crop&q=80",
+      alt: "Cultural Training & Relocation Preparation"
+    },
+    {
+      title: "Household Moving",
+      description: "FIDI accredited door-to-door packing, customs, and transport services.",
+      image: "/images/moving-relocation.jpg",
+      alt: "Household Moving & Personal Effects"
+    },
+    {
+      title: "Pet Relocation & Care",
+      description: "Genuine care and attention for your family pets from pickup to reunion.",
+      image: "/images/pet-relocation.jpg",
+      alt: "Pet Relocation & Care"
+    },
+    {
+      title: "Departure & Repatriation",
+      description: "Complete exit management including lease termination and account closures.",
+      image: "https://images.unsplash.com/photo-1464037866556-6812c9d1c72e?w=800&h=1000&fit=crop&q=80",
+      alt: "Departure & Repatriation Management"
+    }
+  ];
 
   return (
     <>
@@ -78,288 +132,31 @@ export default function RelocationPage() {
       </section>
 
       {/* Introduction Section */}
-      <section className="py-20 bg-[hsl(var(--brand))]">
-        <div className="container mx-auto px-4 md:px-6">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-            className="text-center mb-12"
-          >
-            <p className="text-xl md:text-2xl text-white mb-12 max-w-4xl mx-auto leading-relaxed">
-              We make relocating to the Middle East simple, seamless, and fully supported.
-              From home search and school search to settling in services, one team takes
-              care of everything so your people feel at home from day one.
-            </p>
-          </motion.div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0 }}
-              className="flex items-start gap-4 p-6 rounded-lg bg-white/10"
-            >
-              <CheckCircle className="text-white flex-shrink-0 mt-1" size={24} />
-              <span className="text-white">15+ years helping families settle in the GCC</span>
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.1 }}
-              className="flex items-start gap-4 p-6 rounded-lg bg-white/10"
-            >
-              <CheckCircle className="text-white flex-shrink-0 mt-1" size={24} />
-              <span className="text-white">One dedicated relocation consultant per family</span>
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              className="flex items-start gap-4 p-6 rounded-lg bg-white/10"
-            >
-              <CheckCircle className="text-white flex-shrink-0 mt-1" size={24} />
-              <span className="text-white">Complete support from arrival to settling in</span>
-            </motion.div>
-          </div>
-        </div>
-      </section>
+      <BlueBanner
+        description="We make relocating to the Middle East simple, seamless, and fully supported. From home search and school search to settling in services, one team takes care of everything so your people feel at home from day one."
+        features={[
+          "15+ years helping families settle in the GCC",
+          "One dedicated relocation consultant per family",
+          "Complete support from arrival to settling in"
+        ]}
+      />
 
       {/* Relocation & Mobility Services Section */}
       <section className="pt-20 bg-white">
-        <div className="container mx-auto px-4 md:px-6">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-            className="text-center mb-16"
-          >
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-light mb-6">
-              Relocation & Mobility Services<br />
-              <span className="text-[hsl(var(--brand))]">Across the GCC</span>
-            </h2>
-            <p className="text-lg text-gray-600 max-w-4xl mx-auto mb-8 leading-relaxed">
-              RelocateMe delivers personalised relocation programs across the United Arab Emirates, Saudi Arabia, Qatar, Bahrain, Oman, and Kuwait, helping companies move their talent efficiently and compliantly, with precision and care.
-            </p>
-            <p className="text-lg text-gray-600 max-w-4xl mx-auto mb-8 leading-relaxed">
-              We streamline the journey from airport arrival to long-term settling through a single point of contact. Your dedicated account manager coordinates every stage with clarity, specialist care, and meticulous attention to detail.
-            </p>
-            <Button
-              size="lg"
-              className="bg-[hsl(var(--brand))] hover:bg-[hsl(var(--brand))]/90 text-white px-6 py-5"
-              onClick={scrollToContact}
-            >
-              Start Your Relocation
-            </Button>
-          </motion.div>
+        <div className="container mx-auto px-4 md:px-6 mb-16">
+          <SectionHeader
+            title="Relocation & Mobility Services"
+            highlightedText="Across the GCC"
+            paragraphs={[
+              "RelocateMe delivers personalised relocation programs across the United Arab Emirates, Saudi Arabia, Qatar, Bahrain, Oman, and Kuwait, helping companies move their talent efficiently and compliantly, with precision and care.",
+              "We streamline the journey from airport arrival to long-term settling through a single point of contact. Your dedicated account manager coordinates every stage with clarity, specialist care, and meticulous attention to detail."
+            ]}
+            buttonText="Start Your Relocation"
+            onButtonClick={scrollToContact}
+          />
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
-          {/* 1. Arrival & City Orientations */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0 }}
-            className="relative aspect-square overflow-hidden group"
-          >
-            <Image
-              src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=800&h=1000&fit=crop&q=80"
-              alt="Arrival & City Orientations"
-              fill
-              className="object-cover transition-transform duration-700 group-hover:scale-105"
-            />
-            <div className="absolute inset-0 bg-black/50 transition-opacity duration-300 group-hover:bg-black/60" />
-            <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6 text-white">
-              <h3 className="text-2xl md:text-3xl font-light mb-4">
-                Arrival & City Orientations
-              </h3>
-              <p className="text-sm md:text-base text-white/90">
-                Welcoming airport meet & greet, temporary accommodation, and city familiarisation tours.
-              </p>
-            </div>
-          </motion.div>
-
-          {/* 2. Home Search & Housing Expertise */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.1 }}
-            className="relative aspect-square overflow-hidden group"
-          >
-            <Image
-              src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&h=1000&fit=crop&q=80"
-              alt="Home Search & Housing Expertise"
-              fill
-              className="object-cover transition-transform duration-700 group-hover:scale-105"
-            />
-            <div className="absolute inset-0 bg-black/50 transition-opacity duration-300 group-hover:bg-black/60" />
-            <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6 text-white">
-              <h3 className="text-2xl md:text-3xl font-light mb-4">
-                Home Search & Housing
-              </h3>
-              <p className="text-sm md:text-base text-white/90">
-                Personalized property search, viewings, lease negotiation, and move-in coordination.
-              </p>
-            </div>
-          </motion.div>
-
-          {/* 3. School Search & Education Advisory */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="relative aspect-square overflow-hidden group"
-          >
-            <Image
-              src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=800&h=1000&fit=crop&q=80"
-              alt="School Search & Education Advisory"
-              fill
-              className="object-cover transition-transform duration-700 group-hover:scale-105"
-            />
-            <div className="absolute inset-0 bg-black/50 transition-opacity duration-300 group-hover:bg-black/60" />
-            <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6 text-white">
-              <h3 className="text-2xl md:text-3xl font-light mb-4">
-                School Search & Education
-              </h3>
-              <p className="text-sm md:text-base text-white/90">
-                Expert guidance through school selection, tours, and admission processes.
-              </p>
-            </div>
-          </motion.div>
-
-          {/* 4. Settling-In & Community Integration */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.3 }}
-            className="relative aspect-square overflow-hidden group"
-          >
-            <Image
-              src="https://images.unsplash.com/photo-1521791136064-7986c2920216?w=800&h=1000&fit=crop&q=80"
-              alt="Settling-In & Community Integration"
-              fill
-              className="object-cover transition-transform duration-700 group-hover:scale-105"
-            />
-            <div className="absolute inset-0 bg-black/50 transition-opacity duration-300 group-hover:bg-black/60" />
-            <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6 text-white">
-              <h3 className="text-2xl md:text-3xl font-light mb-4">
-                Settling-In Services
-              </h3>
-              <p className="text-sm md:text-base text-white/90">
-                Utilities, banking, mobile setup, driving licence, and local registrations.
-              </p>
-            </div>
-          </motion.div>
-
-          {/* 5. Cultural Training & Relocation Preparation */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0 }}
-            className="relative aspect-square overflow-hidden group"
-          >
-            <Image
-              src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=1000&fit=crop&q=80"
-              alt="Cultural Training & Relocation Preparation"
-              fill
-              className="object-cover transition-transform duration-700 group-hover:scale-105"
-            />
-            <div className="absolute inset-0 bg-black/50 transition-opacity duration-300 group-hover:bg-black/60" />
-            <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6 text-white">
-              <h3 className="text-2xl md:text-3xl font-light mb-4">
-                Cultural Training
-              </h3>
-              <p className="text-sm md:text-base text-white/90">
-                Tailored cultural awareness programs for confident transition into new environments.
-              </p>
-            </div>
-          </motion.div>
-
-          {/* 6. Household Moving & Personal Effects */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.1 }}
-            className="relative aspect-square overflow-hidden group"
-          >
-            <Image
-              src="/images/moving-relocation.jpg"
-              alt="Household Moving & Personal Effects"
-              fill
-              className="object-cover transition-transform duration-700 group-hover:scale-105"
-            />
-            <div className="absolute inset-0 bg-black/50 transition-opacity duration-300 group-hover:bg-black/60" />
-            <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6 text-white">
-              <h3 className="text-2xl md:text-3xl font-light mb-4">
-                Household Moving
-              </h3>
-              <p className="text-sm md:text-base text-white/90">
-                FIDI accredited door-to-door packing, customs, and transport services.
-              </p>
-            </div>
-          </motion.div>
-
-          {/* 7. Pet Relocation & Care */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="relative aspect-square overflow-hidden group"
-          >
-            <Image
-              src="/images/pet-relocation.jpg"
-              alt="Pet Relocation & Care"
-              fill
-              className="object-cover transition-transform duration-700 group-hover:scale-105"
-            />
-            <div className="absolute inset-0 bg-black/50 transition-opacity duration-300 group-hover:bg-black/60" />
-            <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6 text-white">
-              <h3 className="text-2xl md:text-3xl font-light mb-4">
-                Pet Relocation & Care
-              </h3>
-              <p className="text-sm md:text-base text-white/90">
-                Genuine care and attention for your family pets from pickup to reunion.
-              </p>
-            </div>
-          </motion.div>
-
-          {/* 8. Departure & Repatriation Management */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.3 }}
-            className="relative aspect-square overflow-hidden group"
-          >
-            <Image
-              src="https://images.unsplash.com/photo-1464037866556-6812c9d1c72e?w=800&h=1000&fit=crop&q=80"
-              alt="Departure & Repatriation Management"
-              fill
-              className="object-cover transition-transform duration-700 group-hover:scale-105"
-            />
-            <div className="absolute inset-0 bg-black/50 transition-opacity duration-300 group-hover:bg-black/60" />
-            <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6 text-white">
-              <h3 className="text-2xl md:text-3xl font-light mb-4">
-                Departure & Repatriation
-              </h3>
-              <p className="text-sm md:text-base text-white/90">
-                Complete exit management including lease termination and account closures.
-              </p>
-            </div>
-          </motion.div>
-        </div>
+        <ServiceGrid services={relocationServices} />
       </section>
 
       {/* Relocation Services Timeline Section */}

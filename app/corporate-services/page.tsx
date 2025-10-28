@@ -15,6 +15,9 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { CheckCircle, Users, Heart, Award, Building2, ArrowRight } from "lucide-react";
+import { SectionHeader } from "@/components/sections/section-header";
+import { BlueBanner } from "@/components/sections/blue-banner";
+import { ServiceGrid } from "@/components/sections/service-grid";
 
 export default function CorporateServicesPage() {
   const scrollToContact = () => {
@@ -23,6 +26,57 @@ export default function CorporateServicesPage() {
       contactSection.scrollIntoView({ behavior: 'smooth' });
     }
   };
+
+  const corporateServices = [
+    {
+      title: "Business Set-Up",
+      description: "We simplify business setup across the region, handling formation, licensing, and compliance.",
+      image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&h=1000&fit=crop&q=80",
+      alt: "Business Set-Up"
+    },
+    {
+      title: "Comprehensive Office Solutions",
+      description: "Fully furnished, 5-star serviced office spaces designed to meet every need.",
+      image: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&h=1000&fit=crop&q=80",
+      alt: "Comprehensive Office Solutions"
+    },
+    {
+      title: "HR Support Services",
+      description: "Tailored HR guidance covering onboarding, policies, and compliance.",
+      image: "https://images.unsplash.com/photo-1521791136064-7986c2920216?w=800&h=1000&fit=crop&q=80",
+      alt: "HR Support Services"
+    },
+    {
+      title: "Tenancy Management",
+      description: "From lease negotiations to renewals and landlord coordination, we manage it all.",
+      image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&h=1000&fit=crop&q=80",
+      alt: "Tenancy Management"
+    },
+    {
+      title: "Expense Management",
+      description: "Streamlined solutions for expense tracking and reporting with full transparency.",
+      image: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=800&h=1000&fit=crop&q=80",
+      alt: "Expense Management"
+    },
+    {
+      title: "Cultural Training Programs",
+      description: "Interactive sessions to ease adaptation to local culture and build stronger connections.",
+      image: "https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=800&h=1000&fit=crop&q=80",
+      alt: "Cultural Training Programs"
+    },
+    {
+      title: "Language Training Programs",
+      description: "Personalised language courses to support integration and confident communication.",
+      image: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=800&h=1000&fit=crop&q=80",
+      alt: "Language Training Programs"
+    },
+    {
+      title: "Spousal Training Programs",
+      description: "Career and personal support for accompanying spouses to help families thrive together.",
+      image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&h=1000&fit=crop&q=80",
+      alt: "Spousal Training Programs"
+    }
+  ];
 
   return (
     <>
@@ -75,279 +129,31 @@ export default function CorporateServicesPage() {
       </section>
 
       {/* Introduction Section */}
-      <section className="py-20 bg-[hsl(var(--brand))]">
-        <div className="container mx-auto px-4 md:px-6">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-            className="text-center mb-12"
-          >
-            <p className="text-xl md:text-2xl text-white mb-12 max-w-4xl mx-auto leading-relaxed">
-              From business setup to office solutions, HR support, and beyond.
-              One trusted partner for all your corporate needs across the region.
-            </p>
-          </motion.div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0 }}
-              className="flex items-start gap-4 p-6 rounded-lg bg-white/10"
-            >
-              <CheckCircle className="text-white flex-shrink-0 mt-1" size={24} />
-              <span className="text-white">15+ years helping businesses expand to the GCC</span>
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.1 }}
-              className="flex items-start gap-4 p-6 rounded-lg bg-white/10"
-            >
-              <CheckCircle className="text-white flex-shrink-0 mt-1" size={24} />
-              <span className="text-white">One dedicated account manager from start to finish</span>
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              className="flex items-start gap-4 p-6 rounded-lg bg-white/10"
-            >
-              <CheckCircle className="text-white flex-shrink-0 mt-1" size={24} />
-              <span className="text-white">Complete support across all GCC countries</span>
-            </motion.div>
-          </div>
-        </div>
-      </section>
+      <BlueBanner
+        description="From business setup to office solutions, HR support, and beyond. One trusted partner for all your corporate needs across the region."
+        features={[
+          "15+ years helping businesses expand to the GCC",
+          "One dedicated account manager from start to finish",
+          "Complete support across all GCC countries"
+        ]}
+      />
 
       {/* Our Corporate Services Grid Section */}
       <section className="pt-20 bg-white">
-        <div className="container mx-auto px-4 md:px-6">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-            className="text-center mb-16"
-          >
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-light mb-6">
-              Expanding to the GCC Should Feel<br />
-              <span className="text-[hsl(var(--brand))]">Strategic, Not Complicated</span>
-            </h2>
-            <p className="text-lg text-gray-600 max-w-4xl mx-auto mb-6 leading-relaxed">
-              RelocateMe delivers personalised relocation programs across the United Arab Emirates, Saudi Arabia, Qatar, Bahrain, Oman, and Kuwait, helping companies move their talent efficiently and compliantly, with precision and care.
-            </p>
-            <p className="text-lg text-gray-600 max-w-4xl mx-auto mb-8 leading-relaxed">
-              We streamline the journey from airport arrival to long-term settling through a single point of contact. Your dedicated account manager coordinates every stage with clarity, specialist care, and meticulous attention to detail.
-            </p>
-            <Button
-              size="lg"
-              className="bg-[hsl(var(--brand))] hover:bg-[hsl(var(--brand))]/90 text-white px-6 py-5"
-              onClick={scrollToContact}
-            >
-              Get Your Free Setup Plan
-            </Button>
-          </motion.div>
+        <div className="container mx-auto px-4 md:px-6 mb-16">
+          <SectionHeader
+            title="Enter the GCC with clarity and confidence."
+            highlightedText="Our regional expertise and on-the-ground teams ensure a seamless market entry."
+            paragraphs={[
+              "RelocateMe provides comprehensive corporate support services in all locations we operate: United Arab Emirates, Saudi Arabia, Qatar, Bahrain, Oman, and Kuwait.",
+              "From assisting companies with entity formation and prime-location office solutions, to HR support services and employee tenancy management. Our corporate services are designed to help you grow seamlessly across the region."
+            ]}
+            buttonText="Reach Out To Discuss Your Business Needs"
+            onButtonClick={scrollToContact}
+          />
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0 }}
-            className="relative aspect-square overflow-hidden group"
-          >
-            <Image
-              src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&h=1000&fit=crop&q=80"
-              alt="Business Set-Up"
-              fill
-              className="object-cover transition-transform duration-700 group-hover:scale-105"
-            />
-            <div className="absolute inset-0 bg-black/50 transition-opacity duration-300 group-hover:bg-black/60" />
-            <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6 text-white">
-              <h3 className="text-2xl md:text-3xl font-light mb-4">
-                Business Set-Up
-              </h3>
-              <p className="text-sm md:text-base text-white/90">
-                We simplify business setup across the region, handling formation, licensing, and compliance.
-              </p>
-            </div>
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.1 }}
-            className="relative aspect-square overflow-hidden group"
-          >
-            <Image
-              src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&h=1000&fit=crop&q=80"
-              alt="Comprehensive Office Solutions"
-              fill
-              className="object-cover transition-transform duration-700 group-hover:scale-105"
-            />
-            <div className="absolute inset-0 bg-black/50 transition-opacity duration-300 group-hover:bg-black/60" />
-            <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6 text-white">
-              <h3 className="text-2xl md:text-3xl font-light mb-4">
-                Comprehensive Office Solutions
-              </h3>
-              <p className="text-sm md:text-base text-white/90">
-                Fully furnished, 5-star serviced office spaces designed to meet every need.
-              </p>
-            </div>
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="relative aspect-square overflow-hidden group"
-          >
-            <Image
-              src="https://images.unsplash.com/photo-1521791136064-7986c2920216?w=800&h=1000&fit=crop&q=80"
-              alt="HR Support Services"
-              fill
-              className="object-cover transition-transform duration-700 group-hover:scale-105"
-            />
-            <div className="absolute inset-0 bg-black/50 transition-opacity duration-300 group-hover:bg-black/60" />
-            <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6 text-white">
-              <h3 className="text-2xl md:text-3xl font-light mb-4">
-                HR Support Services
-              </h3>
-              <p className="text-sm md:text-base text-white/90">
-                Tailored HR guidance covering onboarding, policies, and compliance.
-              </p>
-            </div>
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.3 }}
-            className="relative aspect-square overflow-hidden group"
-          >
-            <Image
-              src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&h=1000&fit=crop&q=80"
-              alt="Tenancy Management"
-              fill
-              className="object-cover transition-transform duration-700 group-hover:scale-105"
-            />
-            <div className="absolute inset-0 bg-black/50 transition-opacity duration-300 group-hover:bg-black/60" />
-            <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6 text-white">
-              <h3 className="text-2xl md:text-3xl font-light mb-4">
-                Tenancy Management
-              </h3>
-              <p className="text-sm md:text-base text-white/90">
-                From lease negotiations to renewals and landlord coordination, we manage it all.
-              </p>
-            </div>
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0 }}
-            className="relative aspect-square overflow-hidden group"
-          >
-            <Image
-              src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=800&h=1000&fit=crop&q=80"
-              alt="Expense Management"
-              fill
-              className="object-cover transition-transform duration-700 group-hover:scale-105"
-            />
-            <div className="absolute inset-0 bg-black/50 transition-opacity duration-300 group-hover:bg-black/60" />
-            <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6 text-white">
-              <h3 className="text-2xl md:text-3xl font-light mb-4">
-                Expense Management
-              </h3>
-              <p className="text-sm md:text-base text-white/90">
-                Streamlined solutions for expense tracking and reporting with full transparency.
-              </p>
-            </div>
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.1 }}
-            className="relative aspect-square overflow-hidden group"
-          >
-            <Image
-              src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=800&h=1000&fit=crop&q=80"
-              alt="Cultural Training Programs"
-              fill
-              className="object-cover transition-transform duration-700 group-hover:scale-105"
-            />
-            <div className="absolute inset-0 bg-black/50 transition-opacity duration-300 group-hover:bg-black/60" />
-            <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6 text-white">
-              <h3 className="text-2xl md:text-3xl font-light mb-4">
-                Cultural Training Programs
-              </h3>
-              <p className="text-sm md:text-base text-white/90">
-                Interactive sessions to ease adaptation to local culture and build stronger connections.
-              </p>
-            </div>
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="relative aspect-square overflow-hidden group"
-          >
-            <Image
-              src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=800&h=1000&fit=crop&q=80"
-              alt="Language Training Programs"
-              fill
-              className="object-cover transition-transform duration-700 group-hover:scale-105"
-            />
-            <div className="absolute inset-0 bg-black/50 transition-opacity duration-300 group-hover:bg-black/60" />
-            <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6 text-white">
-              <h3 className="text-2xl md:text-3xl font-light mb-4">
-                Language Training Programs
-              </h3>
-              <p className="text-sm md:text-base text-white/90">
-                Personalised language courses to support integration and confident communication.
-              </p>
-            </div>
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.3 }}
-            className="relative aspect-square overflow-hidden group"
-          >
-            <Image
-              src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&h=1000&fit=crop&q=80"
-              alt="Spousal Training Programs"
-              fill
-              className="object-cover transition-transform duration-700 group-hover:scale-105"
-            />
-            <div className="absolute inset-0 bg-black/50 transition-opacity duration-300 group-hover:bg-black/60" />
-            <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6 text-white">
-              <h3 className="text-2xl md:text-3xl font-light mb-4">
-                Spousal Training Programs
-              </h3>
-              <p className="text-sm md:text-base text-white/90">
-                Career and personal support for accompanying spouses to help families thrive together.
-              </p>
-            </div>
-          </motion.div>
-        </div>
+        <ServiceGrid services={corporateServices} />
       </section>
 
       {/* Our Corporate Services Timeline Section */}
@@ -382,11 +188,8 @@ export default function CorporateServicesPage() {
               title: "Office Solutions & Workspace Setup",
               content: (
                 <div className="bg-gray-50 rounded-lg p-6 md:p-8">
-                  <p className="text-gray-600 text-base md:text-lg leading-relaxed mb-4">
-                    From serviced offices and co-working spaces to bespoke corporate headquarters, we deliver tailored solutions to fit your operational needs. With access to premium offices in prime city locations, you can be operational as soon as your licence is issued. If you require a customised office search, we'll manage it end-to-end, ensuring you have a professional, compliant, and ready-to-operate environment from day one.
-                  </p>
                   <p className="text-gray-600 text-base md:text-lg leading-relaxed">
-                    Our business setup services include access to fully furnished; 5-star serviced office spaces designed to meet every need. Whether you require a premium private office, convenient flexi desks, virtual offices, or simply a prestigious business address for company registration, we provide tailored solutions in prime city locations, ensuring you have the right set up from day one.
+                    From serviced offices and co-working spaces to bespoke corporate headquarters, we deliver tailored solutions to fit your operational needs. With access to premium offices in prime city locations, you can be operational as soon as your licence is issued. If you require a customised office search, we'll manage it end-to-end, ensuring you have a professional, compliant, and ready-to-operate environment from day one.
                   </p>
                 </div>
               )
@@ -406,7 +209,7 @@ export default function CorporateServicesPage() {
               content: (
                 <div className="bg-gray-50 rounded-lg p-6 md:p-8">
                   <p className="text-gray-600 text-base md:text-lg leading-relaxed">
-                    We manage the entire lifecycle of corporate leases and staff accommodations, from property sourcing, tenancy registrations, and tenancy renewals to maintenance coordination, inspections, and landlord liaison. This ensures consistency and cost control for every property under management.
+                    We manage the entire lifecycle of corporate leases and staff accommodations, from property sourcing, tenancy registrations, and tenancy renewals to maintenance coordination, inspections, and landlord liaison. This ensures consistency and cost control for every property we manage.
                   </p>
                 </div>
               )
@@ -447,8 +250,8 @@ export default function CorporateServicesPage() {
           },
           {
             icon: <Users size={32} />,
-            title: "Real People,\nNot Portals",
-            description: "You'll always talk to your dedicated manager."
+            title: "Solution-Focused\nSupport",
+            description: "Dedicated account manager for effective processes."
           },
           {
             icon: <CheckCircle size={32} />,
