@@ -35,7 +35,7 @@ export async function GET(request: NextRequest) {
           }}
         >
           {/* Background Image */}
-          {backgroundImage && (
+          {backgroundImage && imageUrl && (
             <div
               style={{
                 position: 'absolute',
