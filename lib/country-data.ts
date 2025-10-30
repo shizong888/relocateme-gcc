@@ -40,7 +40,7 @@ export const countryData: Record<string, CountryPageData> = {
   uae: {
     slug: "uae",
     name: "UAE",
-    heroTitle: "Launch Your Business in the UAE",
+    heroTitle: "Launch Your Business\nin the UAE",
     heroSubtitle: "We fast-track your company setup with 100% foreign ownership, delivering the best-fit options and end-to-end support from licence to launch.",
     heroImage: "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=2070&q=80",
     bannerDescription: "Your trusted partner for business setup across the UAE. We support all jurisdictions; DED Mainland and leading free zones including DMCC, DIFC, DIC, RAKEZ, and Meydan free zone.",
