@@ -45,7 +45,7 @@ export function Navbar({
       href: "/corporate-services",
       submenu: [
         {
-          label: "Corporate Services Overview",
+          label: "Corporate Services",
           href: "/corporate-services",
           description: "Complete corporate support across the GCC region"
         },
@@ -66,7 +66,7 @@ export function Navbar({
       href: "/immigration",
       submenu: [
         {
-          label: "Immigration Services Overview",
+          label: "Immigration Services",
           href: "/immigration",
           description: "Complete visa and immigration support across the GCC"
         },
