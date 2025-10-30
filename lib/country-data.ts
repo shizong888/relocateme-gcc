@@ -176,20 +176,19 @@ export const countryData: Record<string, CountryPageData> = {
   "saudi-arabia": {
     slug: "saudi-arabia",
     name: "Saudi Arabia",
-    heroTitle: "Business Setup in Saudi Arabia with Expert Guidance",
-    heroSubtitle: "Accelerate your company formation process in the Saudi market and completely integrate your business with full foreign ownership",
-    heroImage: "https://images.unsplash.com/photo-1588668214407-6ea9a6d8c272?w=2070&q=80",
-    bannerDescription: "Your complete partner for business setup, MISA licensing, and company registration in the Kingdom of Saudi Arabia.",
+    heroTitle: "Launch Your Business in Saudi Arabia",
+    heroSubtitle: "We fast-track your company setup with 100% foreign ownership in MISA, delivering best-fit structures and end-to-end support from licence to launch.",
+    heroImage: "https://images.unsplash.com/photo-1694018359679-49465b4c0d61?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1740",
+    bannerDescription: "Your trusted partner for business setup across the Kingdom of Saudi Arabia. We support all jurisdictions, with on-the-ground delivery in Riyadh, Jeddah, and Dammam, and full compliance with MISA, Ministry of Commerce (CR), ZATCA, GOSI, Qiwa, Mudad, Muqeem, and Absher requirements.",
     bannerFeatures: [
-      "Get your license in 10 days",
-      "Dedicated account manager throughout",
-      "Full compliance and ongoing support"
+      "100% foreign ownership",
+      "Fast-track approvals across MISA, CR, and key portals",
+      "In-country GRO/immigration specialists"
     ],
-    sectionTitle: "Enter Saudi Arabia with clarity and confidence.",
+    sectionTitle: "Launch your business in Saudi Arabia with clarity and confidence.",
     sectionHighlight: "Our regional expertise and on-the-ground teams ensure a seamless market entry.",
     sectionParagraphs: [
-      "RelocateMe provides comprehensive business setup services across Saudi Arabia, including Riyadh, Jeddah, Dammam, and all major cities.",
-      "From MISA licensing and commercial registration to ongoing compliance and corporate services, we guide you through every step of establishing and growing your business in the Kingdom."
+      "RelocateMe provides end-to-end Saudi market entry support: MISA licensing, seamless onboarding, and workforce mobilisation, backed by office solutions, immigration handling, and complete government activations from licence to operational readiness."
     ],
     services: [
       {
@@ -227,24 +226,38 @@ export const countryData: Record<string, CountryPageData> = {
         description: "Complete visa and iqama processing for investors, employees, and dependents with fast-tracked General Manager processing.",
         image: "https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=800&h=1000&fit=crop&q=80",
         alt: "Visa Services"
+      },
+      {
+        title: "Tax & Zakat (ZATCA) Compliance",
+        description: "In partnership with a specialist tax firm, we deliver ZATCA registration, VAT setup and filings, ESR/UBO support and proactive tax planning for KSA entities.",
+        image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&h=1000&fit=crop&q=80",
+        alt: "Tax & Zakat Compliance"
       }
     ],
     timeline: [
       {
-        title: "Step 1: Check Your Company's Eligibility (1 day)",
-        content: "Get a free assessment to confirm if your business qualifies for 100% foreign ownership in Saudi Arabia. Our team will evaluate your business activity and recommend whether MISA, CR, or other license types are most suitable."
+        title: "Step 1: MISA Licensing Approval Process",
+        content: "We verify your company's eligibility with MISA, confirm activity classification, and compile the required documents."
       },
       {
-        title: "Step 2: Apply for Your Saudi Business License (5 weeks)",
-        content: "MISA, CR and all required licenses are submitted and processed on your behalf from our local team, ensuring full compliance from the start with Ministry of Investment, Chamber of Commerce, and other relevant authorities."
+        title: "Step 2: MISA Application Process",
+        content: "Start your company incorporation through MISA. Our on the ground teams support with the application and submission on your behalf, until the licence is issued."
       },
       {
-        title: "Step 3: Obtain General Manager Visa (7 weeks)",
-        content: "Your General Manager's visa process is fast-tracked through us with complete QVP (Qiwa Verification Platform) and Muqeem coordination."
+        title: "Step 3: Core Authority Activations",
+        content: "We open all key mandatory authority portals to ensure you are ready to operate and apply for visa and residency services."
       },
       {
-        title: "Step 4: Activate Bank Account (1 week)",
-        content: "Open your corporate bank account through RelocateMe's network of bank partners with expedited processing."
+        title: "Step 4: General Manager Visa & Iqama",
+        content: "Work visa issuance, medicals, and iqama for the General Manager and priority staff. We coordinate all appointments and submissions."
+      },
+      {
+        title: "Step 5: Corporate Bank Account Opening",
+        content: "Our team manages the full process of opening and activating your corporate bank account with setup through our banking partners."
+      },
+      {
+        title: "Step 6: Start Operations",
+        content: "You're fully operational, compliant and ready for business in the KSA. Complete setup achieved in under 90 days, from start to finish."
       }
     ],
     whyChoose: {

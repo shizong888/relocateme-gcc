@@ -95,7 +95,7 @@ export default function SaudiArabiaPage() {
             title={data.sectionTitle}
             highlightedText={data.sectionHighlight}
             paragraphs={data.sectionParagraphs}
-            buttonText="Get Your Free Assessment"
+            buttonText="Register for a Free Consultation"
             onButtonClick={scrollToContact}
           />
         </div>
@@ -114,8 +114,11 @@ export default function SaudiArabiaPage() {
             className="mb-4"
           >
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-light leading-tight text-left">
-              <span className="text-[hsl(var(--brand))]">Get Your License in 10 Days</span> — Fully Operational within 3 Months
+              Your <span className="text-[hsl(var(--brand))]">Business Set-Up Journey in KSA</span>
             </h2>
+            <p className="text-lg text-gray-600 mt-4">
+              Achieve a confident market entry with RelocateMe's structured, compliance-first approach.
+            </p>
           </motion.div>
         </div>
 
