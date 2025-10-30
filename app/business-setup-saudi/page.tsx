@@ -52,7 +52,7 @@ export default function SaudiArabiaPage() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.5 }}
             >
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-light text-white mb-6 leading-tight">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-light text-white mb-6 leading-tight whitespace-pre-line">
                 <span className="bg-clip-text text-transparent bg-gradient-to-b from-white to-white/90">
                   {data.heroTitle}
                 </span>
