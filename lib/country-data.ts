@@ -462,9 +462,9 @@ export const immigrationData: Record<string, ImmigrationPageData> = {
     contactFormTitleHighlight: "UAE Golden Visa?",
     contactFormDescription: "Let's make your UAE residency journey seamless. Share your details below and our immigration team will reach out within 24 hours to assess your eligibility and create your personalized Golden Visa plan."
   },
-  "saudi-arabia-work-visa": {
-    slug: "saudi-arabia-work-visa",
-    name: "Saudi Arabia Work Visa",
+  "saudi-arabia-visa-iqama": {
+    slug: "saudi-arabia-visa-iqama",
+    name: "Saudi Arabia Visa & IQAMA",
     heroTitle: "Simplify Your Employee Visa and\nIqama Process in Saudi Arabia",
     heroSubtitle: "We manage the entire visa and Iqama process for your employees, from work authorisations to residency renewals, ensuring your workforce remains compliant, operational, and fully supported across the Kingdom.",
     heroImage: "/images/Riyadh_Skyline.jpg",

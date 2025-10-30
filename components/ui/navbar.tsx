@@ -76,8 +76,8 @@ export function Navbar({
           description: "Secure long-term residency in the UAE with 5 or 10-year Golden Visa"
         },
         {
-          label: "Saudi Arabia Work Visa",
-          href: "/saudi-arabia-work-visa",
+          label: "Saudi Arabia Visa & IQAMA",
+          href: "/saudi-arabia-visa-iqama",
           description: "Employee visa and Iqama services for corporate teams"
         }
       ]

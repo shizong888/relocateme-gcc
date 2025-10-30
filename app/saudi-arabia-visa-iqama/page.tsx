@@ -20,8 +20,8 @@ import { BlueBanner } from "@/components/sections/blue-banner";
 import { ServiceGrid } from "@/components/sections/service-grid";
 import { immigrationData } from "@/lib/country-data";
 
-export default function SaudiArabiaWorkVisaPage() {
-  const data = immigrationData["saudi-arabia-work-visa"];
+export default function SaudiArabiaVisaIqamaPage() {
+  const data = immigrationData["saudi-arabia-visa-iqama"];
 
   const scrollToContact = () => {
     const contactSection = document.getElementById('contact-form');
