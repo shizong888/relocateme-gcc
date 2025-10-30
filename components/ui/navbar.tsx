@@ -76,9 +76,9 @@ export function Navbar({
           description: "Secure long-term residency in the UAE with 5 or 10-year Golden Visa"
         },
         {
-          label: "Immigrate to Saudi Arabia",
-          href: "/immigrate-to-saudi",
-          description: "Saudi visa and iqama services for professionals and families"
+          label: "Saudi Arabia Work Visa",
+          href: "/saudi-arabia-work-visa",
+          description: "Employee visa and Iqama services for corporate teams"
         }
       ]
     },

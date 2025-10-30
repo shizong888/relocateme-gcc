@@ -461,5 +461,120 @@ export const immigrationData: Record<string, ImmigrationPageData> = {
     contactFormTitle: "Ready to Secure Your",
     contactFormTitleHighlight: "UAE Golden Visa?",
     contactFormDescription: "Let's make your UAE residency journey seamless. Share your details below and our immigration team will reach out within 24 hours to assess your eligibility and create your personalized Golden Visa plan."
+  },
+  "saudi-arabia-work-visa": {
+    slug: "saudi-arabia-work-visa",
+    name: "Saudi Arabia Work Visa",
+    heroTitle: "Simplify Your Employee Visa and\nIqama Process in Saudi Arabia",
+    heroSubtitle: "We manage the entire visa and Iqama process for your employees, from work authorisations to residency renewals, ensuring your workforce remains compliant, operational, and fully supported across the Kingdom.",
+    heroImage: "/images/Riyadh_Skyline.jpg",
+    bannerDescription: "Your trusted partner for corporate immigration and workforce mobility in Saudi Arabia. Our in-country GRO and immigration specialists handle every aspect of employee onboarding and residency, ensuring smooth coordination with MISA, the Ministry of Commerce, GOSI, Qiwa, and other key authorities.",
+    bannerFeatures: [
+      "End-to-end visa and Iqama management",
+      "Fast, compliant processing for corporate teams",
+      "Experienced GRO and immigration experts on the ground"
+    ],
+    sectionTitle: "Empower Your Workforce with Clarity and Confidence",
+    sectionHighlight: "",
+    sectionParagraphs: [
+      "RelocateMe simplifies employee visas and Saudi Iqama for organisations of all sizes. From onboarding and initial approvals through home-country processing, entry, renewals, and dependent sponsorship, we coordinate every step with timely, compliant, and transparent service—so your HR and mobility teams can focus on business priorities, not paperwork."
+    ],
+    services: [
+      {
+        title: "Employee Home Country Application Process",
+        description: "Much of the visa journey begins in the employee's home country. We coordinate this entire process, ensuring all documentation, approvals, and appointments are managed efficiently, so your employee can focus on their relocation.",
+        image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&h=1000&fit=crop&q=80",
+        alt: "Home Country Application"
+      },
+      {
+        title: "Employee Visa & Iqama Processing",
+        description: "Full support for employee onboarding, including work visa issuance, medicals, and Iqama activation under company sponsorship.",
+        image: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&h=1000&fit=crop&q=80",
+        alt: "Visa & Iqama Processing"
+      },
+      {
+        title: "Renewals & Compliance",
+        description: "Ongoing monitoring and renewal of Iqamas to prevent expiry or fines. We manage government fees, medicals, and insurance renewals.",
+        image: "https://images.unsplash.com/photo-1521791136064-7986c2920216?w=800&h=1000&fit=crop&q=80",
+        alt: "Renewals & Compliance"
+      },
+      {
+        title: "Dependent Sponsorship Management",
+        description: "Assistance with dependent visa applications, renewals, and transfers, ensuring smooth family sponsorship for key employees.",
+        image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&h=1000&fit=crop&q=80",
+        alt: "Dependent Sponsorship"
+      },
+      {
+        title: "Government Liaison & GRO Services",
+        description: "In-country GRO representation for all labour, immigration, and chamber activities, saving time and ensuring full compliance.",
+        image: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=800&h=1000&fit=crop&q=80",
+        alt: "GRO Services"
+      }
+    ],
+    timeline: [
+      {
+        title: "Step 1: Employee Eligibility & Documentation Review",
+        content: "We verify company and employee eligibility, prepare all required documentation, and align with current government regulations."
+      },
+      {
+        title: "Step 2: Work Visa Application & Issuance",
+        content: "We manage the full process including KSA visa application, submission of application in employees home country, medical exams, Embassy submissions, and employee entry."
+      },
+      {
+        title: "Step 3: Iqama Processing & Activation",
+        content: "Upon arrival, we coordinate all medicals, insurance, and stamping to issue the employee's Iqama card swiftly and compliantly."
+      },
+      {
+        title: "Step 4: Dependent Visa Management",
+        content: "For employees relocating with families, we oversee dependent visa applications and residence issuance."
+      },
+      {
+        title: "Step 5: Renewals & Ongoing Support",
+        content: "We handle all renewals, government payments, and portal updates, ensuring uninterrupted residency status for all employees."
+      }
+    ],
+    whyChoose: {
+      subtitle: "Supporting Your Business in Saudi Arabia",
+      items: [
+        {
+          title: "Transparent timelines and proactive compliance tracking",
+          description: "Real-time updates with consolidated reporting for full visibility"
+        },
+        {
+          title: "Dedicated account manager for your company",
+          description: "Personal support throughout your corporate immigration journey"
+        },
+        {
+          title: "In-country GRO and immigration experts",
+          description: "Local expertise ensuring smooth processing and full compliance"
+        }
+      ],
+      footerText: "RelocateMe provides corporations with a dedicated immigration partner you can trust."
+    },
+    faqs: [
+      {
+        question: "What is an Iqama in Saudi Arabia?",
+        answer: "An Iqama is a residency permit that allows foreign workers to legally live and work in Saudi Arabia. It's issued under company sponsorship and must be renewed periodically. RelocateMe manages the entire Iqama lifecycle from initial issuance to renewals."
+      },
+      {
+        question: "How long does the work visa process take?",
+        answer: "The timeline varies depending on the employee's nationality and documentation readiness. Typically, the full process from visa application to Iqama issuance takes 6-12 weeks. RelocateMe coordinates every step to minimize delays."
+      },
+      {
+        question: "Can employees bring their families to Saudi Arabia?",
+        answer: "Yes, employees can sponsor their spouse and children for dependent visas once their own Iqama is issued. RelocateMe manages the entire dependent sponsorship process including applications, medicals, and residency issuance."
+      },
+      {
+        question: "What is GRO and why do we need it?",
+        answer: "GRO (Government Relations Officer) services provide in-country representation for all government and labour-related activities. A GRO is required for companies operating in Saudi Arabia to handle visa processing, Iqama renewals, and compliance with MISA, Ministry of Commerce, GOSI, and Qiwa. RelocateMe provides experienced GRO specialists as part of our service."
+      },
+      {
+        question: "What happens if an Iqama expires?",
+        answer: "Expired Iqamas can result in significant fines and legal issues for both the employee and employer. RelocateMe provides proactive monitoring and renewal management to prevent expiry, handling all government fees, medicals, and insurance renewals in advance."
+      }
+    ],
+    contactFormTitle: "Ready to Simplify Your",
+    contactFormTitleHighlight: "Saudi Arabia Work Visas?",
+    contactFormDescription: "Let's streamline your workforce immigration. Share your details below and our corporate immigration team will reach out within 24 hours to discuss your employee visa and Iqama requirements."
   }
 };
