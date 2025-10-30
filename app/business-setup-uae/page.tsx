@@ -95,7 +95,7 @@ export default function UAEPage() {
             title={data.sectionTitle}
             highlightedText={data.sectionHighlight}
             paragraphs={data.sectionParagraphs}
-            buttonText="Get Your Free Assessment"
+            buttonText="Register for a Free Consultation"
             onButtonClick={scrollToContact}
           />
         </div>
@@ -114,10 +114,10 @@ export default function UAEPage() {
             className="mb-4"
           >
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-light leading-tight text-left">
-              Your <span className="text-[hsl(var(--brand))]">30-Day Expansion Journey</span>
+              Your <span className="text-[hsl(var(--brand))]">30-Day Business Set-Up Journey</span>
             </h2>
             <p className="text-lg text-gray-600 mt-4">
-              Launch your business with speed and confidence through RelocateMe's streamlined setup process
+              Achieve a confident market entry with RelocateMe's structured and compliance-first setup approach.
             </p>
           </motion.div>
         </div>

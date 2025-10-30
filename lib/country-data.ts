@@ -40,49 +40,49 @@ export const countryData: Record<string, CountryPageData> = {
   uae: {
     slug: "uae",
     name: "UAE",
-    heroTitle: "Launch Your Business in Dubai's Premier Free Zones",
-    heroSubtitle: "Fast-track your company setup with 100% foreign ownership, flexible payment options, and complete support from licensing to operations",
+    heroTitle: "Launch Your Business in the UAE",
+    heroSubtitle: "We fast-track your company setup with 100% foreign ownership, delivering the best-fit options and end-to-end support from licence to launch.",
     heroImage: "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=2070&q=80",
-    bannerDescription: "Your complete partner for business setup in UAE's leading free zones including DMCC, DIFC, and mainland jurisdictions.",
+    bannerDescription: "Your trusted partner for business setup across the UAE. We support all jurisdictions; DED Mainland and leading free zones including DMCC, DIFC, DIC, RAKEZ, and Meydan free zone.",
     bannerFeatures: [
       "100% foreign ownership without local partner",
-      "Fast-track setup in 30 days from start to operations",
-      "Flexible monthly payment plans available"
+      "Fast-track approval process",
+      "In-country immigration specialists"
     ],
-    sectionTitle: "Launch in the UAE with speed and confidence.",
-    sectionHighlight: "Streamlined setup process across UAE free zones and mainland jurisdictions.",
+    sectionTitle: "Launch your business in the UAE with clarity and confidence.",
+    sectionHighlight: "Streamline your business setup process across UAE free zones and mainland jurisdictions.",
     sectionParagraphs: [
-      "RelocateMe provides comprehensive business setup services across the United Arab Emirates, specializing in DMCC, DIFC, Dubai mainland, and other premier free zones.",
-      "From subsidized licenses and virtual office solutions to private office spaces and complete visa processing, we handle every aspect of your UAE business formation with flexible payment options and expert guidance."
+      "RelocateMe provides comprehensive business setup services across the United Arab Emirates, specialising in Meydan, DMCC, DIFC, Dubai mainland and other premier free zones.",
+      "We handle your business formation from licence to launch: virtual offices, private office spaces, and full visa processing, delivered with expert guidance at every stage."
     ],
     services: [
       {
-        title: "DMCC & Free Zone Licensing",
-        description: "Get 100% foreign business ownership with significant cost savings and flexible monthly payments. Award-winning business environment with global recognition.",
+        title: "Free Zone Licensing",
+        description: "Achieve 100% foreign ownership with significant cost savings and flexible monthly payments. Benefit from award-winning free zone environments with global recognition.",
         image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&h=1000&fit=crop&q=80",
-        alt: "DMCC Free Zone License"
+        alt: "Free Zone License"
       },
       {
-        title: "Virtual Office Solutions",
-        description: "Complete business setup without physical presence requirements. Premium business address, mail handling, forwarding services, and meeting room access.",
+        title: "DED Mainland Licence",
+        description: "Streamlined company formation across all DED jurisdictions with compliant structures, trade name & MOA support, and rapid activation for full on-the-ground operations.",
         image: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&h=1000&fit=crop&q=80",
+        alt: "DED Mainland Licence"
+      },
+      {
+        title: "Virtual Office",
+        description: "Complete business setup without physical presence. Premium business address, mail handling and forwarding, and access to meeting rooms.",
+        image: "https://images.unsplash.com/photo-1521791136064-7986c2920216?w=800&h=1000&fit=crop&q=80",
         alt: "Virtual Office"
       },
       {
-        title: "Private Office Spaces",
-        description: "Premium, fully-furnished private offices in the heart of Dubai. Instant operational capability with professional business address and 24/7 access.",
-        image: "https://images.unsplash.com/photo-1521791136064-7986c2920216?w=800&h=1000&fit=crop&q=80",
+        title: "Private Offices",
+        description: "Premium, fully furnished private offices in Dubai and Abu Dhabi. Instant operational capability with a professional business address and 24/7 access.",
+        image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&h=1000&fit=crop&q=80",
         alt: "Private Offices"
       },
       {
-        title: "Soft Landing Package",
-        description: "Gradual market entry with comprehensive support. Test the market before full commitment with reduced initial investment and flexible setup options.",
-        image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&h=1000&fit=crop&q=80",
-        alt: "Soft Landing"
-      },
-      {
-        title: "Visa & Residence Services",
-        description: "Complete residence visa processing for you and your team. Fast-tracked online applications, entry permits, and Emirates ID for full UAE residency.",
+        title: "Visa Services",
+        description: "End-to-end residence visa processing for you and your team. Fast-tracked online applications, entry permits, and Emirates ID for full UAE residency.",
         image: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=800&h=1000&fit=crop&q=80",
         alt: "Visa Services"
       },
@@ -91,32 +91,38 @@ export const countryData: Record<string, CountryPageData> = {
         description: "Fast-tracked corporate bank account opening through our banking partnerships. Full process management from application to activation.",
         image: "https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=800&h=1000&fit=crop&q=80",
         alt: "Banking Setup"
+      },
+      {
+        title: "Tax Specialists",
+        description: "In partnership with a specialist tax firm, we deliver corporate tax advisory, full VAT support, ESR/UBO compliance, and forward-looking tax planning.",
+        image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&h=1000&fit=crop&q=80",
+        alt: "Tax Specialists"
       }
     ],
     timeline: [
       {
-        title: "Step 1: Applying for DMCC License (2 days)",
-        content: "Submit your documents including passport copy and a brief business summary. Our team handles all documentation and applies for your DMCC or free zone license on your behalf."
+        title: "Step 1: Applying for your License (1-3 days)",
+        content: "Submit your documents including passport copy and a brief business summary. Our team handles all documentation and applies for your free zone license on your behalf."
       },
       {
-        title: "Step 2: Receiving the License (5 days)",
-        content: "Get officially registered with DMCC or your chosen free zone and receive your business license. You're now legally established in the UAE."
+        title: "Step 2: Receiving the License (2-5 days)",
+        content: "Get officially registered within your chosen free zone or mainland and receive your business license. You're now legally established in the UAE."
       },
       {
-        title: "Step 3: Applying for Visas (4 days)",
+        title: "Step 3: Applying for Residence Visas (3-4 days)",
         content: "Your residence visa is applied online via our team. We handle the full visa application process, allowing you to proceed to the next step of gaining your entry permit."
       },
       {
-        title: "Step 4: Receiving Visas & Emirates ID (5 days)",
-        content: "Team members are now fully authorized to live and work in the UAE. Complete residence visa and Emirates ID processing for you and your employees."
+        title: "Step 4: Receiving Visas & Emirates ID (5-7 days)",
+        content: "Team members are now fully authorised to live and work in the UAE. Complete residence visa and Emirates ID processing for you and your employees."
       },
       {
-        title: "Step 5: Opening Bank Account (10 days)",
-        content: "Our team manages the full process of opening and activating your corporate bank account with fast-tracked setup through our banking partnerships."
+        title: "Step 5: Opening Bank Account (5-10 days)",
+        content: "Our team manages the full process of opening and activating your corporate bank account with setup through our banking partnerships."
       },
       {
         title: "Step 6: Starting Operations (1 day)",
-        content: "You're fully operational, compliant, staffed, and ready for business in Dubai. Complete setup achieved in 30 days from start to finish."
+        content: "You're fully operational, compliant, staffed, and ready for business in the UAE. Complete setup achieved in under 30 days, from start to finish."
       }
     ],
     whyChoose: {
