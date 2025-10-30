@@ -71,9 +71,9 @@ export function Navbar({
           description: "Complete visa and immigration support across the GCC"
         },
         {
-          label: "Immigrate to UAE",
+          label: "UAE Golden Visa",
           href: "/uae-golden-visa",
-          description: "UAE Golden Visa and immigration services for individuals and families"
+          description: "Secure long-term residency in the UAE with 5 or 10-year Golden Visa"
         },
         {
           label: "Immigrate to Saudi Arabia",
