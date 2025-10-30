@@ -15,7 +15,79 @@ import {
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
 
-export function Navbar({ transparent = false }: { transparent?: boolean }) {
+export interface NavMenuItem {
+  label: string;
+  href: string;
+  submenu?: {
+    label: string;
+    href: string;
+    description: string;
+  }[];
+}
+
+export interface NavbarProps {
+  transparent?: boolean;
+  logo?: string;
+  logoAlt?: string;
+  menuItems?: NavMenuItem[];
+  ctaText?: string;
+  ctaHref?: string;
+}
+
+export function Navbar({
+  transparent = false,
+  logo = "/relocateme-logo.png",
+  logoAlt = "RelocateMe Logo",
+  menuItems = [
+    { label: "About Us", href: "/about-us" },
+    {
+      label: "Corporate Services",
+      href: "/corporate-services",
+      submenu: [
+        {
+          label: "Corporate Services Overview",
+          href: "/corporate-services",
+          description: "Complete corporate support across the GCC region"
+        },
+        {
+          label: "Business Setup in UAE",
+          href: "/business-setup-uae",
+          description: "Launch your business in Dubai's premier free zones"
+        },
+        {
+          label: "Business Setup in Saudi Arabia",
+          href: "/business-setup-saudi",
+          description: "Accelerate your Saudi market entry with MISA licensing"
+        }
+      ]
+    },
+    {
+      label: "Immigration Services",
+      href: "/immigration",
+      submenu: [
+        {
+          label: "Immigration Services Overview",
+          href: "/immigration",
+          description: "Complete visa and immigration support across the GCC"
+        },
+        {
+          label: "Immigrate to UAE",
+          href: "/immigrate-to-uae",
+          description: "UAE visa and immigration services for individuals and families"
+        },
+        {
+          label: "Immigrate to Saudi Arabia",
+          href: "/immigrate-to-saudi",
+          description: "Saudi visa and iqama services for professionals and families"
+        }
+      ]
+    },
+    { label: "Relocation Services", href: "/relocation" },
+    { label: "Insights", href: "/insights" }
+  ],
+  ctaText = "Get in Touch",
+  ctaHref = "/contact"
+}: NavbarProps) {
     const [isScrolled, setIsScrolled] = useState(false);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -57,8 +129,8 @@ export function Navbar({ transparent = false }: { transparent?: boolean }) {
                     <div className="flex items-center">
                         <a href="/">
                             <Image
-                                src="/relocateme-logo.png"
-                                alt="RelocateMe Logo"
+                                src={logo}
+                                alt={logoAlt}
                                 width={180}
                                 height={40}
                                 className={cn(
@@ -69,107 +141,64 @@ export function Navbar({ transparent = false }: { transparent?: boolean }) {
                         </a>
                     </div>
 
-                    <div className="hidden md:flex items-center gap-8">
-                        <a
-                            href="/about-us"
-                            className={cn(
-                                "text-sm font-medium transition-colors hover:opacity-80",
-                                shouldBeTransparent ? "text-white" : "text-gray-900"
-                            )}
-                        >
-                            About Us
-                        </a>
-
-                        <NavigationMenu>
-                            <NavigationMenuList>
-                                <NavigationMenuItem>
-                                    <NavigationMenuTrigger
-                                        className={cn(
-                                            "text-sm font-medium transition-colors hover:opacity-80 bg-transparent",
-                                            shouldBeTransparent ? "text-white hover:bg-white/10" : "text-gray-900 hover:bg-gray-100"
-                                        )}
-                                    >
-                                        Corporate Services
-                                    </NavigationMenuTrigger>
-                                    <NavigationMenuContent>
-                                        <ul className="grid w-[400px] gap-3 p-4">
-                                            <li>
-                                                <NavigationMenuLink asChild>
-                                                    <a
-                                                        href="/corporate-services"
-                                                        className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
-                                                    >
-                                                        <div className="text-sm font-medium leading-none">Corporate Services Overview</div>
-                                                        <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
-                                                            Complete corporate support across the GCC region
-                                                        </p>
-                                                    </a>
-                                                </NavigationMenuLink>
-                                            </li>
-                                            <li>
-                                                <NavigationMenuLink asChild>
-                                                    <a
-                                                        href="/business-setup-uae"
-                                                        className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
-                                                    >
-                                                        <div className="text-sm font-medium leading-none">Business Setup in UAE</div>
-                                                        <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
-                                                            Launch your business in Dubai's premier free zones
-                                                        </p>
-                                                    </a>
-                                                </NavigationMenuLink>
-                                            </li>
-                                            <li>
-                                                <NavigationMenuLink asChild>
-                                                    <a
-                                                        href="/business-setup-saudi"
-                                                        className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
-                                                    >
-                                                        <div className="text-sm font-medium leading-none">Business Setup in Saudi Arabia</div>
-                                                        <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
-                                                            Accelerate your Saudi market entry with MISA licensing
-                                                        </p>
-                                                    </a>
-                                                </NavigationMenuLink>
-                                            </li>
-                                        </ul>
-                                    </NavigationMenuContent>
-                                </NavigationMenuItem>
-                            </NavigationMenuList>
-                        </NavigationMenu>
-
-                        <a
-                            href="/immigration"
-                            className={cn(
-                                "text-sm font-medium transition-colors hover:opacity-80",
-                                shouldBeTransparent ? "text-white" : "text-gray-900"
-                            )}
-                        >
-                            Immigration Services
-                        </a>
-                        <a
-                            href="/relocation"
-                            className={cn(
-                                "text-sm font-medium transition-colors hover:opacity-80",
-                                shouldBeTransparent ? "text-white" : "text-gray-900"
-                            )}
-                        >
-                            Relocation Services
-                        </a>
-                        <a
-                            href="/insights"
-                            className={cn(
-                                "text-sm font-medium transition-colors hover:opacity-80",
-                                shouldBeTransparent ? "text-white" : "text-gray-900"
-                            )}
-                        >
-                            Insights
-                        </a>
+                    <div className="hidden md:flex items-center gap-4">
+                        {menuItems.map((item) => (
+                            item.submenu ? (
+                                <NavigationMenu key={item.href}>
+                                    <NavigationMenuList>
+                                        <NavigationMenuItem>
+                                            <a href={item.href} className="no-underline">
+                                                <NavigationMenuTrigger
+                                                    className={cn(
+                                                        "text-sm font-medium transition-colors hover:opacity-80 bg-transparent",
+                                                        shouldBeTransparent ? "text-white hover:bg-white/10" : "text-gray-900 hover:bg-gray-100"
+                                                    )}
+                                                >
+                                                    {item.label}
+                                                </NavigationMenuTrigger>
+                                            </a>
+                                            <NavigationMenuContent>
+                                                <ul className="grid w-[400px] gap-3 p-4">
+                                                    {item.submenu.map((subitem) => (
+                                                        <li key={subitem.href}>
+                                                            <NavigationMenuLink asChild>
+                                                                <a
+                                                                    href={subitem.href}
+                                                                    className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                                                                >
+                                                                    <div className="text-sm font-medium leading-none">{subitem.label}</div>
+                                                                    <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+                                                                        {subitem.description}
+                                                                    </p>
+                                                                </a>
+                                                            </NavigationMenuLink>
+                                                        </li>
+                                                    ))}
+                                                </ul>
+                                            </NavigationMenuContent>
+                                        </NavigationMenuItem>
+                                    </NavigationMenuList>
+                                </NavigationMenu>
+                            ) : (
+                                <a
+                                    key={item.href}
+                                    href={item.href}
+                                    className={cn(
+                                        "text-sm font-medium transition-colors px-4 py-2 rounded-md",
+                                        shouldBeTransparent
+                                            ? "text-white hover:bg-white/10"
+                                            : "text-gray-900 hover:bg-gray-100"
+                                    )}
+                                >
+                                    {item.label}
+                                </a>
+                            )
+                        ))}
                     </div>
 
                     {/* Desktop CTA Button */}
                     <div className="hidden md:flex items-center gap-4">
-                        <a href="/contact">
+                        <a href={ctaHref}>
                             <Button
                                 variant="outline"
                                 size="default"
@@ -180,7 +209,7 @@ export function Navbar({ transparent = false }: { transparent?: boolean }) {
                                         : "bg-[hsl(var(--brand))] border border-[hsl(var(--brand))] text-white hover:bg-[hsl(var(--brand))]/90 hover:text-white"
                                 )}
                             >
-                                Get in Touch
+                                {ctaText}
                             </Button>
                         </a>
                     </div>
@@ -212,66 +241,45 @@ export function Navbar({ transparent = false }: { transparent?: boolean }) {
                         className="md:hidden bg-white border-t border-gray-200"
                     >
                         <div className="container mx-auto px-4 py-6 flex flex-col gap-4">
-                            <a
-                                href="/about-us"
-                                onClick={() => setIsMobileMenuOpen(false)}
-                                className="text-gray-900 font-medium py-2 hover:text-[hsl(var(--brand))] transition-colors"
-                            >
-                                About Us
-                            </a>
-
-                            <div className="flex flex-col gap-2">
-                                <a
-                                    href="/corporate-services"
-                                    onClick={() => setIsMobileMenuOpen(false)}
-                                    className="text-gray-900 font-medium py-2 hover:text-[hsl(var(--brand))] transition-colors"
-                                >
-                                    Corporate Services
-                                </a>
-                                <a
-                                    href="/business-setup-uae"
-                                    onClick={() => setIsMobileMenuOpen(false)}
-                                    className="text-gray-600 text-sm py-2 pl-4 hover:text-[hsl(var(--brand))] transition-colors"
-                                >
-                                    → Business Setup in UAE
-                                </a>
-                                <a
-                                    href="/business-setup-saudi"
-                                    onClick={() => setIsMobileMenuOpen(false)}
-                                    className="text-gray-600 text-sm py-2 pl-4 hover:text-[hsl(var(--brand))] transition-colors"
-                                >
-                                    → Business Setup in Saudi Arabia
-                                </a>
-                            </div>
-
-                            <a
-                                href="/immigration"
-                                onClick={() => setIsMobileMenuOpen(false)}
-                                className="text-gray-900 font-medium py-2 hover:text-[hsl(var(--brand))] transition-colors"
-                            >
-                                Immigration Services
-                            </a>
-                            <a
-                                href="/relocation"
-                                onClick={() => setIsMobileMenuOpen(false)}
-                                className="text-gray-900 font-medium py-2 hover:text-[hsl(var(--brand))] transition-colors"
-                            >
-                                Relocation Services
-                            </a>
-                            <a
-                                href="/insights"
-                                onClick={() => setIsMobileMenuOpen(false)}
-                                className="text-gray-900 font-medium py-2 hover:text-[hsl(var(--brand))] transition-colors"
-                            >
-                                Insights
-                            </a>
-                            <a href="/contact" onClick={() => setIsMobileMenuOpen(false)} className="mt-4">
+                            {menuItems.map((item) => (
+                                item.submenu ? (
+                                    <div key={item.href} className="flex flex-col gap-2">
+                                        <a
+                                            href={item.href}
+                                            onClick={() => setIsMobileMenuOpen(false)}
+                                            className="text-gray-900 font-medium py-2 hover:text-[hsl(var(--brand))] transition-colors"
+                                        >
+                                            {item.label}
+                                        </a>
+                                        {item.submenu.map((subitem) => (
+                                            <a
+                                                key={subitem.href}
+                                                href={subitem.href}
+                                                onClick={() => setIsMobileMenuOpen(false)}
+                                                className="text-gray-600 text-sm py-2 pl-4 hover:text-[hsl(var(--brand))] transition-colors"
+                                            >
+                                                → {subitem.label}
+                                            </a>
+                                        ))}
+                                    </div>
+                                ) : (
+                                    <a
+                                        key={item.href}
+                                        href={item.href}
+                                        onClick={() => setIsMobileMenuOpen(false)}
+                                        className="text-gray-900 font-medium py-2 hover:text-[hsl(var(--brand))] transition-colors"
+                                    >
+                                        {item.label}
+                                    </a>
+                                )
+                            ))}
+                            <a href={ctaHref} onClick={() => setIsMobileMenuOpen(false)} className="mt-4">
                                 <Button
                                     variant="outline"
                                     size="default"
                                     className="w-full bg-[hsl(var(--brand))] border border-[hsl(var(--brand))] text-white hover:bg-[hsl(var(--brand))]/90 hover:text-white px-6 py-5"
                                 >
-                                    Get in Touch
+                                    {ctaText}
                                 </Button>
                             </a>
                         </div>
