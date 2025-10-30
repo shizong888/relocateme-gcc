@@ -42,7 +42,7 @@ export function WhyChooseSection({
           <p className="text-xl text-gray-600">{subtitle}</p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto justify-items-center">
           {items.map((item, index) => (
             <motion.div
               key={index}
@@ -50,7 +50,7 @@ export function WhyChooseSection({
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
-              className="text-center p-6 rounded-lg border border-gray-200 hover:shadow-lg transition-shadow"
+              className="text-center p-6 rounded-lg border border-gray-200 hover:shadow-lg transition-shadow w-full max-w-sm"
             >
               <div className="w-16 h-16 bg-[hsl(var(--brand))]/10 rounded-full flex items-center justify-center mx-auto mb-4 text-[hsl(var(--brand))]">
                 {item.icon}
