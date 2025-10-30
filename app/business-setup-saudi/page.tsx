@@ -196,7 +196,7 @@ export default function SaudiArabiaPage() {
         title={data.contactFormTitle}
         titleHighlight={data.contactFormTitleHighlight}
         description={data.contactFormDescription}
-        imageSrc="https://images.unsplash.com/photo-1588668214407-6ea9a6d8c272?w=2070&q=80"
+        imageSrc="/images/Riyadh_Skyline.jpg"
         imageAlt={`Business setup in ${data.name}`}
       />
 
