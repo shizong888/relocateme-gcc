@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { WhatsAppButton } from "@/components/ui/whatsapp-button";
+import { ConsentManager } from "@/components/analytics/ConsentManager";
+import { GoogleTagManager, GoogleTagManagerNoScript } from "@/components/analytics/GoogleTagManager";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -59,10 +61,18 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        {/* Consent Manager - Must be first in head */}
+        <ConsentManager />
+        {/* Google Tag Manager */}
+        <GoogleTagManager />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
         suppressHydrationWarning
       >
+        {/* Google Tag Manager (noscript) - Must be first in body */}
+        <GoogleTagManagerNoScript />
         {children}
         <WhatsAppButton />
       </body>
