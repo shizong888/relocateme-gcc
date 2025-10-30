@@ -36,6 +36,44 @@ export interface CountryPageData {
   contactFormDescription: string;
 }
 
+export interface ImmigrationPageData {
+  slug: string;
+  name: string;
+  heroTitle: string;
+  heroSubtitle: string;
+  heroImage: string;
+  bannerDescription: string;
+  bannerFeatures: string[];
+  sectionTitle: string;
+  sectionHighlight: string;
+  sectionParagraphs: string[];
+  services: {
+    title: string;
+    description: string;
+    image: string;
+    alt: string;
+  }[];
+  timeline: {
+    title: string;
+    content: string;
+  }[];
+  whyChoose: {
+    subtitle: string;
+    items: {
+      title: string;
+      description: string;
+    }[];
+    footerText: string;
+  };
+  faqs: {
+    question: string;
+    answer: string;
+  }[];
+  contactFormTitle: string;
+  contactFormTitleHighlight: string;
+  contactFormDescription: string;
+}
+
 export const countryData: Record<string, CountryPageData> = {
   uae: {
     slug: "uae",
@@ -311,5 +349,117 @@ export const countryData: Record<string, CountryPageData> = {
     contactFormTitle: "Ready to Launch Your",
     contactFormTitleHighlight: "Business in Saudi Arabia?",
     contactFormDescription: "Let's make your Saudi Arabia expansion seamless. Share your details below and our business setup team will reach out within 24 hours to create your personalized company formation plan."
+  }
+};
+
+export const immigrationData: Record<string, ImmigrationPageData> = {
+  "uae-golden-visa": {
+    slug: "uae-golden-visa",
+    name: "UAE Golden Visa",
+    heroTitle: "UAE Golden Visa\nSecure Long-Term Residency in the UAE",
+    heroSubtitle: "We streamline your UAE Golden Visa application with dedicated end-to-end support, helping you or your team secure 5 or 10 year residency in the United Arab Emirates, with no local sponsor required.",
+    heroImage: "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=2070&q=80",
+    bannerDescription: "Your trusted partner for immigration and residency services across the UAE. Our expert team provides on-the-ground assistance for Golden Visas, work visas, and dependent visas, ensuring full compliance and seamless processing across all emirates.",
+    bannerFeatures: [
+      "5 or 10 year Golden Visa",
+      "Sponsor family members and dependents",
+      "Expert immigration team on the ground"
+    ],
+    sectionTitle: "Apply for Your Residency with Clarity and Confidence",
+    sectionHighlight: "",
+    sectionParagraphs: [
+      "RelocateMe simplifies the Golden Visa process for investors, entrepreneurs, professionals, and outstanding students. Our dedicated immigration specialists handle every step, from document preparation and endorsements to application submission and visa issuance, with complete transparency and care."
+    ],
+    services: [
+      {
+        title: "Investors",
+        description: "Secure a 10-year residency through property or public investment of AED 2 million or more.",
+        image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&h=1000&fit=crop&q=80",
+        alt: "Investors"
+      },
+      {
+        title: "Entrepreneurs",
+        description: "Obtain a 5 year Golden Visa as the founder of an approved startup or innovative business recognised by UAE authorities.",
+        image: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&h=1000&fit=crop&q=80",
+        alt: "Entrepreneurs"
+      },
+      {
+        title: "Specialised Talent & Professionals",
+        description: "Doctors, scientists, creatives, executives, engineers, and athletes can qualify under the specialised talent category with endorsement from the relevant authority.",
+        image: "https://images.unsplash.com/photo-1521791136064-7986c2920216?w=800&h=1000&fit=crop&q=80",
+        alt: "Specialised Talent"
+      },
+      {
+        title: "Outstanding Students",
+        description: "Exceptional UAE or international students with top academic performance may apply for a 5 or 10-year Golden Visa, including family sponsorship.",
+        image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&h=1000&fit=crop&q=80",
+        alt: "Outstanding Students"
+      }
+    ],
+    timeline: [
+      {
+        title: "Step 1: Eligibility Assessment",
+        content: "We identify the right Golden Visa category based on your background: investor, entrepreneur, professional, or student."
+      },
+      {
+        title: "Step 2: Documentation & Endorsement",
+        content: "Our team prepares your documents and secures required approvals or recommendation letters from the relevant UAE authorities."
+      },
+      {
+        title: "Step 3: Application Submission",
+        content: "We submit your complete Golden Visa application on your behalf."
+      },
+      {
+        title: "Step 4: Visa Issuance & Residency Activation",
+        content: "Upon approval, your 5 or 10 year Golden Visa is issued, enabling you and your family to live, work, and study in the UAE."
+      },
+      {
+        title: "Step 5: Ongoing Support",
+        content: "RelocateMe continues to support renewals, family sponsorship, and related immigration services for full peace of mind."
+      }
+    ],
+    whyChoose: {
+      subtitle: "Supporting Your UAE Residency Journey",
+      items: [
+        {
+          title: "Transparent timelines and documentation guidance",
+          description: "Clear communication at every step of your Golden Visa application"
+        },
+        {
+          title: "Dedicated account manager for each client",
+          description: "Personal support throughout your entire residency journey"
+        },
+        {
+          title: "On-the-ground specialists across the UAE",
+          description: "Local expertise ensuring smooth processing and compliance"
+        }
+      ],
+      footerText: "RelocateMe delivers professional visa and immigration solutions with complete transparency and care."
+    },
+    faqs: [
+      {
+        question: "What is the UAE Golden Visa?",
+        answer: "The UAE Golden Visa is a long-term residency program offering 5 or 10-year renewable visas to investors, entrepreneurs, specialized professionals, and outstanding students. It allows you to live, work, and study in the UAE without a local sponsor."
+      },
+      {
+        question: "Who is eligible for the Golden Visa?",
+        answer: "Eligibility includes investors (AED 2 million+ in property or public investments), entrepreneurs with approved startups, specialized professionals (doctors, scientists, engineers, creatives, athletes), and outstanding students with exceptional academic performance."
+      },
+      {
+        question: "Can I sponsor my family members?",
+        answer: "Yes, Golden Visa holders can sponsor their spouse, children, and in some cases, parents and siblings, allowing your entire family to enjoy long-term UAE residency."
+      },
+      {
+        question: "How long does the Golden Visa process take?",
+        answer: "The timeline varies depending on your category and documentation readiness. Typically, the process takes 4-8 weeks from eligibility assessment to visa issuance, with RelocateMe managing every step."
+      },
+      {
+        question: "Do I need to maintain my investment to keep the Golden Visa?",
+        answer: "For investor-category Golden Visas, you generally need to maintain your qualifying investment (property or public investment) for the duration of your visa validity. Our team provides ongoing guidance on compliance requirements."
+      }
+    ],
+    contactFormTitle: "Ready to Secure Your",
+    contactFormTitleHighlight: "UAE Golden Visa?",
+    contactFormDescription: "Let's make your UAE residency journey seamless. Share your details below and our immigration team will reach out within 24 hours to assess your eligibility and create your personalized Golden Visa plan."
   }
 };
