@@ -72,8 +72,8 @@ export function Navbar({
         },
         {
           label: "Immigrate to UAE",
-          href: "/immigrate-to-uae",
-          description: "UAE visa and immigration services for individuals and families"
+          href: "/uae-golden-visa",
+          description: "UAE Golden Visa and immigration services for individuals and families"
         },
         {
           label: "Immigrate to Saudi Arabia",
