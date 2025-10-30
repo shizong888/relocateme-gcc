@@ -356,7 +356,7 @@ export const immigrationData: Record<string, ImmigrationPageData> = {
   "uae-golden-visa": {
     slug: "uae-golden-visa",
     name: "UAE Golden Visa",
-    heroTitle: "UAE Golden Visa\nSecure Long-Term Residency in the UAE",
+    heroTitle: "Secure Long-Term Residency in the UAE",
     heroSubtitle: "We streamline your UAE Golden Visa application with dedicated end-to-end support, helping you or your team secure 5 or 10 year residency in the United Arab Emirates, with no local sponsor required.",
     heroImage: "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=2070&q=80",
     bannerDescription: "Your trusted partner for immigration and residency services across the UAE. Our expert team provides on-the-ground assistance for Golden Visas, work visas, and dependent visas, ensuring full compliance and seamless processing across all emirates.",
