@@ -3,6 +3,26 @@ import Script from 'next/script';
 export function GoogleTagManager() {
   return (
     <>
+      {/* Google Consent Mode v2 - Default consent state */}
+      <Script
+        id="google-consent-mode"
+        strategy="beforeInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+
+            gtag('consent', 'default', {
+              'ad_storage': 'denied',
+              'ad_user_data': 'denied',
+              'ad_personalization': 'denied',
+              'analytics_storage': 'denied',
+              'wait_for_update': 500
+            });
+          `,
+        }}
+      />
+
       {/* Google Tag Manager Script */}
       <Script
         id="google-tag-manager"
