@@ -10,8 +10,9 @@ type BlogPostSitemap = {
 
 const BASE_URL = 'https://www.relocatemegcc.com'
 
-// Revalidate sitemap every hour or on-demand via webhook
-export const revalidate = 3600 // 1 hour
+// Disable static generation - always generate fresh sitemap on each request
+export const dynamic = 'force-dynamic'
+export const revalidate = 0
 
 // Static pages with their update frequency and priority
 const staticPages = [
