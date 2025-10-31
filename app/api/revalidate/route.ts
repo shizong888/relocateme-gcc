@@ -13,8 +13,8 @@ import { NextRequest, NextResponse } from 'next/server'
  */
 export async function POST(request: NextRequest) {
   try {
-    // Get environment variable - try multiple possible names
-    const expectedToken = process.env.SECRET_TOKEN || process.env.NEXT_PUBLIC_WEBHOOK_TOKEN || process.env.WEBHOOK_TOKEN || 'your-secret-token'
+    // Get environment variable directly
+    const expectedToken = process.env.REVALIDATION_TOKEN || 'your-secret-token'
 
     // Verify the request is coming from Sanity with the correct token
     const token = request.headers.get('x-revalidate-token')
@@ -87,16 +87,13 @@ export async function POST(request: NextRequest) {
 export async function GET(request: NextRequest) {
   const token = request.nextUrl.searchParams.get('token')
   const debug = request.nextUrl.searchParams.get('debug')
-  const expectedToken = process.env.SECRET_TOKEN || process.env.NEXT_PUBLIC_WEBHOOK_TOKEN || process.env.WEBHOOK_TOKEN || 'your-secret-token'
+  const expectedToken = process.env.REVALIDATION_TOKEN || 'your-secret-token'
 
   // Debug mode - shows if env var is set (without exposing the value)
   if (debug === 'true') {
     return NextResponse.json({
-      envVarSet: !!(process.env.SECRET_TOKEN || process.env.NEXT_PUBLIC_WEBHOOK_TOKEN || process.env.WEBHOOK_TOKEN),
-      envVarLength: (process.env.SECRET_TOKEN || process.env.NEXT_PUBLIC_WEBHOOK_TOKEN || process.env.WEBHOOK_TOKEN)?.length || 0,
-      secretTokenExists: !!process.env.SECRET_TOKEN,
-      nextPublicWebhookExists: !!process.env.NEXT_PUBLIC_WEBHOOK_TOKEN,
-      webhookTokenExists: !!process.env.WEBHOOK_TOKEN,
+      envVarSet: !!process.env.REVALIDATION_TOKEN,
+      envVarLength: process.env.REVALIDATION_TOKEN?.length || 0,
       tokenProvided: !!token,
       tokenLength: token?.length || 0,
       defaultTokenBeingUsed: expectedToken === 'your-secret-token'
