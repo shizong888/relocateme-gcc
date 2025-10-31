@@ -47,11 +47,14 @@ export async function POST(request: NextRequest) {
       action: body._action || 'unknown'
     })
 
-    // Revalidate the sitemap
-    revalidatePath('/sitemap.xml')
+    // Revalidate the sitemap - force refresh the entire route
+    revalidatePath('/', 'layout') // Revalidate root which includes sitemap
+    revalidatePath('/sitemap.xml', 'page')
+    console.log('Revalidated sitemap')
 
     // Revalidate the insights page
-    revalidatePath('/insights')
+    revalidatePath('/insights', 'page')
+    console.log('Revalidated insights page')
 
     // If it's a specific blog post, revalidate that page too
     if (body._type === 'blogPost' && body.slug?.current && body.categorySlug) {
@@ -108,8 +111,9 @@ export async function GET(request: NextRequest) {
   }
 
   try {
-    revalidatePath('/sitemap.xml')
-    revalidatePath('/insights')
+    revalidatePath('/', 'layout')
+    revalidatePath('/sitemap.xml', 'page')
+    revalidatePath('/insights', 'page')
 
     return NextResponse.json({
       revalidated: true,

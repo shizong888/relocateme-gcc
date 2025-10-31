@@ -10,9 +10,8 @@ type BlogPostSitemap = {
 
 const BASE_URL = 'https://www.relocatemegcc.com'
 
-// Disable static generation - always generate fresh sitemap on each request
-export const dynamic = 'force-dynamic'
-export const revalidate = 0
+// Use ISR - regenerate sitemap every 60 seconds (or on-demand via webhook)
+export const revalidate = 60
 
 // Static pages with their update frequency and priority
 const staticPages = [
