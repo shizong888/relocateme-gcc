@@ -14,6 +14,7 @@ export async function GET() {
     hasResend: allEnvKeys.filter(k => k.toLowerCase().includes('resend')),
     // Check exact names
     exact: {
+      SECRET_TOKEN: 'SECRET_TOKEN' in process.env,
       WEBHOOK_TOKEN: 'WEBHOOK_TOKEN' in process.env,
       NEXT_PUBLIC_WEBHOOK_TOKEN: 'NEXT_PUBLIC_WEBHOOK_TOKEN' in process.env,
       REVALIDATION_TOKEN: 'REVALIDATION_TOKEN' in process.env,
