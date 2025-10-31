@@ -136,8 +136,8 @@ export default function UAEPage() {
         />
       </section>
 
-      {/* Why Choose Us Section */}
-      <WhyChooseSection
+      {/* Why Choose Us Section - Hidden per user request */}
+      {/* <WhyChooseSection
         audience="Companies"
         subtitle={data.whyChoose.subtitle}
         items={data.whyChoose.items.map((item, index) => {
@@ -151,10 +151,10 @@ export default function UAEPage() {
         footerText={data.whyChoose.footerText}
         buttonText="Book a Free Consultation"
         onButtonClick={scrollToContact}
-      />
+      /> */}
 
-      {/* FAQ Section */}
-      <section className="py-20 bg-white">
+      {/* FAQ Section - Hidden per user request */}
+      {/* <section className="py-20 bg-white">
         <div className="container mx-auto px-4 md:px-6">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -189,7 +189,7 @@ export default function UAEPage() {
             </Accordion>
           </motion.div>
         </div>
-      </section>
+      </section> */}
 
       {/* Contact Form Section */}
       <ContactForm
