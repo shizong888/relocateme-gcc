@@ -10,7 +10,7 @@ const REVALIDATION_TOKEN = process.env.REVALIDATION_TOKEN || 'your-secret-token'
  *
  * Usage in Sanity Studio:
  * 1. Go to Settings → Webhooks
- * 2. Create new webhook with URL: https://relocateme.ae/api/revalidate
+ * 2. Create new webhook with URL: https://www.relocatemegcc.com/api/revalidate
  * 3. Add secret token as header: x-revalidate-token: your-secret-token
  * 4. Select events: Create, Update, Delete for blogPost and category types
  * 5. Save and test the webhook

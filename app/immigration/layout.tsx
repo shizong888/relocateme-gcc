@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Immigration Services GCC | RelocateMe",
     description: "Expert visa and immigration services across the GCC. Golden Visas, work permits, and comprehensive immigration support.",
-    url: "https://relocateme-gcc.com/immigration",
+    url: "https://www.relocatemegcc.com/immigration",
     siteName: "RelocateMe GCC",
     images: [
       {
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     images: ["/api/og?image=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1436491865332-7a61a109cc05%3Fw%3D1200%26q%3D80"]
   },
   alternates: {
-    canonical: "https://relocateme-gcc.com/immigration"
+    canonical: "https://www.relocatemegcc.com/immigration"
   }
 };
 

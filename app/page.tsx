@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "RelocateMe GCC - Corporate Services, Relocation & Immigration Experts",
     description: "Leading provider of corporate services, relocation, and visa immigration solutions across the GCC.",
-    url: "https://relocateme-gcc.com",
+    url: "https://www.relocatemegcc.com",
     siteName: "RelocateMe GCC",
     images: [
       {
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
     images: ["/relocateme-logo.png"]
   },
   alternates: {
-    canonical: "https://relocateme-gcc.com"
+    canonical: "https://www.relocatemegcc.com"
   }
 };
 

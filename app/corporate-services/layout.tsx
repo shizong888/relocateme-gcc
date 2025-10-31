@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Corporate Services GCC | RelocateMe",
     description: "Comprehensive corporate services across the GCC. Business setup, office solutions, HR support, and value-added services.",
-    url: "https://relocateme-gcc.com/corporate-services",
+    url: "https://www.relocatemegcc.com/corporate-services",
     siteName: "RelocateMe GCC",
     images: [
       {
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     images: ["/api/og?image=https%3A%2F%2Fwww.relocatemegcc.com%2Fimages%2Fhero-corporate.jpg"]
   },
   alternates: {
-    canonical: "https://relocateme-gcc.com/corporate-services"
+    canonical: "https://www.relocatemegcc.com/corporate-services"
   }
 };
 

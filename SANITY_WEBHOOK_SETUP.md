@@ -37,7 +37,7 @@ openssl rand -base64 32
 4. Fill in the following details:
 
    - **Name**: `RelocateMe Sitemap Revalidation`
-   - **URL**: `https://relocateme.ae/api/revalidate`
+   - **URL**: `https://www.relocatemegcc.com/api/revalidate`
    - **Dataset**: `production`
    - **HTTP Method**: `POST`
    - **HTTP Headers**:
@@ -76,7 +76,7 @@ openssl rand -base64 32
 #### Option 2: Manual Test via URL
 Visit this URL in your browser (replace with your actual token):
 ```
-https://relocateme.ae/api/revalidate?token=your-super-secret-token-here
+https://www.relocatemegcc.com/api/revalidate?token=your-super-secret-token-here
 ```
 
 You should see:
@@ -90,7 +90,7 @@ You should see:
 
 ### 5. Verify Sitemap Updates
 
-1. Visit: https://relocateme.ae/sitemap.xml
+1. Visit: https://www.relocatemegcc.com/sitemap.xml
 2. Make a change to a blog post in Sanity
 3. Wait a few seconds for the webhook to process
 4. Refresh the sitemap URL

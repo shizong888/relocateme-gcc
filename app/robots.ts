@@ -12,6 +12,6 @@ export default function robots(): MetadataRoute.Robots {
         '/_business-setup-saudi/', // Hidden page
       ],
     },
-    sitemap: 'https://relocateme.ae/sitemap.xml',
+    sitemap: 'https://www.relocatemegcc.com/sitemap.xml',
   }
 }

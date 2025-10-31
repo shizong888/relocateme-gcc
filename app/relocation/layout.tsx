@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Relocation Services GCC | RelocateMe",
     description: "Expert relocation services across the GCC. From home search and school selection to settling-in support for families and employees.",
-    url: "https://relocateme-gcc.com/relocation",
+    url: "https://www.relocatemegcc.com/relocation",
     siteName: "RelocateMe GCC",
     images: [
       {
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     images: ["/api/og?image=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1622675363311-3e1904dc1885%3Fixlib%3Drb-4.1.0%26ixid%3DM3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%253D%253D%26auto%3Dformat%26fit%3Dcrop%26q%3D80%26w%3D2070"]
   },
   alternates: {
-    canonical: "https://relocateme-gcc.com/relocation"
+    canonical: "https://www.relocatemegcc.com/relocation"
   }
 };
 
