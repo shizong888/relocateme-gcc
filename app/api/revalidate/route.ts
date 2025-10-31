@@ -83,9 +83,21 @@ export async function POST(request: NextRequest) {
   }
 }
 
-// Optional: GET endpoint for manual testing
+// Optional: GET endpoint for manual testing and debugging
 export async function GET(request: NextRequest) {
   const token = request.nextUrl.searchParams.get('token')
+  const debug = request.nextUrl.searchParams.get('debug')
+
+  // Debug mode - shows if env var is set (without exposing the value)
+  if (debug === 'true') {
+    return NextResponse.json({
+      envVarSet: !!process.env.REVALIDATION_TOKEN,
+      envVarLength: process.env.REVALIDATION_TOKEN?.length || 0,
+      tokenProvided: !!token,
+      tokenLength: token?.length || 0,
+      defaultTokenBeingUsed: REVALIDATION_TOKEN === 'your-secret-token'
+    })
+  }
 
   if (token !== REVALIDATION_TOKEN) {
     return NextResponse.json(
