@@ -13,6 +13,8 @@ export async function GET(request: NextRequest) {
   return NextResponse.json({
     message: 'Environment variable debug info',
     availableKeys: envKeys,
+    nextPublicWebhookTokenExists: 'NEXT_PUBLIC_WEBHOOK_TOKEN' in process.env,
+    nextPublicWebhookTokenLength: process.env.NEXT_PUBLIC_WEBHOOK_TOKEN?.length || 0,
     webhookTokenExists: 'WEBHOOK_TOKEN' in process.env,
     webhookTokenValue: process.env.WEBHOOK_TOKEN ? '[REDACTED - EXISTS]' : 'NOT SET',
     webhookTokenLength: process.env.WEBHOOK_TOKEN?.length || 0,
