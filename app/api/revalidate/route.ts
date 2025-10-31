@@ -1,4 +1,4 @@
-import { revalidatePath, revalidateTag } from 'next/cache'
+import { revalidatePath } from 'next/cache'
 import { NextRequest, NextResponse } from 'next/server'
 
 // Secret token to protect the revalidation endpoint
@@ -50,9 +50,10 @@ export async function POST(request: NextRequest) {
       console.log('Revalidated blog post:', blogPath)
     }
 
-    // If categories changed, revalidate all blog-related pages
+    // If categories changed, revalidate the insights page
     if (body._type === 'category') {
-      revalidateTag('blog-posts')
+      revalidatePath('/insights', 'page')
+      console.log('Revalidated insights page due to category change')
     }
 
     return NextResponse.json({
