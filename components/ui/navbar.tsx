@@ -53,12 +53,13 @@ export function Navbar({
           label: "Business Setup in UAE",
           href: "/business-setup-uae",
           description: "Launch your business in Dubai's premier free zones"
-        },
-        {
-          label: "Business Setup in Saudi Arabia",
-          href: "/business-setup-saudi",
-          description: "Accelerate your Saudi market entry with MISA licensing"
         }
+        // Temporarily hidden - needs copy updates before production
+        // {
+        //   label: "Business Setup in Saudi Arabia",
+        //   href: "/business-setup-saudi",
+        //   description: "Accelerate your Saudi market entry with MISA licensing"
+        // }
       ]
     },
     {
