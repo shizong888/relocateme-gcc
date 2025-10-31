@@ -20,7 +20,17 @@ export async function POST(request: NextRequest) {
     // Verify the request is coming from Sanity with the correct token
     const token = request.headers.get('x-revalidate-token')
 
+    // Debug logging
+    console.log('Webhook received:', {
+      hasToken: !!token,
+      tokenLength: token?.length,
+      hasEnvToken: !!REVALIDATION_TOKEN,
+      envTokenLength: REVALIDATION_TOKEN?.length,
+      tokensMatch: token === REVALIDATION_TOKEN
+    })
+
     if (token !== REVALIDATION_TOKEN) {
+      console.error('Token mismatch - rejecting request')
       return NextResponse.json(
         { message: 'Invalid token' },
         { status: 401 }
