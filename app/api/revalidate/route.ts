@@ -1,10 +1,6 @@
 import { revalidatePath } from 'next/cache'
 import { NextRequest, NextResponse } from 'next/server'
 
-// Secret token to protect the revalidation endpoint
-// Set this in your environment variables
-const REVALIDATION_TOKEN = process.env.REVALIDATION_TOKEN || 'your-secret-token'
-
 /**
  * Webhook endpoint for Sanity to trigger revalidation
  *
@@ -17,6 +13,9 @@ const REVALIDATION_TOKEN = process.env.REVALIDATION_TOKEN || 'your-secret-token'
  */
 export async function POST(request: NextRequest) {
   try {
+    // Get environment variable directly
+    const expectedToken = process.env.REVALIDATION_TOKEN || 'your-secret-token'
+
     // Verify the request is coming from Sanity with the correct token
     const token = request.headers.get('x-revalidate-token')
 
@@ -24,12 +23,13 @@ export async function POST(request: NextRequest) {
     console.log('Webhook received:', {
       hasToken: !!token,
       tokenLength: token?.length,
-      hasEnvToken: !!REVALIDATION_TOKEN,
-      envTokenLength: REVALIDATION_TOKEN?.length,
-      tokensMatch: token === REVALIDATION_TOKEN
+      hasEnvToken: !!expectedToken,
+      envTokenLength: expectedToken?.length,
+      tokensMatch: token === expectedToken,
+      isDefaultToken: expectedToken === 'your-secret-token'
     })
 
-    if (token !== REVALIDATION_TOKEN) {
+    if (token !== expectedToken) {
       console.error('Token mismatch - rejecting request')
       return NextResponse.json(
         { message: 'Invalid token' },
@@ -87,6 +87,7 @@ export async function POST(request: NextRequest) {
 export async function GET(request: NextRequest) {
   const token = request.nextUrl.searchParams.get('token')
   const debug = request.nextUrl.searchParams.get('debug')
+  const expectedToken = process.env.REVALIDATION_TOKEN || 'your-secret-token'
 
   // Debug mode - shows if env var is set (without exposing the value)
   if (debug === 'true') {
@@ -95,11 +96,11 @@ export async function GET(request: NextRequest) {
       envVarLength: process.env.REVALIDATION_TOKEN?.length || 0,
       tokenProvided: !!token,
       tokenLength: token?.length || 0,
-      defaultTokenBeingUsed: REVALIDATION_TOKEN === 'your-secret-token'
+      defaultTokenBeingUsed: expectedToken === 'your-secret-token'
     })
   }
 
-  if (token !== REVALIDATION_TOKEN) {
+  if (token !== expectedToken) {
     return NextResponse.json(
       { message: 'Invalid token' },
       { status: 401 }
