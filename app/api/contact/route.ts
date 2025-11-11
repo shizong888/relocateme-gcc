@@ -155,8 +155,8 @@ export async function POST(request: NextRequest) {
     console.log('API Key present:', !!process.env.RESEND_API_KEY);
 
     const data = await resend.emails.send({
-      from: 'onboarding@resend.dev',
-      to: 'contactabertay@gmail.com', // Testing mode - can only send to your verified email
+      from: 'contact@relocatemegcc.com',
+      to: 'victoria@relocatemegcc.com',
       subject: `New Contact Form Submission - ${name}`,
       html: emailHtml,
     });
